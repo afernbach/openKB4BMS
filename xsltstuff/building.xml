@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj name="building" href="building/" is="knx:ViewBuilding">
+  <list name="parts" href="building/parts" of="knx:Part">
+    <obj name="P-013F-0_BP-1" href="building/parts/treitlstrasse" is="knx:Part" displayName="Treitlstrasse">
+      <enum name="type" href="building/parts/treitlstrasse/type" val="building" range="/enums/part"/>
+      <list name="parts" href="building/parts/treitlstrasse/parts" of="knx:Part">
+        <obj name="P-013F-0_BP-2" href="building/parts/treitlstrasse/parts/4stock" is="knx:Part" displayName="4.Stock">
+          <enum name="type" href="building/parts/treitlstrasse/parts/4stock/type" val="buildingpart" range="/enums/part"/>
+          <list name="parts" href="building/parts/treitlstrasse/parts/4stock/parts" of="knx:Part">
+            <obj name="P-013F-0_BP-3" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab" is="knx:Part" displayName="A-Lab">
+              <enum name="type" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/type" val="room" range="/enums/part"/>
+              <list name="instances" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances" of="knx:InstancePart">
+                <obj name="P-013F-0_DI-43" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/1" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/colour_touch_panel_up_588_2/1" is="knx:Entity" displayName="Colour-Touch-Panel UP 588/2"/>
+                </obj>
+                <obj name="P-013F-0_DI-57" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/2" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/cheops_drive_731/1" is="knx:Entity" displayName="Cheops drive"/>
+                </obj>
+                <obj name="P-013F-0_DI-49" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/3" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1" is="knx:Entity" displayName="Push button 4-fold UP 287 DELTA style"/>
+                </obj>
+                <obj name="P-013F-0_DI-56" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/4" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/cheops_drive_731/1" is="knx:Entity" displayName="Cheops drive"/>
+                </obj>
+                <obj name="P-013F-0_DI-53" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/5" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/presence_detector_up_258_21/1" is="knx:Entity" displayName="Presence detector UP 258/21"/>
+                </obj>
+                <obj name="P-013F-0_DI-44" href="building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/6" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1" is="knx:Entity" displayName="FCU Operator Panel Office UP 237E DELTA i-system"/>
+                </obj>
+              </list>
+            </obj>
+            <obj name="P-013F-0_BP-4" href="building/parts/treitlstrasse/parts/4stock/parts/gang" is="knx:Part" displayName="Gang">
+              <enum name="type" href="building/parts/treitlstrasse/parts/4stock/parts/gang/type" val="room" range="/enums/part"/>
+              <list name="instances" href="building/parts/treitlstrasse/parts/4stock/parts/gang/instances" of="knx:InstancePart">
+                <obj name="P-013F-0_DI-46" href="building/parts/treitlstrasse/parts/4stock/parts/gang/instances/1" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/push_button_interface_up_220_02/1" is="knx:Entity" displayName="Push button interface UP 220/02"/>
+                </obj>
+                <obj name="P-013F-0_DI-50" href="building/parts/treitlstrasse/parts/4stock/parts/gang/instances/2" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/motion_detector_up_255_delta_profil___style/1" is="knx:Entity" displayName="Motion Detector UP 255 Delta profil / style"/>
+                </obj>
+              </list>
+            </obj>
+            <obj name="P-013F-0_BP-5" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts" is="knx:Part" displayName="Aufputzkasten A-Lab rechts">
+              <enum name="type" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts/type" val="distributionboard" range="/enums/part"/>
+              <list name="instances" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts/instances" of="knx:InstancePart">
+                <obj name="P-013F-0_DI-47" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts/instances/1" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/wall_switch_interface_up_220_03/1" is="knx:Entity" displayName="Wall switch interface UP 220/03"/>
+                </obj>
+                <obj name="P-013F-0_DI-45" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts/instances/2" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1" is="knx:Entity" displayName="Load switch N 510/03, N 510/04"/>
+                </obj>
+              </list>
+            </obj>
+            <obj name="P-013F-0_BP-6" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links" is="knx:Part" displayName="Aufputzkasten A-Lab links">
+              <enum name="type" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/type" val="distributionboard" range="/enums/part"/>
+              <list name="instances" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances" of="knx:InstancePart">
+                <obj name="P-013F-0_DI-58" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/1" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/lb_s11_logic_unit_mdrc/1" is="knx:Entity" displayName="LB/S1.1 Logic unit, MDRC"/>
+                </obj>
+                <obj name="P-013F-0_DI-48" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/2" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/universal_i_o_unit_n_670/1" is="knx:Entity" displayName="Universal I/O Unit N 670"/>
+                </obj>
+                <obj name="P-013F-0_DI-54" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/3" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/coupler_wave___instabus_up_140/1" is="knx:Entity" displayName="Coupler wave / instabus UP 140"/>
+                </obj>
+                <obj name="P-013F-0_DI-52" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/4" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1" is="knx:Entity" displayName="Switching actuator N 567/12, (2 Amp)"/>
+                </obj>
+                <obj name="P-013F-0_DI-55" href="building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/5" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/fan_coil_49550/1" is="knx:Entity" displayName="FAN COIL 49550"/>
+                </obj>
+              </list>
+            </obj>
+          </list>
+        </obj>
+      </list>
+    </obj>
+  </list>
+</obj>

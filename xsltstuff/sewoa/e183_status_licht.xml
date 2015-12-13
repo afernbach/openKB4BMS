@@ -1,0 +1,18 @@
+<obj name="P-013F-0_GA-20" href="/networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/status_licht/" is="knx:Group" displayName="Status Licht">
+  <int name="address" href="address" val="10499" min="0"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <list name="instances" href="instances" of="knx:InstanceGroup">
+    <obj name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-6_R-199" href="instances/1" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Status, Channel C"/>
+      <enum name="connector" href="instances/1/connector" val="send" range="/enums/connector"/>
+    </obj>
+    <obj name="P-013F-0_DI-43_M-0001_A-9102-01-C46E-O00EF_O-7_R-40" href="instances/2" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/colour_touch_panel_up_588_2/1/datapoints/page_1_function_1" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Page 1, Function 1"/>
+      <enum name="connector" href="instances/2/connector" val="send" range="/enums/connector"/>
+    </obj>
+    <obj name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-11_R-237" href="instances/3" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/led_outer_right" is="knx:DPT-1 knx:Datapoint" displayName="LED outer right"/>
+      <enum name="connector" href="instances/3/connector" val="send" range="/enums/connector"/>
+    </obj>
+  </list>
+</obj>

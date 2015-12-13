@@ -1,0 +1,26 @@
+<obj name="P-013F-0_GA-13" href="licht/" is="knx:Group" displayName="Licht">
+  <int name="address" href="licht/address" val="10500" min="0"/>
+  <ref name="function" href="licht/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <list name="instances" href="licht/instances" of="knx:InstanceGroup">
+    <obj name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-2_R-152" href="licht/instances/1" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel C"/>
+      <enum name="connector" href="licht/instances/1/connector" val="send" range="/enums/connector"/>
+    </obj>
+    <obj name="P-013F-0_DI-43_M-0001_A-9102-01-C46E-O00EF_O-5_R-39" href="licht/instances/2" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/colour_touch_panel_up_588_2/1/datapoints/page_1_function_1" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Page 1, Function 1"/>
+      <enum name="connector" href="licht/instances/2/connector" val="send" range="/enums/connector"/>
+    </obj>
+    <obj name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-6_R-211" href="licht/instances/3" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_d__upper_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Louvres, Rocker D"/>
+      <enum name="connector" href="licht/instances/3/connector" val="send" range="/enums/connector"/>
+    </obj>
+    <obj name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-7_R-202" href="licht/instances/4" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_d__lower_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Shutter, Rocker D"/>
+      <enum name="connector" href="licht/instances/4/connector" val="send" range="/enums/connector"/>
+    </obj>
+    <obj name="P-013F-0_DI-53_M-0001_A-8042-12-94A8-O00E8_O-0_R-31" href="licht/instances/5" is="knx:InstanceGroup">
+      <ref name="reference" href="/networks/e183_1/entities/presence_detector_up_258_21/1/datapoints/output_light_a" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Output light A"/>
+      <enum name="connector" href="licht/instances/5/connector" val="send" range="/enums/connector"/>
+    </obj>
+  </list>
+</obj>

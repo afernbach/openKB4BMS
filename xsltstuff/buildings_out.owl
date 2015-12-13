@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse">
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treitlstrasse</rdfs:label>
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Building"/>
+<contains rdf:resource="http://localhost:8080/building/parts/treitlstrasse/parts/4stock"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock">
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.Stock</rdfs:label>
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#BuildingPart"/>
+<contains rdf:resource="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/a_lab"/>
+<contains rdf:resource="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/gang"/>
+<contains rdf:resource="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts"/>
+<contains rdf:resource="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/a_lab">
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A-Lab</rdfs:label>
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Room"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/colour_touch_panel_up_588_2"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/cheops_drive_731"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/push_button_4_fold_up_287_delta_style"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/cheops_drive_731"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/presence_detector_up_258_21"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/gang">
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gang</rdfs:label>
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Room"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/push_button_interface_up_220_02"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/motion_detector_up_255_delta_profil___style"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts">
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aufputzkasten A-Lab rechts</rdfs:label>
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#DistributionBoard"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/wall_switch_interface_up_220_03"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links">
+<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aufputzkasten A-Lab links</rdfs:label>
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#DistributionBoard"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/lb_s11_logic_unit_mdrc"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/universal_i_o_unit_n_670"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/coupler_wave___instabus_up_140"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/switching_actuator_n_567_12_2_amp"/>
+<contains rdf:resource="http://localhost:8080//networks/e183_1/entities/fan_coil_49550"/>
+</owl:NamedIndividual>
+</rdf:RDF>

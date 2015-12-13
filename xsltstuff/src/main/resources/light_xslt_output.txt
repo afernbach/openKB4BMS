@@ -1,0 +1,120 @@
+<owl:NamedIndividual rdf:about="&EnergyResourceOntology;MainBuilding">
+        <rdf:type rdf:resource="&BuildingOntology;Building"/>
+    </owl:NamedIndividual>
+	
+	 <owl:NamedIndividual rdf:about="&EnergyResourceOntology;4thFloorTreitl">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OWLClass_626774e5_4ffd_464a_9f0b_9eb4d6306947"/>
+        <contains rdf:resource="&EnergyResourceOntology;ALAB"/>
+    </owl:NamedIndividual>
+	
+	 <owl:NamedIndividual rdf:about="&EnergyResourceOntology;ALAB">
+        <rdf:type rdf:resource="&EnergyResourceOntology;Room"/>
+    </owl:NamedIndividual>
+
+
+
+ <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1LightSwitch1CentralOnOff">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OnOffLightSwitch"/>
+        <isIn rdf:resource="&EnergyResourceOntology;LivingRoom1"/>
+        <hasCurrentStateValue rdf:resource="&EnergyResourceOntology;LivingRoom1LightSwitch1CentralOnStateValue"/>
+        <hasState rdf:resource="&EnergyResourceOntology;LivingRoom1LightSwitch1OnOffState"/>
+        <controlledObject rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1"/>
+    </owl:NamedIndividual>
+	
+	    
+<!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1 -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1">
+        <rdf:type rdf:resource="&EnergyResourceOntology;SimpleLamp"/>
+        <producesEnergyType rdf:resource="&EnergyResourceOntology;Light"/>
+        <isIn rdf:resource="&EnergyResourceOntology;LivingRoom1"/>
+        <hasFunctionality rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnOffFunctionality"/>
+        <hasState rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnOffState"/>
+        <hasCurrentStateValue rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnStateValue"/>
+        <actuallyProducesEnergy rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnSupply"/>
+        <maxProducesEnergy rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnSupply"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OffCommand -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OffCommand">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OffCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OffDemand -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OffDemand">
+        <rdf:type rdf:resource="&EnergyResourceOntology;EnergyDemand"/>
+        <hasNativeValue rdf:datatype="&xsd;double">0.0</hasNativeValue>
+        <hasNativeUnit rdf:datatype="&xsd;string">WattHours</hasNativeUnit>
+        <ofEnergyType rdf:resource="&EnergyResourceOntology;ElectricEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OnCommand -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnCommand">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OnCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OnDemand -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnDemand">
+        <rdf:type rdf:resource="&EnergyResourceOntology;EnergyDemand"/>
+        <hasNativeValue rdf:datatype="&xsd;double">15.0</hasNativeValue>
+        <hasNativeUnit rdf:datatype="&xsd;string">WattHours</hasNativeUnit>
+        <ofEnergyType rdf:resource="&EnergyResourceOntology;ElectricEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OnOffFunctionality -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnOffFunctionality">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OnOffFunctionality"/>
+        <hasCommand rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OffCommand"/>
+        <hasCommand rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OnOffState -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnOffState">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OnOffState"/>
+        <hasStateValue rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnStateValue"/>
+        <hasStateValue rdf:resource="&EnergyResourceOntology;LivingRoomSimpleLampLight1OffStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OnStateValue -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnStateValue">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OnStateValue"/>
+        <hasEnergyDemand rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnDemand"/>
+        <hasEnergySupply rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnSupply"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#LivingRoom1SimpleLampLight1OnSupply -->
+
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OnSupply">
+        <rdf:type rdf:resource="&EnergyResourceOntology;EnergySupply"/>
+        <hasNativeValue rdf:datatype="&xsd;double">750.0</hasNativeValue>
+        <hasNativeUnit rdf:datatype="&xsd;string">Lumen</hasNativeUnit>
+        <ofEnergyType rdf:resource="&EnergyResourceOntology;Light"/>
+    </owl:NamedIndividual>
+	
+    <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoomSimpleLampLight1OffStateValue">
+        <rdf:type rdf:resource="&EnergyResourceOntology;OffStateValue"/>
+        <hasEnergyDemand rdf:resource="&EnergyResourceOntology;LivingRoom1SimpleLampLight1OffDemand"/>
+    </owl:NamedIndividual>

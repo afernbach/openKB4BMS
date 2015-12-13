@@ -1,0 +1,263 @@
+<obj href="obix/">
+  <ref name="about" href="obix/about"/>
+  <ref name="enums" href="enums"/>
+  <ref name="units" href="units"/>
+  <ref name="parameters" href="parameters"/>
+  <ref name="encodings" href="encodings"/>
+  <ref href="watchService" is="obix:WatchService"/>
+  <ref href="alarms" is="obix:AlarmSubject"/>
+  <ref href="watch0" is="obix:Watch"/>
+  <ref name="networks" href="networks"/>
+  <ref name="P-013F" href="networks/e183_1" is="knx:Network" displayName="E183-1"/>
+  <ref name="P-013F-0_DI-59" href="networks/e183_1/entities/ip_router_n_146_02/1" is="knx:Entity" displayName="IP-Router N 146/02"/>
+  <ref name="P-013F-0_DI-46" href="networks/e183_1/entities/push_button_interface_up_220_02/1" is="knx:Entity" displayName="Push button interface UP 220/02"/>
+  <ref name="P-013F-0_DI-46_M-0001_A-9009-02-5C1C_O-4_R-4" href="networks/e183_1/entities/push_button_interface_up_220_02/1/datapoints/switch_input_c" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Input C"/>
+  <ref name="P-013F-0_DI-46_M-0001_A-9009-02-5C1C_O-6_R-6" href="networks/e183_1/entities/push_button_interface_up_220_02/1/datapoints/switch_input_d" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Input D"/>
+  <ref name="P-013F-0_DI-47" href="networks/e183_1/entities/wall_switch_interface_up_220_03/1" is="knx:Entity" displayName="Wall switch interface UP 220/03"/>
+  <ref name="P-013F-0_DI-47_M-0001_A-2405-05-341B_O-0_R-0" href="networks/e183_1/entities/wall_switch_interface_up_220_03/1/datapoints/input_a" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Input A"/>
+  <ref name="P-013F-0_DI-47_M-0001_A-2405-05-341B_O-1_R-1" href="networks/e183_1/entities/wall_switch_interface_up_220_03/1/datapoints/input_b" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Input B"/>
+  <ref name="P-013F-0_DI-45" href="networks/e183_1/entities/load_switch_n_510_03_n_510_04/1" is="knx:Entity" displayName="Load switch N 510/03, N 510/04"/>
+  <ref name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-0_R-13" href="networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_a" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel A"/>
+  <ref name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-1_R-147" href="networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_b" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel B"/>
+  <ref name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-6_R-199" href="networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Status, Channel C"/>
+  <ref name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-2_R-152" href="networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel C"/>
+  <ref name="P-013F-0_DI-43" href="networks/e183_1/entities/colour_touch_panel_up_588_2/1" is="knx:Entity" displayName="Colour-Touch-Panel UP 588/2"/>
+  <ref name="P-013F-0_DI-43_M-0001_A-9102-01-C46E-O00EF_O-7_R-40" href="networks/e183_1/entities/colour_touch_panel_up_588_2/1/datapoints/page_1_function_1" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Page 1, Function 1"/>
+  <ref name="P-013F-0_DI-43_M-0001_A-9102-01-C46E-O00EF_O-5_R-39" href="networks/e183_1/entities/colour_touch_panel_up_588_2/1/datapoints/page_1_function_1" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Page 1, Function 1"/>
+  <ref name="P-013F-0_DI-43_M-0001_A-9102-01-C46E-O00EF_O-8_R-143" href="networks/e183_1/entities/colour_touch_panel_up_588_2/1/datapoints/page_1_function_2" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Page 1, Function 2"/>
+  <ref name="P-013F-0_DI-43_M-0001_A-9102-01-C46E-O00EF_O-11_R-184" href="networks/e183_1/entities/colour_touch_panel_up_588_2/1/datapoints/page_1_function_3" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Page 1, Function 3"/>
+  <ref name="P-013F-0_DI-50" href="networks/e183_1/entities/motion_detector_up_255_delta_profil___style/1" is="knx:Entity" displayName="Motion Detector UP 255 Delta profil / style"/>
+  <ref name="P-013F-0_DI-50_M-0001_A-211D-01-0A52-O0006_O-0_R-0" href="networks/e183_1/entities/motion_detector_up_255_delta_profil___style/1/datapoints/switch" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch"/>
+  <ref name="P-013F-0_DI-57" href="networks/e183_1/entities/cheops_drive_731/1" is="knx:Entity" displayName="cheops drive 731"/>
+  <ref name="P-013F-0_DI-57_M-0048_A-731A-10-B078_O-0_R-1" href="networks/e183_1/entities/cheops_drive_731/1/datapoints/actuating_value" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="actuating value"/>
+  <ref name="P-013F-0_DI-56" href="networks/e183_1/entities/cheops_drive_731/1" is="knx:Entity" displayName="cheops drive 731"/>
+  <ref name="P-013F-0_DI-56_M-0048_A-731A-10-B078_O-0_R-1" href="networks/e183_1/entities/cheops_drive_731/1/datapoints/actuating_value" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="actuating value"/>
+  <ref name="P-013F-0_DI-49" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1" is="knx:Entity" displayName="Push button 4-fold UP 287 DELTA style"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-11_R-237" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/led_outer_right" is="knx:DPT-1 knx:Datapoint" displayName="LED outer right"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-6_R-211" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_d__upper_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker D  (upper rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-7_R-202" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_d__lower_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker D  (lower rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-0_R-215" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_a__upper_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker A  (upper rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-1_R-216" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_a__lower_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker A  (lower rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-2_R-218" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_b__upper_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker B  (upper rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-3_R-220" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_b__lower_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker B  (lower rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-4_R-226" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_c__upper_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker C  (upper rocker contact)"/>
+  <ref name="P-013F-0_DI-49_M-0001_A-9076-02-9E24_O-5_R-222" href="networks/e183_1/entities/push_button_4_fold_up_287_delta_style/1/datapoints/switch_rocker_c__lower_rocker_contact" is="knx:DPT-1 knx:Datapoint" displayName="Switch, Rocker C  (lower rocker contact)"/>
+  <ref name="P-013F-0_DI-44" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1" is="knx:Entity" displayName="FCU Operator Panel Office UP 237E DELTA i-system"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-0_R-1" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/setpoint_shifting" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Setpoint shifting"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-1_R-2" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/status_heating___cooling_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Status heating / cooling mode"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-3_R-4" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/status_of_comfort_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Status of comfort mode"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-4_R-5" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/standby_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Standby mode"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-5_R-6" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/night_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Night mode"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-6_R-7" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/frost_heat_protection" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Frost/heat protection"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-7_R-8" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/fan_automatic_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Fan automatic mode"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-8_R-9" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/fan_status" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Fan status"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-9_R-10" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/fan_rotational_speed" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Fan rotational speed"/>
+  <ref name="P-013F-0_DI-44_M-0001_A-8025-01-C29E_O-10_R-11" href="networks/e183_1/entities/fcu_operator_panel_office_up_237e_delta_i_system/1/datapoints/status_of_window" is="knx:DPT-1 knx:Datapoint" displayName="Status of window"/>
+  <ref name="P-013F-0_DI-55" href="networks/e183_1/entities/fan_coil_49550/1" is="knx:Entity" displayName="FAN COIL 49550"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-21_R-22" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/output_for_heating_valve" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Output for heating valve"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-22_R-23" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/output_for_cooling_valve" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Output for cooling valve"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-5_R-6" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/setpoint_adjustment" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Setpoint adjustment"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-23_R-24" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/control_value_for_pi_controller" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Control value for PI controller"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-10_R-11" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/on_command_for_standby_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="ON command for standby mode"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-11_R-12" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/on_command_for_night_setback" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="ON command for night setback"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-12_R-13" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/on_command_for_frost_protection" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="ON command for frost protection"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-15_R-16" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/manual_operation_of_fan" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Manual operation of fan"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-16_R-17" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/toggling_to_automatic_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Toggling to automatic mode"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-17_R-18" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/fan_status_manual_automatic" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Fan status (manual, automatic)"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-31_R-32" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/status_of_comfort_mode" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Status of comfort mode"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-0_R-1" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/input_output_for_actual_temperature" is="knx:DPST-9-1 knx:DPT-9 knx:Datapoint" displayName="Input/output for actual temperature"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-4_R-5" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/base_setpoint_temperature" is="knx:DPST-9-1 knx:DPT-9 knx:Datapoint" displayName="Base setpoint temperature"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-13_R-46" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/input_for_window_contact" is="knx:DPT-1 knx:Datapoint" displayName="Input for window contact"/>
+  <ref name="P-013F-0_DI-55_M-0050_A-0001-11-DC72_O-14_R-15" href="networks/e183_1/entities/fan_coil_49550/1/datapoints/presence_detector" is="knx:DPT-1 knx:Datapoint" displayName="Presence detector"/>
+  <ref name="P-013F-0_DI-53" href="networks/e183_1/entities/presence_detector_up_258_21/1" is="knx:Entity" displayName="Presence detector UP 258/21"/>
+  <ref name="P-013F-0_DI-53_M-0001_A-8042-12-94A8-O00E8_O-25_R-26" href="networks/e183_1/entities/presence_detector_up_258_21/1/datapoints/output_brightness" is="knx:DPT-9 knx:Datapoint" displayName="Output brightness"/>
+  <ref name="P-013F-0_DI-53_M-0001_A-8042-12-94A8-O00E8_O-0_R-31" href="networks/e183_1/entities/presence_detector_up_258_21/1/datapoints/output_light_a" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Output light A"/>
+  <ref name="P-013F-0_DI-53_M-0001_A-8042-12-94A8-O00E8_O-9_R-10" href="networks/e183_1/entities/presence_detector_up_258_21/1/datapoints/output_presence" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Output presence"/>
+  <ref name="P-013F-0_DI-54" href="networks/e183_1/entities/coupler_wave___instabus_up_140/1" is="knx:Entity" displayName="Coupler wave / instabus UP 140"/>
+  <ref name="P-013F-0_DI-54_M-0001_A-980B-02-5CB6_O-20_R-7407" href="networks/e183_1/entities/coupler_wave___instabus_up_140/1/datapoints/fensterkontakt_rechtssensor_kanal" is="knx:DPT-1 knx:Datapoint" displayName="Fensterkontakt rechts.Sensor Kanal"/>
+  <ref name="P-013F-0_DI-54_M-0001_A-980B-02-5CB6_O-40_R-7345" href="networks/e183_1/entities/coupler_wave___instabus_up_140/1/datapoints/fensterkontakt_mittesensor_kanal" is="knx:DPT-1 knx:Datapoint" displayName="Fensterkontakt mitte.Sensor Kanal"/>
+  <ref name="P-013F-0_DI-54_M-0001_A-980B-02-5CB6_O-60_R-7283" href="networks/e183_1/entities/coupler_wave___instabus_up_140/1/datapoints/fensterkontakt_linkssensor_kanal" is="knx:DPT-1 knx:Datapoint" displayName="Fensterkontakt links.Sensor Kanal"/>
+  <ref name="P-013F-0_DI-52" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1" is="knx:Entity" displayName="Switching actuator N 567/12, (2 Amp)"/>
+  <ref name="P-013F-0_DI-52_M-0001_A-9803-04-5747_O-23_R-24" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1/datapoints/switch_channel_f" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel F"/>
+  <ref name="P-013F-0_DI-52_M-0001_A-9803-04-5747_O-7_R-43" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1/datapoints/switch_channel_b" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel B"/>
+  <ref name="P-013F-0_DI-52_M-0001_A-9803-04-5747_O-27_R-28" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1/datapoints/switch_channel_g" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel G"/>
+  <ref name="P-013F-0_DI-52_M-0001_A-9803-04-5747_O-11_R-12" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1/datapoints/switch_channel_c" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel C"/>
+  <ref name="P-013F-0_DI-52_M-0001_A-9803-04-5747_O-31_R-32" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1/datapoints/switch_channel_h" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel H"/>
+  <ref name="P-013F-0_DI-52_M-0001_A-9803-04-5747_O-15_R-16" href="networks/e183_1/entities/switching_actuator_n_567_12_2_amp/1/datapoints/switch_channel_d" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Switch, Channel D"/>
+  <ref name="P-013F-0_DI-58" href="networks/e183_1/entities/lb_s11_logic_unit_mdrc/1" is="knx:Entity" displayName="LB/S1.1 Logic unit, MDRC"/>
+  <ref name="P-013F-0_DI-58_M-0002_A-6198-13-A260-O0007_O-2_R-2" href="networks/e183_1/entities/lb_s11_logic_unit_mdrc/1/datapoints/gatter" is="knx:DPT-1 knx:Datapoint" displayName="Gatter"/>
+  <ref name="P-013F-0_DI-58_M-0002_A-6198-13-A260-O0007_O-1_R-1" href="networks/e183_1/entities/lb_s11_logic_unit_mdrc/1/datapoints/gatter" is="knx:DPT-1 knx:Datapoint" displayName="Gatter"/>
+  <ref name="P-013F-0_DI-58_M-0002_A-6198-13-A260-O0007_O-0_R-0" href="networks/e183_1/entities/lb_s11_logic_unit_mdrc/1/datapoints/gatter" is="knx:DPT-1 knx:Datapoint" displayName="Gatter"/>
+  <ref name="P-013F-0_DI-58_M-0002_A-6198-13-A260-O0007_O-8_R-8" href="networks/e183_1/entities/lb_s11_logic_unit_mdrc/1/datapoints/gatter" is="knx:DPT-1 knx:Datapoint" displayName="Gatter"/>
+  <ref name="P-013F-0_DI-48" href="networks/e183_1/entities/universal_i_o_unit_n_670/1" is="knx:Entity" displayName="Universal I/O Unit N 670"/>
+  <ref name="P-013F-0_DI-48_M-0001_A-9005-01-8D0D_O-0_R-19" href="networks/e183_1/entities/universal_i_o_unit_n_670/1/datapoints/voltage_output_a" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" displayName="Voltage, Output A"/>
+  <ref name="building" href="networks/e183_1/views/building" is="knx:ViewBuilding"/>
+  <ref name="P-013F-0_BP-1" href="networks/e183_1/views/building/parts/treitlstrasse" is="knx:Part" displayName="Treitlstrasse"/>
+  <ref name="P-013F-0_BP-2" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock" is="knx:Part" displayName="4.Stock"/>
+  <ref name="P-013F-0_BP-3" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab" is="knx:Part" displayName="A-Lab"/>
+  <ref name="P-013F-0_DI-43" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/1" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-57" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/2" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-49" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/3" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-56" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/4" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-53" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/5" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-44" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/a_lab/instances/6" is="knx:InstancePart"/>
+  <ref name="P-013F-0_BP-4" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/gang" is="knx:Part" displayName="Gang"/>
+  <ref name="P-013F-0_DI-46" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/gang/instances/1" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-50" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/gang/instances/2" is="knx:InstancePart"/>
+  <ref name="P-013F-0_BP-5" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts" is="knx:Part" displayName="Aufputzkasten A-Lab rechts"/>
+  <ref name="P-013F-0_DI-47" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts/instances/1" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-45" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts/instances/2" is="knx:InstancePart"/>
+  <ref name="P-013F-0_BP-6" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links" is="knx:Part" displayName="Aufputzkasten A-Lab links"/>
+  <ref name="P-013F-0_DI-58" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/1" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-48" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/2" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-54" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/3" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-52" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/4" is="knx:InstancePart"/>
+  <ref name="P-013F-0_DI-55" href="networks/e183_1/views/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links/instances/5" is="knx:InstancePart"/>
+  <ref name="functional" href="networks/e183_1/views/functional" is="knx:ViewFunctional"/>
+  <ref name="P-013F-0_GR-7" href="networks/e183_1/views/functional/groups/e183_1" is="knx:Group" displayName="E183-1"/>
+  <ref name="P-013F-0_GR-8" href="networks/e183_1/views/functional/groups/e183_1/groups/gang" is="knx:Group" displayName="Gang"/>
+  <ref name="P-013F-0_GA-10" href="networks/e183_1/views/functional/groups/e183_1/groups/gang/groups/eingang_tuer" is="knx:Group" displayName="Eingang T&#xfc;r"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/gang/groups/eingang_tuer/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-9" href="networks/e183_1/views/functional/groups/e183_1/groups/gang/groups/a_lab_tuer" is="knx:Group" displayName="A-Lab T&#xfc;r"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/gang/groups/a_lab_tuer/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GR-11" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab" is="knx:Group" displayName="A-Lab"/>
+  <ref name="P-013F-0_GA-21" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_raumtemperatur_ist" is="knx:Group" displayName="HK Raumtemperatur Ist"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_raumtemperatur_ist/function" is="knx:DPST-9-1 knx:DPT-9 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-12" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_heizung_stellgroesse" is="knx:Group" displayName="HK Heizung Stellgr&#xf6;&#xdf;e"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_heizung_stellgroesse/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-22" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_raumtemperatur_soll" is="knx:Group" displayName="HK Raumtemperatur Soll"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_raumtemperatur_soll/function" is="knx:DPST-9-1 knx:DPT-9 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-20" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/status_licht" is="knx:Group" displayName="Status Licht"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/status_licht/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-13" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/licht" is="knx:Group" displayName="Licht"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/licht/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-14" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_links_rauf" is="knx:Group" displayName="Jalousie links rauf"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_links_rauf/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-15" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_links_runter" is="knx:Group" displayName="Jalousie links runter"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_links_runter/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-16" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_mitte_rauf" is="knx:Group" displayName="Jalousie mitte rauf"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_mitte_rauf/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-17" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_mitte_runter" is="knx:Group" displayName="Jalousie mitte runter"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_mitte_runter/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-18" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_rechts_rauf" is="knx:Group" displayName="Jalousie rechts rauf"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_rechts_rauf/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-19" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_rechts_runter" is="knx:Group" displayName="Jalousie rechts runter"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/jalousie_rechts_runter/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-23" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterkontakt_rechts" is="knx:Group" displayName="Fensterkontakt rechts"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterkontakt_rechts/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-24" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterkontakt_mitte" is="knx:Group" displayName="Fensterkontakt mitte"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterkontakt_mitte/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-25" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterkontakt_links" is="knx:Group" displayName="Fensterkontakt links"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterkontakt_links/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-26" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterstatus_alle" is="knx:Group" displayName="Fensterstatus Alle"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/fensterstatus_alle/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-27" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_kuehlung_stellgroesse" is="knx:Group" displayName="HK K&#xfc;hlung Stellgr&#xf6;&#xdf;e"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_kuehlung_stellgroesse/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-28" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/praesenz" is="knx:Group" displayName="Pr&#xe4;senz"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/praesenz/function" is="knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-29" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_sollwertverschiebung" is="knx:Group" displayName="HK Sollwertverschiebung"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_sollwertverschiebung/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-30" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_stellgroesse_heiz_kuehlbetrieb" is="knx:Group" displayName="HK Stellgr&#xf6;&#xdf;e Heiz-K&#xfc;hlbetrieb"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_stellgroesse_heiz_kuehlbetrieb/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-31" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_status_komfortbetrieb" is="knx:Group" displayName="HK Status Komfortbetrieb"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_status_komfortbetrieb/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-32" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_standbybetrieb" is="knx:Group" displayName="HK Standbybetrieb"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_standbybetrieb/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-33" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_nachtbetrieb" is="knx:Group" displayName="HK Nachtbetrieb"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_nachtbetrieb/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-34" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_frost__hitzeschutz" is="knx:Group" displayName="HK Frost- Hitzeschutz"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_frost__hitzeschutz/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-35" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_ventilator_automatik" is="knx:Group" displayName="HK Ventilator Automatik"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_ventilator_automatik/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-36" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_ventilator_status" is="knx:Group" displayName="HK Ventilator Status"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_ventilator_status/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-37" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_ventilator_drehzahl" is="knx:Group" displayName="HK Ventilator Drehzahl"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/a_lab/groups/hk_ventilator_drehzahl/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="function" href="function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GR-12" href="networks/e183_1/views/functional/groups/e183_1/groups/iotsensoren" is="knx:Group" displayName="IoTSensoren"/>
+  <ref name="P-013F-0_GA-38" href="networks/e183_1/views/functional/groups/e183_1/groups/iotsensoren/groups/indoorbrigthnesssensor" is="knx:Group" displayName="IndoorBrigthnessSensor"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotsensoren/groups/indoorbrigthnesssensor/function" is="knx:DPT-9 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-39" href="networks/e183_1/views/functional/groups/e183_1/groups/iotsensoren/groups/presencedetector" is="knx:Group" displayName="PresenceDetector"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotsensoren/groups/presencedetector/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GR-13" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator" is="knx:Group" displayName="IotActuator"/>
+  <ref name="P-013F-0_GA-41" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindrechtsrunter" is="knx:Group" displayName="SunblindRechtsRunter"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindrechtsrunter/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-42" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindrechtsrauf" is="knx:Group" displayName="SunblindRechtsRauf"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindrechtsrauf/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-43" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/switchactuatorlicht" is="knx:Group" displayName="SwitchActuatorLicht"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/switchactuatorlicht/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-44" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/hk_kuehlen" is="knx:Group" displayName="HK_Kuehlen"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/hk_kuehlen/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-45" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/hk_heizen" is="knx:Group" displayName="HK_Heizen"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/hk_heizen/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-46" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/hk_sollwerttemp" is="knx:Group" displayName="HK_Sollwerttemp"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/hk_sollwerttemp/function" is="knx:DPST-9-1 knx:DPT-9 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-47" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/fanklimageraet" is="knx:Group" displayName="FanKlimageraet"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/fanklimageraet/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-48" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindmitterunter" is="knx:Group" displayName="SunblindMitteRunter"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindmitterunter/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-49" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindmitterauf" is="knx:Group" displayName="SunblindMitteRauf"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindmitterauf/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-50" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindlinkrunter" is="knx:Group" displayName="SunblindLinkRunter"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindlinkrunter/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="P-013F-0_GA-51" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindlinksrauf" is="knx:Group" displayName="SunblindLinksRauf"/>
+  <ref name="function" href="networks/e183_1/views/functional/groups/e183_1/groups/iotactuator/groups/sunblindlinksrauf/function" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint"/>
+  <ref name="topology" href="networks/e183_1/views/topology" is="knx:ViewTopology"/>
+  <ref name="P-013F-0_A-38" href="networks/e183_1/views/topology/areas/backbone_bereich" is="knx:Area" displayName="Backbone-Bereich"/>
+  <ref name="P-013F-0_L-39" href="networks/e183_1/views/topology/areas/backbone_bereich/bereichslinie" is="knx:Area" displayName="Bereichslinie"/>
+  <ref name="P-013F-0_A-40" href="networks/e183_1/views/topology/areas/hauptlinie" is="knx:Area" displayName="Hauptlinie"/>
+  <ref name="P-013F-0_L-41" href="networks/e183_1/views/topology/areas/hauptlinie/hauptlinie" is="knx:Area" displayName="Hauptlinie"/>
+  <ref name="P-013F-0_L-42" href="networks/e183_1/views/topology/areas/hauptlinie/4stock" is="knx:Area" displayName="4.Stock"/>
+  <ref name="P-013F-0_DI-59" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/1" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-46" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/2" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-47" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/3" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-45" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/4" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-43" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/5" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-50" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/6" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-57" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/7" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-56" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/8" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-49" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/9" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-44" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/10" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-55" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/11" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-53" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/12" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-54" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/13" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-52" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/14" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-58" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/15" is="knx:InstanceArea"/>
+  <ref name="P-013F-0_DI-48" href="networks/e183_1/views/topology/areas/hauptlinie/4stock/instances/16" is="knx:InstanceArea"/>
+</obj>

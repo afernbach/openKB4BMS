@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#">
+<rdfs:label xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="&amp;xsd;string">CH3</rdfs:label>
+<CONTROL31 ID="ED31"/>
+<CONTROL32 ID="ED32"/>
+<contains>CH31</contains>
+</owl:NamedIndividual><owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#">
+<rdfs:label xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="&amp;xsd;string">CH31</rdfs:label>
+<CONTROL311 ID="ED311"/>
+<CONTROL312 ID="ED312"/>
+<contains>CH313</contains>
+</owl:NamedIndividual><owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#">
+<rdfs:label xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="&amp;xsd;string">CH313</rdfs:label>
+<CONTROL3131 ID="ED3131"/>
+<CONTROL3132 ID="ED3132"/>
+</owl:NamedIndividual>

@@ -1,0 +1,4 @@
+<obj name="P-013F-0_DI-45_M-0001_A-9064-01-60D9_O-2_R-152" href="/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c/" is="knx:DPST-1-1 knx:DPT-1 knx:Datapoint" display="On / Off" displayName="Switch, Channel C">
+  <bool name="value" href="value" val="false" displayName="On / Off" null="true" writable="true"/>
+  <enum name="encoding" href="encoding" val="off" null="true" writable="true" range="/encodings/onoff"/>
+</obj>

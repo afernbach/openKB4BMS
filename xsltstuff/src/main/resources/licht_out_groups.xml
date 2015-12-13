@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#demandOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergyDemand"/>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WattHours</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#ElectricEnergy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#demandOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergyDemand"/>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WattHours</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#ElectricEnergy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#commandOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffCommand"/>
+<EnergyResourceOntology:webserviceRelativeUrl xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</EnergyResourceOntology:webserviceRelativeUrl>
+<EnergyResourceOntology:webservicePayload xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><![CDATA[ <bool name="value" href="value/" val="false" displayName="On / Off" writable="true"/> ]]> </EnergyResourceOntology:webservicePayload>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#commandOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnCommand"/>
+<EnergyResourceOntology:webserviceRelativeUrl xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</EnergyResourceOntology:webserviceRelativeUrl>
+<EnergyResourceOntology:webservicePayload xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><![CDATA[ <bool name="value" href="value/" val="true" displayName="On / Off" writable="true"/> ]]> </EnergyResourceOntology:webservicePayload>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#supply">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergySupply"/>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lumen</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Light"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffStateValue"/>
+<EnergyResourceOntology:hasEnergyDemand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#demandOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnStateValue"/>
+<EnergyResourceOntology:hasEnergyDemand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#demandOn"/>
+<EnergyResourceOntology:hasEnergySupply xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#supplyOn"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOnOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffState"/>
+<EnergyResourceOntology:hasStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOn"/>
+<EnergyResourceOntology:hasStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#funcOnOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffFunctionality"/>
+<EnergyResourceOntology:hasCommand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#commandOn"/>
+<EnergyResourceOntology:hasCommand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#commandOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#lamp">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#SimpleLamp"/>
+<EnergyResourceOntology:producesEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Light"/>
+<EnergyResourceOntology:hasFunctionality xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#funcOnOff"/>
+<EnergyResourceOntology:hasState xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOnOff"/>
+<EnergyResourceOntology:hasCurrentStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOff"/>
+<EnergyResourceOntology:actuallyProducesEnergy xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#supplyOff"/>
+<EnergyResourceOntology:maxProducesEnergy xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#supplyOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffLightSwitch"/>
+<EnergyResourceOntology:hasState xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOnOff"/>
+<EnergyResourceOntology:hasCurrentStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#stateOff"/>
+<EnergyResourceOntology:controlledObject xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/status_channel_c#lamp"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergyDemand"/>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WattHours</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#ElectricEnergy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergyDemand"/>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WattHours</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#ElectricEnergy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffCommand"/>
+<EnergyResourceOntology:webserviceRelativeUrl xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</EnergyResourceOntology:webserviceRelativeUrl>
+<EnergyResourceOntology:webservicePayload xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><![CDATA[ <bool name="value" href="value/" val="false" displayName="On / Off" writable="true"/> ]]> </EnergyResourceOntology:webservicePayload>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnCommand"/>
+<EnergyResourceOntology:webserviceRelativeUrl xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</EnergyResourceOntology:webserviceRelativeUrl>
+<EnergyResourceOntology:webservicePayload xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><![CDATA[ <bool name="value" href="value/" val="true" displayName="On / Off" writable="true"/> ]]> </EnergyResourceOntology:webservicePayload>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supply">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergySupply"/>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lumen</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Light"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffStateValue"/>
+<EnergyResourceOntology:hasEnergyDemand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnStateValue"/>
+<EnergyResourceOntology:hasEnergyDemand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOn"/>
+<EnergyResourceOntology:hasEnergySupply xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOn"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOnOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffState"/>
+<EnergyResourceOntology:hasStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn"/>
+<EnergyResourceOntology:hasStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#funcOnOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffFunctionality"/>
+<EnergyResourceOntology:hasCommand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOn"/>
+<EnergyResourceOntology:hasCommand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#lamp">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#SimpleLamp"/>
+<EnergyResourceOntology:producesEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Light"/>
+<EnergyResourceOntology:hasFunctionality xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#funcOnOff"/>
+<EnergyResourceOntology:hasState xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOnOff"/>
+<EnergyResourceOntology:hasCurrentStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
+<EnergyResourceOntology:actuallyProducesEnergy xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOff"/>
+<EnergyResourceOntology:maxProducesEnergy xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffLightSwitch"/>
+<EnergyResourceOntology:hasState xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOnOff"/>
+<EnergyResourceOntology:hasCurrentStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
+<EnergyResourceOntology:controlledObject xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#lamp"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergyDemand"/>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WattHours</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#ElectricEnergy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergyDemand"/>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WattHours</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#ElectricEnergy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffCommand"/>
+<EnergyResourceOntology:webserviceRelativeUrl xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</EnergyResourceOntology:webserviceRelativeUrl>
+<EnergyResourceOntology:webservicePayload xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><![CDATA[ <bool name="value" href="value/" val="false" displayName="On / Off" writable="true"/> ]]> </EnergyResourceOntology:webservicePayload>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnCommand"/>
+<EnergyResourceOntology:webserviceRelativeUrl xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</EnergyResourceOntology:webserviceRelativeUrl>
+<EnergyResourceOntology:webservicePayload xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><![CDATA[ <bool name="value" href="value/" val="true" displayName="On / Off" writable="true"/> ]]> </EnergyResourceOntology:webservicePayload>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supply">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#EnergySupply"/>
+<EnergyResourceOntology:hasNativeUnit xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lumen</EnergyResourceOntology:hasNativeUnit>
+<EnergyResourceOntology:hasNativeValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750.0</EnergyResourceOntology:hasNativeValue>
+<EnergyResourceOntology:ofEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Light"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffStateValue"/>
+<EnergyResourceOntology:hasEnergyDemand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnStateValue"/>
+<EnergyResourceOntology:hasEnergyDemand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#demandOn"/>
+<EnergyResourceOntology:hasEnergySupply xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOn"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOnOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffState"/>
+<EnergyResourceOntology:hasStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn"/>
+<EnergyResourceOntology:hasStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#funcOnOff">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffFunctionality"/>
+<EnergyResourceOntology:hasCommand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOn"/>
+<EnergyResourceOntology:hasCommand xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#commandOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#lamp">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#SimpleLamp"/>
+<EnergyResourceOntology:producesEnergyType xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Light"/>
+<EnergyResourceOntology:hasFunctionality xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#funcOnOff"/>
+<EnergyResourceOntology:hasState xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOnOff"/>
+<EnergyResourceOntology:hasCurrentStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
+<EnergyResourceOntology:actuallyProducesEnergy xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOff"/>
+<EnergyResourceOntology:maxProducesEnergy xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOff"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04">
+<rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffLightSwitch"/>
+<EnergyResourceOntology:hasState xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOnOff"/>
+<EnergyResourceOntology:hasCurrentStateValue xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
+<EnergyResourceOntology:controlledObject xmlns:EnergyResourceOntology="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#lamp"/>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+<rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:first="http://www.w3.org/2002/03owlt/miscellaneous/consistent201#"
+        xml:base="http://www.w3.org/2002/03owlt/miscellaneous/consistent201" >
+
+    <owl:Class rdf:ID="ShakespearePlay">
+        <rdfs:label xml:lang="en">Shakespeare's plays</rdfs:label>
+        <rdfs:comment xml:lang="en">The class of Shakespeare's plays.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>

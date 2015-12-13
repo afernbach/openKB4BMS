@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj is="knx:Part"  OID= "CH3">
+    <CONTROL31 ID="ED31">   
+    </CONTROL31>
+    <CONTROL32 ID="ED32">
+    </CONTROL32>
+    <list>
+        <obj is="knx:Part"  OID= "CH31">
+            <CONTROL311 ID= "ED311">
+            </CONTROL311>
+            <CONTROL312 ID= "ED312">
+            </CONTROL312>
+            <list>
+                <obj is="knx:Part"  OID= "CH313">
+                    <CONTROL3131 ID= "ED3131">
+                    </CONTROL3131>
+                    <CONTROL3132 ID= "ED3132">
+                    </CONTROL3132>
+                </obj>
+                </list>
+        </obj>
+        </list>
+</obj>

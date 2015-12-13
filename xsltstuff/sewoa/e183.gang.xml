@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj name="P-013F-0_BP-4" href="building/parts/treitlstrasse/parts/4stock/parts/gang" is="knx:Part" displayName="Gang">
+              <enum name="type" href="building/parts/treitlstrasse/parts/4stock/parts/gang/type" val="room" range="/enums/part"/>
+              <list name="instances" href="building/parts/treitlstrasse/parts/4stock/parts/gang/instances" of="knx:InstancePart">
+                <obj name="P-013F-0_DI-46" href="building/parts/treitlstrasse/parts/4stock/parts/gang/instances/1" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/push_button_interface_up_220_02/1" is="knx:Entity" displayName="Push button interface UP 220/02"/>
+                </obj>
+                <obj name="P-013F-0_DI-50" href="building/parts/treitlstrasse/parts/4stock/parts/gang/instances/2" is="knx:InstancePart">
+                  <ref name="reference" href="/networks/e183_1/entities/motion_detector_up_255_delta_profil___style/1" is="knx:Entity" displayName="Motion Detector UP 255 Delta profil / style"/>
+                </obj>
+              </list>
+            </obj>

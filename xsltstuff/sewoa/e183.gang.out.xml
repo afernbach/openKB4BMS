@@ -1,0 +1,6 @@
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/gang">
+<rdf:type rdf:reference="&amp;EnergyResourceOntology;Room"/>
+<rdfs:label rdf:datatype="&amp;xsd;string">Gang</rdfs:label>
+<contains rdf:reference="http://localhost:8080//networks/e183_1/entities/push_button_interface_up_220_02/1"/>
+<contains rdf:reference="http://localhost:8080//networks/e183_1/entities/motion_detector_up_255_delta_profil___style/1"/>
+</owl:NamedIndividual>

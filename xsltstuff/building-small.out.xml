@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     rdf:about="http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_rechts">
+    <rdfs:label rdf:datatype="&amp;xsd;string">Aufputzkasten A-Lab rechts</rdfs:label>
+    <rdf:type rdf:reference="&amp;EnergyResourceOntology;DistributionBoard"/>
+    <contains>http://localhost:8080//networks/e183_1/entities/wall_switch_interface_up_220_03/1</contains>
+    <contains>http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1</contains>
+</owl:NamedIndividual>
