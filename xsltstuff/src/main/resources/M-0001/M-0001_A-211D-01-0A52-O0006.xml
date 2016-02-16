@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.0.1267.10507" xmlns="http://knx.org/xml/project/12">
+  <ManufacturerData>
+    <Manufacturer RefId="M-0001">
+      <ApplicationPrograms>
+        <ApplicationProgram Id="M-0001_A-211D-01-0A52-O0006" Name="12 S1 Mot.detect. standalone 211D01" ApplicationNumber="8477" ApplicationVersion="1" ProgramType="ApplicationProgram" MaskVersion="MV-0011" VisibleDescription="Description - see file:   211D01_apb_e.pdf&#xD;&#xA;to operate as a standalone device.&#xD;&#xA;Motions within the detection area generate a &#xD;&#xA;switching telegram, optionally depending&#xD;&#xA;on an adjustable brightness level.&#xD;&#xA;With continued detection of motions, sending of &#xD;&#xA;telegrams can be cyclically repeated.&#xD;&#xA;At the end of a detection a telegram is sent, &#xD;&#xA;with a minimum overshoot time of 10 seconds.&#xD;&#xA;A longer overshoot time is adjustable.&#xD;&#xA;Reocurring motions will again be recognized&#xD;&#xA;when an adjustable dead time is elapsed.&#xD;&#xA;With an external telegram to the blocking &#xD;&#xA;object, the motion detector can be disabled.&#xD;&#xA;no. of associations:    5&#xD;&#xA;no. of group addresses: 5&#xD;&#xA;no. of comm. objects:   2&#xD;&#xA;    1 switch object&#xD;&#xA;    1 blocking object&#xD;&#xA;&#xD;&#xA;" LoadProcedureStyle="DefaultProcedure" PeiType="4" HelpFile="" DefaultLanguage="en-US" DynamicTableManagement="1" Linkable="1" OriginalManufacturer="M-0006" PreEts4Style="1" NonRegRelevantDataVersion="0" Hash="ChSOPzcs+N5M6XireATUUg==" ConvertedFromPreEts4Data="1" Broken="0" IPConfig="Tool" AdditionalAddressesCount="0" DownloadInfoIncomplete="0" CreatedFromLegacySchemaVersion="0">
+          <Static>
+            <Code>
+              <AbsoluteSegment Id="M-0001_A-211D-01-0A52-O0006_AS-0100" Address="256" Size="256" UserMemory="0">
+                <Data>/wAAAAagAQH/BMAAAP/gY+kjLjhDqwEA/xAgEEAAAAAAAAACAQACAQAAAAAAAALQztcAz5cA1COmNK4mzQ4rEtOBNqYBzQylAc8JJgGBP9MQziBTJwY/0xHOIEUC0y+mA64BzQ1UtlOhhCMDAc5DtgKkCLfSTwXTAUzNDWwmBgTTG8XTQLbSsdEmKAHTJKYDzQ5JJB0R0wPTEhPTgRXTEc6mM64XrZUQ0BLQgaYAt9UU04G20rfRJ9KmM65NzQ4rANPvFdOmCrfUENMQziDYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</Data>
+                <Mask>/wAAAP////////////////////////8AAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w==</Mask>
+              </AbsoluteSegment>
+            </Code>
+            <ParameterTypes>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW" Name="t_Bew_Basis_T_W" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="4">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-3" DisplayOrder="1" Text="Time base 1.0 sec" Value="3" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-4" DisplayOrder="2" Text="Time base 2.1 sec" Value="4" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-5" DisplayOrder="3" Text="Time base 4.2 sec" Value="5" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-6" DisplayOrder="4" Text="Time base 8.4 sec" Value="6" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-7" DisplayOrder="5" Text="Time base 17 sec" Value="7" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-8" DisplayOrder="6" Text="Time base 34 sec" Value="8" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-9" DisplayOrder="7" Text="Time base 1.1 min" Value="9" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-10" DisplayOrder="8" Text="Time base 2.2 min" Value="10" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-11" DisplayOrder="9" Text="Time base 4.5 min" Value="11" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-12" DisplayOrder="10" Text="Time base 9 min" Value="12" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-13" DisplayOrder="11" Text="Time base 18 min" Value="13" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-14" DisplayOrder="12" Text="Time base 36 min" Value="14" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-15" DisplayOrder="13" Text="Time base 1.2 hrs" Value="15" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe" Name="t_Daemm_Stufe" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="16">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-8264" DisplayOrder="1" Text="disabled" Value="8264" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41280" DisplayOrder="2" Text="up to brightness level 1 lux" Value="41280" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41293" DisplayOrder="3" Text="up to brightness level 2 lux" Value="41293" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41315" DisplayOrder="4" Text="up to brightness level 5 lux" Value="41315" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41336" DisplayOrder="5" Text="up to brightness level 10 lux" Value="41336" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41348" DisplayOrder="6" Text="up to brightness level 15 lux" Value="41348" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41358" DisplayOrder="7" Text="up to brightness level 20 lux" Value="41358" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41386" DisplayOrder="8" Text="up to brightness level 50 lux" Value="41386" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41404" DisplayOrder="9" Text="up to brightness level 100 lux" Value="41404" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41418" DisplayOrder="10" Text="up to brightness level 200 lux" Value="41418" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41431" DisplayOrder="11" Text="up to brightness level 500 lux" Value="41431" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41438" DisplayOrder="12" Text="up to brightness level 1000 lux" Value="41438" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-8197" DisplayOrder="13" Text="Brightness independent" Value="8197" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis" Name="t_End_Bew_Basis" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="4">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-0" DisplayOrder="1" Text="Time base 130 ms" Value="0" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-1" DisplayOrder="2" Text="Time base 260 ms" Value="1" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-2" DisplayOrder="3" Text="Time base 520 ms" Value="2" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-3" DisplayOrder="4" Text="Time base 1.0 sec" Value="3" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-4" DisplayOrder="5" Text="Time base 2.1 sec" Value="4" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-5" DisplayOrder="6" Text="Time base 4.2 sec" Value="5" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-6" DisplayOrder="7" Text="Time base 8.4 sec" Value="6" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-7" DisplayOrder="8" Text="Time base 17 sec" Value="7" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-8" DisplayOrder="9" Text="Time base 34 sec" Value="8" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-9" DisplayOrder="10" Text="Time base 1.1 min" Value="9" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-10" DisplayOrder="11" Text="Time base 2.2 min" Value="10" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-11" DisplayOrder="12" Text="Time base 4.5 min" Value="11" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-12" DisplayOrder="13" Text="Time base 9 min" Value="12" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-13" DisplayOrder="14" Text="Time base 18 min" Value="13" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-14" DisplayOrder="15" Text="Time base 36 min" Value="14" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-15" DisplayOrder="16" Text="Time base 1.2 hrs" Value="15" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis" Name="t_Riegel_Basis" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-49" DisplayOrder="1" Text="Time base 0.5 ms" Value="49" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-50" DisplayOrder="2" Text="Time base 8 ms" Value="50" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-51" DisplayOrder="3" Text="Time base 130 ms" Value="51" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-52" DisplayOrder="4" Text="Time base 2.1 sec" Value="52" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-53" DisplayOrder="5" Text="Time base 33 sec" Value="53" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb" Name="t_Sperr_Betrieb" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb_EN-1" DisplayOrder="1" Text="Off = Operation, On = Blocking" Value="1" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb_EN-0" DisplayOrder="2" Text="On = Operation, Off = Blocking" Value="0" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg" Name="t_Wert_Beg" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="16">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-4302" DisplayOrder="1" Text="On" Value="4302" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-4558" DisplayOrder="2" Text="Off" Value="4558" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-8288" DisplayOrder="3" Text="no action" Value="8288" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn" Name="t_Wert_Beginn" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="16">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-4302" DisplayOrder="1" Text="On" Value="4302" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-4558" DisplayOrder="2" Text="Off" Value="4558" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-8421" DisplayOrder="3" Text="no action" Value="8421" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd" Name="t_Wert_End" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="16">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-4302" DisplayOrder="1" Text="On" Value="4302" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-4558" DisplayOrder="2" Text="Off" Value="4558" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-8280" DisplayOrder="3" Text="no action" Value="8280" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde" Name="t_Wert_Ende" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="16">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-4302" DisplayOrder="1" Text="On" Value="4302" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-4558" DisplayOrder="2" Text="Off" Value="4558" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-8209" DisplayOrder="3" Text="no action" Value="8209" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden" Name="t_Zykl_Senden" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden_EN-0" DisplayOrder="1" Text="enabled" Value="0" />
+                  <Enumeration Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden_EN-197" DisplayOrder="2" Text="disabled" Value="197" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FFaktor" Name="t_End_Bew_Faktor" Plugin="">
+                <TypeNumber maxInclusive="127" minInclusive="0" SizeInBit="8" Type="unsignedInt" />
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FFaktor" Name="t_Riegel_Faktor" Plugin="">
+                <TypeNumber maxInclusive="255" minInclusive="0" SizeInBit="8" Type="unsignedInt" />
+              </ParameterType>
+              <ParameterType Id="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FFaktor.5FT.5FW" Name="t_Bew_Faktor_T_W" Plugin="">
+                <TypeNumber maxInclusive="127" minInclusive="10" SizeInBit="8" Type="unsignedInt" />
+              </ParameterType>
+            </ParameterTypes>
+            <Parameters>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-10" Name="End_Bew_Faktor" Text="Factor for overshoot time (0-127)" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FFaktor" Access="ReadWrite" Value="0" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="173" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-11" Name="Riegel_Basis" Text="Base for dead time after end&#xD;&#xA;of motion detection" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis" Access="ReadWrite" Value="51" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="162" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-12" Name="Riegel_Faktor" Text="Factor for dead time after end&#xD;&#xA;of motion detection (0-255)" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FFaktor" Access="ReadWrite" Value="23" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="164" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-14" Name="Sperr_Betrieb" Text="Operation mode of blocking object" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb" Access="ReadWrite" Value="1" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="72" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-15" Name="Wert_Beg" Text="Sent value of switching object at the beginning&#xD;&#xA;of blocking" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg" Access="None" Value="8288" LegacyPatchAlways="1">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="80" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-16" Name="Wert_End" Text="Sent value of switching object at the end&#xD;&#xA;of blocking" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd" Access="None" Value="8280" LegacyPatchAlways="1">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="88" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-2" Name="Wert_Beginn" Text="Value at beginning of motion detection" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn" Access="None" Value="4302" LegacyPatchAlways="1">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="203" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-3" Name="Daemm_Stufe" Text="Motion Detection" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe" Access="ReadWrite" Value="41348" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="104" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-4" Name="Zykl_Senden" Text="Cyclical sending at motion detection" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden" Access="ReadWrite" Value="197" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="130" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-5" Name="User_Timer.Bew_Basis_T_W" Text="Base for cyclical sending" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW" Access="ReadWrite" Value="3" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="4" Offset="55" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-6" Name="Bew_Faktor_T_W" Text="Factor for cyclical sending (10-127)" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FFaktor.5FT.5FW" Access="ReadWrite" Value="10" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="198" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-8" Name="Wert_Ende" Text="Value at end of motion detection" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde" Access="None" Value="4558" LegacyPatchAlways="1">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="159" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-9" Name="User_Timer.End_Bew_Basis" Text="Base for overshoot time" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis" Access="ReadWrite" Value="2" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" BitOffset="0" Offset="55" />
+              </Parameter>
+              <Parameter Id="M-0001_A-211D-01-0A52-O0006_P-1" Name="Bewegungsmeldung" Text="General" ParameterType="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn" Access="Read" Value="4302" LegacyPatchAlways="0" />
+            </Parameters>
+            <ParameterRefs>
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-1_R-1" DisplayOrder="1" RefId="M-0001_A-211D-01-0A52-O0006_P-1" Tag="1" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-3_R-3" DisplayOrder="2" RefId="M-0001_A-211D-01-0A52-O0006_P-3" Tag="3" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-2_R-2" DisplayOrder="3" RefId="M-0001_A-211D-01-0A52-O0006_P-2" Tag="2" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-4_R-4" DisplayOrder="4" RefId="M-0001_A-211D-01-0A52-O0006_P-4" Tag="4" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-5_R-5" DisplayOrder="5" RefId="M-0001_A-211D-01-0A52-O0006_P-5" Tag="5" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-6_R-6" DisplayOrder="6" RefId="M-0001_A-211D-01-0A52-O0006_P-6" Tag="6" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-8_R-8" DisplayOrder="7" RefId="M-0001_A-211D-01-0A52-O0006_P-8" Tag="8" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-9_R-9" DisplayOrder="9" RefId="M-0001_A-211D-01-0A52-O0006_P-9" Tag="9" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-10_R-10" DisplayOrder="10" RefId="M-0001_A-211D-01-0A52-O0006_P-10" Tag="10" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-11_R-11" DisplayOrder="11" RefId="M-0001_A-211D-01-0A52-O0006_P-11" Tag="11" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-12_R-12" DisplayOrder="12" RefId="M-0001_A-211D-01-0A52-O0006_P-12" Tag="12" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-14_R-14" DisplayOrder="14" RefId="M-0001_A-211D-01-0A52-O0006_P-14" Tag="14" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-15_R-15" DisplayOrder="15" RefId="M-0001_A-211D-01-0A52-O0006_P-15" Tag="15" />
+              <ParameterRef Id="M-0001_A-211D-01-0A52-O0006_P-16_R-16" DisplayOrder="16" RefId="M-0001_A-211D-01-0A52-O0006_P-16" Tag="16" />
+            </ParameterRefs>
+            <ComObjectTable CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" Offset="46">
+              <ComObject Id="M-0001_A-211D-01-0A52-O0006_O-0" FunctionText="On / Off" Name="Schalten" Number="0" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Disabled" WriteFlag="Enabled" Text="Switch" />
+              <ComObject Id="M-0001_A-211D-01-0A52-O0006_O-1" FunctionText="activated / deactivated" Name="Sperrung" Number="1" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Disabled" UpdateFlag="Disabled" WriteFlag="Enabled" Text="Blocking" />
+            </ComObjectTable>
+            <ComObjectRefs>
+              <ComObjectRef Id="M-0001_A-211D-01-0A52-O0006_O-0_R-0" RefId="M-0001_A-211D-01-0A52-O0006_O-0" Tag="0" />
+              <ComObjectRef Id="M-0001_A-211D-01-0A52-O0006_O-1_R-1" RefId="M-0001_A-211D-01-0A52-O0006_O-1" Tag="1" />
+            </ComObjectRefs>
+            <AddressTable CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" Offset="22" MaxEntries="5" />
+            <AssociationTable CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100" Offset="35" MaxEntries="5" />
+            <FixupList>
+              <Fixup FunctionRef="MV-0011_ME-TM.5FGetFlg" CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100">
+                <Offset>145</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0011_ME-TM.5FLoad" CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100">
+                <Offset>61</Offset>
+                <Offset>190</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0011_ME-U.5FGetTMx" CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100">
+                <Offset>123</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0011_ME-U.5FreadAD" CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100">
+                <Offset>100</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0011_ME-U.5FtestObj" CodeSegment="M-0001_A-211D-01-0A52-O0006_AS-0100">
+                <Offset>70</Offset>
+              </Fixup>
+            </FixupList>
+            <Extension RequiresExternalSoftware="0" />
+            <Options PreferPartialDownloadIfApplicationLoaded="0" EasyCtrlModeModeStyleEmptyGroupComTables="0" SetObjectTableLengthAlwaysToOne="0" TextParameterEncoding="iso-8859-1" TextParameterZeroTerminate="0" ParameterByteOrder="BigEndian" LegacyNoPartialDownload="1" LegacyNoMemoryVerifyMode="0" LegacyNoOptimisticWrite="0" LegacyDoNotReportPropertyWriteErrors="0" LegacyNoBackgroundDownload="0" LegacyDoNotCheckManufacturerId="0" LegacyAlwaysReloadAppIfCoVisibilityChanged="0" LegacyNeverReloadAppIfCoVisibilityChanged="0" LegacyDoNotSupportUndoDelete="0" LegacyAllowPartialDownloadIfAp2Mismatch="0" LegacyKeepObjectTableGaps="0" PartialDownloadOnlyVisibleParameters="0" LegacyProxyCommunicationObjects="0" DeviceInfoIgnoreRunState="0" DeviceInfoIgnoreLoadedState="0" DeviceCompareAllowCompatibleManufacturerId="0" LineCoupler0912NewProgrammingStyle="0" Comparable="0" Reconstructable="0" DownloadInvisibleParameters="Background" />
+          </Static>
+          <Dynamic>
+            <Channel Name="Generic" Text="" Number="0" Id="M-0001_A-211D-01-0A52-O0006_CH-0">
+              <ComObjectRefRef RefId="M-0001_A-211D-01-0A52-O0006_O-0_R-0" />
+              <ComObjectRefRef RefId="M-0001_A-211D-01-0A52-O0006_O-1_R-1" />
+              <ParameterBlock Id="M-0001_A-211D-01-0A52-O0006_PB-1" Name="Bewegungsmeldung" Access="Read" ParamRefId="M-0001_A-211D-01-0A52-O0006_P-1_R-1">
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-3_R-3" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-2_R-2" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-4_R-4" />
+                <choose ParamRefId="M-0001_A-211D-01-0A52-O0006_P-4_R-4">
+                  <when test="0">
+                    <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-5_R-5" />
+                    <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-6_R-6" />
+                  </when>
+                </choose>
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-8_R-8" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-9_R-9" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-10_R-10" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-11_R-11" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-12_R-12" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-14_R-14" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-15_R-15" />
+                <ParameterRefRef RefId="M-0001_A-211D-01-0A52-O0006_P-16_R-16" />
+              </ParameterBlock>
+            </Channel>
+          </Dynamic>
+        </ApplicationProgram>
+      </ApplicationPrograms>
+      <Languages>
+        <Language Identifier="de-DE">
+          <TranslationUnit RefId="M-0001_A-211D-01-0A52-O0006">
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006">
+              <Translation AttributeName="Name" Text="12 S1 Bew.melder Einzelgerät 211D01" />
+              <Translation AttributeName="VisibleDescription" Text="Beschreibung  - siehe Datei:  211D01_apb.pdf&#xD;&#xA;Bewegungsmelders als Einzelgerät.&#xD;&#xA;Bewegungen im Erfassungsbereich erzeugen ein &#xD;&#xA;Schalttelegramm, abhängig von einer &#xD;&#xA;parametrierbaren Helligkeitsstufe. Hält die &#xD;&#xA;Erfassung an, kann das Senden zyklisch &#xD;&#xA;wiederholt werden. &#xD;&#xA;Bei Erfassungsende wird mit einer Nachlaufzeit &#xD;&#xA;von minimal 10 Sekunden ein Telegramm versendet. &#xD;&#xA;Eine längere Nachlaufzeit ist einstellbar. &#xD;&#xA;Nach Ende einer Erfassung werden Bewegungen&#xD;&#xA;erst nach Ablauf einer einstellbaren Totzeit&#xD;&#xA;wieder erkannt.&#xD;&#xA;Die Sperrfunktion deaktiviert den Melder in &#xD;&#xA;Abhängigkeit eines extern erzeugten Telegrammes&#xD;&#xA;auf das Sperrobjekt.&#xD;&#xA;Anzahl der Zuordnungen:  5&#xD;&#xA;Anzahl der Gruppenadr.:  5&#xD;&#xA;Anzahl der Komm.objekte: 2&#xD;&#xA;     1 Schaltobjekt&#xD;&#xA;     1 Sperrobjekt" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_O-0">
+              <Translation AttributeName="Text" Text="Schalten" />
+              <Translation AttributeName="FunctionText" Text="Ein / Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_O-1">
+              <Translation AttributeName="Text" Text="Sperrung" />
+              <Translation AttributeName="FunctionText" Text="aktiviert / aufgehoben" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-1">
+              <Translation AttributeName="Text" Text="Allgemein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-9">
+              <Translation AttributeName="Text" Text="Nachlaufzeit Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-14">
+              <Translation AttributeName="Text" Text="Funktion des Sperrobjekts" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-15">
+              <Translation AttributeName="Text" Text="Wert des Schaltobjekts&#xD;&#xA;zu Beginn der Sperrung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-16">
+              <Translation AttributeName="Text" Text="Wert des Schaltobjekts&#xD;&#xA;am Ende der Sperrung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-5">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-10">
+              <Translation AttributeName="Text" Text="Nachlaufzeit Faktor (0-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-11">
+              <Translation AttributeName="Text" Text="Totzeit nach Ende der Erfassung&#xD;&#xA;Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-12">
+              <Translation AttributeName="Text" Text="Totzeit nach Ende der Erfassung&#xD;&#xA;Faktor (0-255)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-2">
+              <Translation AttributeName="Text" Text="Wert zu Beginn der Erfassung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-3">
+              <Translation AttributeName="Text" Text="Bewegungserfassung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-4">
+              <Translation AttributeName="Text" Text="Zyklisches Senden bei Erfassung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-6">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Faktor (10-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-8">
+              <Translation AttributeName="Text" Text="Wert nach Ende der Erfassung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-3">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,0 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-4">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,1 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-5">
+              <Translation AttributeName="Text" Text="Zeitbasis 4,2 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-6">
+              <Translation AttributeName="Text" Text="Zeitbasis 8,4 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-7">
+              <Translation AttributeName="Text" Text="Zeitbasis 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-8">
+              <Translation AttributeName="Text" Text="Zeitbasis 34 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-9">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-10">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-11">
+              <Translation AttributeName="Text" Text="Zeitbasis 4,5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-12">
+              <Translation AttributeName="Text" Text="Zeitbasis 9 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-13">
+              <Translation AttributeName="Text" Text="Zeitbasis 18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-14">
+              <Translation AttributeName="Text" Text="Zeitbasis 36 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-15">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,2 std" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-8264">
+              <Translation AttributeName="Text" Text="gesperrt" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41280">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 1 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41293">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 2 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41315">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 5 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41336">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 10 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41348">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 15 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41358">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 20 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41386">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 50 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41404">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 100 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41418">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 200 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41431">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 500 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41438">
+              <Translation AttributeName="Text" Text="bis Helligkeitswert 1000 Lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-8197">
+              <Translation AttributeName="Text" Text="helligkeitsunabhängig" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-0">
+              <Translation AttributeName="Text" Text="Zeitbasis 130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-1">
+              <Translation AttributeName="Text" Text="Zeitbasis 260 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-2">
+              <Translation AttributeName="Text" Text="Zeitbasis 520 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-3">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,0 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-4">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,1 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-5">
+              <Translation AttributeName="Text" Text="Zeitbasis 4,2 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-6">
+              <Translation AttributeName="Text" Text="Zeitbasis 8,4 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-7">
+              <Translation AttributeName="Text" Text="Zeitbasis 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-8">
+              <Translation AttributeName="Text" Text="Zeitbasis 34 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-9">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-10">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-11">
+              <Translation AttributeName="Text" Text="Zeitbasis 4,5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-12">
+              <Translation AttributeName="Text" Text="Zeitbasis 9 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-13">
+              <Translation AttributeName="Text" Text="Zeitbasis 18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-14">
+              <Translation AttributeName="Text" Text="Zeitbasis 36 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-15">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,2 std" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-49">
+              <Translation AttributeName="Text" Text="Zeitbasis 0,5 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-50">
+              <Translation AttributeName="Text" Text="Zeitbasis 8 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-51">
+              <Translation AttributeName="Text" Text="Zeitbasis 130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-52">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,1 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-53">
+              <Translation AttributeName="Text" Text="Zeitbasis 33 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb_EN-0">
+              <Translation AttributeName="Text" Text="Ein = Betrieb, Aus = Sperrung aktiviert" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb_EN-1">
+              <Translation AttributeName="Text" Text="Aus = Betrieb, Ein = Sperrung aktiviert" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-4302">
+              <Translation AttributeName="Text" Text="Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-4558">
+              <Translation AttributeName="Text" Text="Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-8288">
+              <Translation AttributeName="Text" Text="keine Aktion" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-4302">
+              <Translation AttributeName="Text" Text="Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-4558">
+              <Translation AttributeName="Text" Text="Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-8421">
+              <Translation AttributeName="Text" Text="keine Aktion" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-4302">
+              <Translation AttributeName="Text" Text="Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-4558">
+              <Translation AttributeName="Text" Text="Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-8280">
+              <Translation AttributeName="Text" Text="keine Aktion" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-4302">
+              <Translation AttributeName="Text" Text="Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-4558">
+              <Translation AttributeName="Text" Text="Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-8209">
+              <Translation AttributeName="Text" Text="keine Aktion" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden_EN-0">
+              <Translation AttributeName="Text" Text="freigegeben" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden_EN-197">
+              <Translation AttributeName="Text" Text="gesperrt" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="en-US">
+          <TranslationUnit RefId="M-0001_A-211D-01-0A52-O0006">
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006">
+              <Translation AttributeName="Name" Text="12 S1 Mot.detect. standalone 211D01" />
+              <Translation AttributeName="VisibleDescription" Text="Description - see file:   211D01_apb_e.pdf&#xD;&#xA;to operate as a standalone device.&#xD;&#xA;Motions within the detection area generate a &#xD;&#xA;switching telegram, optionally depending&#xD;&#xA;on an adjustable brightness level.&#xD;&#xA;With continued detection of motions, sending of &#xD;&#xA;telegrams can be cyclically repeated.&#xD;&#xA;At the end of a detection a telegram is sent, &#xD;&#xA;with a minimum overshoot time of 10 seconds.&#xD;&#xA;A longer overshoot time is adjustable.&#xD;&#xA;Reocurring motions will again be recognized&#xD;&#xA;when an adjustable dead time is elapsed.&#xD;&#xA;With an external telegram to the blocking &#xD;&#xA;object, the motion detector can be disabled.&#xD;&#xA;no. of associations:    5&#xD;&#xA;no. of group addresses: 5&#xD;&#xA;no. of comm. objects:   2&#xD;&#xA;    1 switch object&#xD;&#xA;    1 blocking object&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_O-0">
+              <Translation AttributeName="Text" Text="Switch" />
+              <Translation AttributeName="FunctionText" Text="On / Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_O-1">
+              <Translation AttributeName="Text" Text="Blocking" />
+              <Translation AttributeName="FunctionText" Text="activated / deactivated" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-1">
+              <Translation AttributeName="Text" Text="General" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-9">
+              <Translation AttributeName="Text" Text="Base for overshoot time" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-14">
+              <Translation AttributeName="Text" Text="Operation mode of blocking object" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-15">
+              <Translation AttributeName="Text" Text="Sent value of switching object at the beginning&#xD;&#xA;of blocking" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-16">
+              <Translation AttributeName="Text" Text="Sent value of switching object at the end&#xD;&#xA;of blocking" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-5">
+              <Translation AttributeName="Text" Text="Base for cyclical sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-10">
+              <Translation AttributeName="Text" Text="Factor for overshoot time (0-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-11">
+              <Translation AttributeName="Text" Text="Base for dead time after end&#xD;&#xA;of motion detection" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-12">
+              <Translation AttributeName="Text" Text="Factor for dead time after end&#xD;&#xA;of motion detection (0-255)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-2">
+              <Translation AttributeName="Text" Text="Value at beginning of motion detection" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-3">
+              <Translation AttributeName="Text" Text="Motion Detection" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-4">
+              <Translation AttributeName="Text" Text="Cyclical sending at motion detection" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-6">
+              <Translation AttributeName="Text" Text="Factor for cyclical sending (10-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_P-8">
+              <Translation AttributeName="Text" Text="Value at end of motion detection" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-3">
+              <Translation AttributeName="Text" Text="Time base 1.0 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-4">
+              <Translation AttributeName="Text" Text="Time base 2.1 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-5">
+              <Translation AttributeName="Text" Text="Time base 4.2 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-6">
+              <Translation AttributeName="Text" Text="Time base 8.4 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-7">
+              <Translation AttributeName="Text" Text="Time base 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-8">
+              <Translation AttributeName="Text" Text="Time base 34 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-9">
+              <Translation AttributeName="Text" Text="Time base 1.1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-10">
+              <Translation AttributeName="Text" Text="Time base 2.2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-11">
+              <Translation AttributeName="Text" Text="Time base 4.5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-12">
+              <Translation AttributeName="Text" Text="Time base 9 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-13">
+              <Translation AttributeName="Text" Text="Time base 18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-14">
+              <Translation AttributeName="Text" Text="Time base 36 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FBew.5FBasis.5FT.5FW_EN-15">
+              <Translation AttributeName="Text" Text="Time base 1.2 hrs" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-8264">
+              <Translation AttributeName="Text" Text="disabled" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41280">
+              <Translation AttributeName="Text" Text="up to brightness level 1 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41293">
+              <Translation AttributeName="Text" Text="up to brightness level 2 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41315">
+              <Translation AttributeName="Text" Text="up to brightness level 5 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41336">
+              <Translation AttributeName="Text" Text="up to brightness level 10 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41348">
+              <Translation AttributeName="Text" Text="up to brightness level 15 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41358">
+              <Translation AttributeName="Text" Text="up to brightness level 20 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41386">
+              <Translation AttributeName="Text" Text="up to brightness level 50 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41404">
+              <Translation AttributeName="Text" Text="up to brightness level 100 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41418">
+              <Translation AttributeName="Text" Text="up to brightness level 200 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41431">
+              <Translation AttributeName="Text" Text="up to brightness level 500 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-41438">
+              <Translation AttributeName="Text" Text="up to brightness level 1000 lux" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FDaemm.5FStufe_EN-8197">
+              <Translation AttributeName="Text" Text="Brightness independent" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-0">
+              <Translation AttributeName="Text" Text="Time base 130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-1">
+              <Translation AttributeName="Text" Text="Time base 260 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-2">
+              <Translation AttributeName="Text" Text="Time base 520 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-3">
+              <Translation AttributeName="Text" Text="Time base 1.0 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-4">
+              <Translation AttributeName="Text" Text="Time base 2.1 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-5">
+              <Translation AttributeName="Text" Text="Time base 4.2 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-6">
+              <Translation AttributeName="Text" Text="Time base 8.4 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-7">
+              <Translation AttributeName="Text" Text="Time base 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-8">
+              <Translation AttributeName="Text" Text="Time base 34 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-9">
+              <Translation AttributeName="Text" Text="Time base 1.1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-10">
+              <Translation AttributeName="Text" Text="Time base 2.2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-11">
+              <Translation AttributeName="Text" Text="Time base 4.5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-12">
+              <Translation AttributeName="Text" Text="Time base 9 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-13">
+              <Translation AttributeName="Text" Text="Time base 18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-14">
+              <Translation AttributeName="Text" Text="Time base 36 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FEnd.5FBew.5FBasis_EN-15">
+              <Translation AttributeName="Text" Text="Time base 1.2 hrs" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-49">
+              <Translation AttributeName="Text" Text="Time base 0.5 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-50">
+              <Translation AttributeName="Text" Text="Time base 8 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-51">
+              <Translation AttributeName="Text" Text="Time base 130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-52">
+              <Translation AttributeName="Text" Text="Time base 2.1 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FRiegel.5FBasis_EN-53">
+              <Translation AttributeName="Text" Text="Time base 33 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb_EN-0">
+              <Translation AttributeName="Text" Text="On = Operation, Off = Blocking" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FSperr.5FBetrieb_EN-1">
+              <Translation AttributeName="Text" Text="Off = Operation, On = Blocking" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-4302">
+              <Translation AttributeName="Text" Text="On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-4558">
+              <Translation AttributeName="Text" Text="Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeg_EN-8288">
+              <Translation AttributeName="Text" Text="no action" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-4302">
+              <Translation AttributeName="Text" Text="On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-4558">
+              <Translation AttributeName="Text" Text="Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FBeginn_EN-8421">
+              <Translation AttributeName="Text" Text="no action" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-4302">
+              <Translation AttributeName="Text" Text="On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-4558">
+              <Translation AttributeName="Text" Text="Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnd_EN-8280">
+              <Translation AttributeName="Text" Text="no action" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-4302">
+              <Translation AttributeName="Text" Text="On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-4558">
+              <Translation AttributeName="Text" Text="Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FWert.5FEnde_EN-8209">
+              <Translation AttributeName="Text" Text="no action" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden_EN-0">
+              <Translation AttributeName="Text" Text="enabled" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006_PT-t.5FZykl.5FSenden_EN-197">
+              <Translation AttributeName="Text" Text="disabled" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="es-ES">
+          <TranslationUnit RefId="M-0001_A-211D-01-0A52-O0006">
+            <TranslationElement RefId="M-0001_A-211D-01-0A52-O0006">
+              <Translation AttributeName="VisibleDescription" Text="Descripción - ver fichero:   211D01_apb_es.pdf" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+      </Languages>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>

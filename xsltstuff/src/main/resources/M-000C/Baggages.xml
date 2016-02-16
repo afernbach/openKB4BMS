@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.0.1267.10507" xmlns="http://knx.org/xml/project/12">
+  <ManufacturerData>
+    <Manufacturer RefId="M-000C">
+      <Baggages />
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>

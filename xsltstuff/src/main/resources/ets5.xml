@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.0.1267.10507" xmlns="http://knx.org/xml/project/12">
+    <Project Id="P-013F">
+        <Installations>
+            <Installation Name="" BCUKey="4294967295">
+                <Topology>
+                    <Area Id="P-013F-0_A-38" Name="Backbone-Bereich" Address="0" CompletionStatus="Undefined" Description="" Puid="1">
+                        <Line Id="P-013F-0_L-39" Name="Bereichslinie" Address="0" MediumTypeRefId="MT-5" Comment="" DomainAddress="0" CompletionStatus="Undefined" Description="" Puid="2" />
+                    </Area>
+                    <Area Id="P-013F-0_A-40" Address="5" Name="Hauptlinie" Description="" Puid="3">
+                        <Line Id="P-013F-0_L-41" Address="0" Name="Hauptlinie" MediumTypeRefId="MT-5" Comment="" Description="" Puid="4" />
+                        <Line Id="P-013F-0_L-42" Address="1" Name="4.Stock" MediumTypeRefId="MT-0" Comment="" Description="" Puid="5">
+                            <DeviceInstance Id="P-013F-0_DI-43" Address="4" Name="" ProductRefId="M-0001_H-hp.5F00215-1-O00EF_P-5WG1.20588.2D2AB.5F2" Hardware2ProgramRefId="M-0001_H-hp.5F00215-1-O00EF_HP-9102-01-C46E-O00EF" Comment="" Description="" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-07-01T17:15:06Z" LastDownload="2009-07-01T17:16:54Z" Puid="69">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-885_R-885" Value="Raumtemperatur" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_UP-660_R-660" Value="9" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_UP-661_R-661" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-727_R-727" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-24_R-24" Value="Licht" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-741_R-741" Value="Jalousie rechts runt" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-813_R-813" Value="Raumtemperatu" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-655_R-655" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-112_R-112" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-669_R-669" Value="Jalousie rechts rauf" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-659_R-659" Value="9" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-871_R-871" Value="14" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-799_R-799" Value="7" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_UP-732_R-732" Value="9" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_UP-733_R-733" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_P-731_R-731" Value="9" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-2_R-3" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-3_R-4" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-215_R-6" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-5_R-39" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-13" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-7_R-40" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-20" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-6_R-42" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-4_R-122" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-1_R-127" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-0_R-128" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-10_R-141" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-8_R-143" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-18" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-9_R-144" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-13_R-182" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-11_R-184" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-19" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-12_R-185" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-14_R-239" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-15_R-240" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-17_R-283" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-217_R-3350" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-219_R-3358" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-221_R-3366" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-223_R-3374" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-225_R-3382" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-227_R-3390" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-229_R-3398" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-231_R-3406" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-233_R-3414" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-235_R-3422" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-237_R-3430" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-239_R-3438" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-241_R-3446" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-243_R-3454" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-245_R-3462" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-220_R-3466" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-216_R-3467" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-218_R-3468" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-222_R-3469" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-224_R-3470" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-226_R-3471" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-228_R-3472" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-230_R-3473" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-232_R-3474" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-234_R-3475" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-236_R-3476" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-238_R-3477" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-240_R-3478" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-242_R-3479" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-244_R-3480" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9102-01-C46E-O00EF_O-246_R-3481" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-44" Address="9" Name="" ProductRefId="M-0001_H-hp.5F00197-1_P-5WG1.20237.2D2EB.5F1" Hardware2ProgramRefId="M-0001_H-hp.5F00197-1_HP-8025-01-C29E" Comment="" Description="Raumbedienung" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-09-24T15:51:52Z" LastDownload="2009-09-24T15:56:03Z" Puid="175">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-8025-01-C29E_P-46_R-46" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-8025-01-C29E_P-56_R-56" Value="3" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-0_R-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-29" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-1_R-2" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-30" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-3_R-4" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-31" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-4_R-5" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-32" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-5_R-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-33" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-6_R-7" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-34" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-7_R-8" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-35" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-8_R-9" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-36" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-9_R-10" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-37" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8025-01-C29E_O-10_R-11" DatapointType="DPST-1-19" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-26" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-45" Address="3" Name="" ProductRefId="M-0001_H-hp.5F00129-1_P-5WG1.20510.2D1AB03.2F4" Hardware2ProgramRefId="M-0001_H-hp.5F00129-1_HP-9064-01-60D9" Comment="" Description="" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2012-12-18T13:26:35Z" LastDownload="2012-12-18T13:26:35Z" Puid="48">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-194_R-194" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-195_R-195" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-284_R-284" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-187_R-187" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-170_R-170" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-176_R-176" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-283_R-283" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-200_R-203" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_UP-206_R-206" Value="6" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_UP-290_R-290" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_P-2_R-181" Value="3" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9064-01-60D9_UP-185_R-185" Value="12" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-0_R-13" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-10" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-1_R-147" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-9" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-2_R-152" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-13" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-43" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-3_R-157" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-4_R-196" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-5_R-198" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-6_R-199" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-20" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9064-01-60D9_O-7_R-201" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-46" Address="1" Name="" ProductRefId="M-0001_H-hp.5F00110-1_P-5WG1.20220.2D2AB02" Hardware2ProgramRefId="M-0001_H-hp.5F00110-1_HP-9009-02-5C1C" Comment="" Description="Institutstür" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2007-08-02T16:15:04Z" LastDownload="2007-08-02T16:17:20Z" Puid="19">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_P-387_R-387" Value="65" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_P-388_R-388" Value="65" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_P-389_R-389" Value="65" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_P-3_R-3" Value="65" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_P-140_R-140" Value="38" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_P-2_R-2" Value="60" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-14_R-14" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-19_R-19" Value="5" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-20_R-20" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-25_R-25" Value="5" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-26_R-26" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-7_R-7" Value="5" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-8_R-8" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9009-02-5C1C_UP-13_R-13" Value="5" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9009-02-5C1C_O-0_R-0" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9009-02-5C1C_O-2_R-2" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9009-02-5C1C_O-4_R-4" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-10" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9009-02-5C1C_O-6_R-6" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-10" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-47" Address="2" Name="" ProductRefId="M-0001_H-hp.5F00168-1_P-5WG1.20220.2D2AB03" Hardware2ProgramRefId="M-0001_H-hp.5F00168-1_HP-2405-05-341B" Comment="" Description="Fingerprintscanner" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2012-12-20T12:59:39Z" LastDownload="2012-12-20T12:59:39Z" Puid="38">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-2405-05-341B_P-3_R-3" Value="42501" />
+                                    <ParameterInstanceRef RefId="M-0001_A-2405-05-341B_P-7_R-7" Value="5" />
+                                    <ParameterInstanceRef RefId="M-0001_A-2405-05-341B_P-8_R-8" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-2405-05-341B_P-13_R-13" Value="5" />
+                                    <ParameterInstanceRef RefId="M-0001_A-2405-05-341B_P-14_R-14" Value="1" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-2405-05-341B_O-0_R-0" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-10" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-2405-05-341B_O-1_R-1" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-9" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-2405-05-341B_O-2_R-2" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-2405-05-341B_O-3_R-3" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-48" Address="15" Name="" ProductRefId="M-0001_H-hp.5F00083-1_P-5WG1.20670.2D1AB03" Hardware2ProgramRefId="M-0001_H-hp.5F00083-1_HP-9005-01-8D0D" Comment="Ausgang A 0-10V für Ventil FanCoil" Description="" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-09-24T14:11:51Z" LastDownload="2009-09-24T14:12:18Z" Puid="282">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-9005-01-8D0D_P-84_R-84" Value="4" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9005-01-8D0D_UP-103_R-103" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9005-01-8D0D_UP-87_R-88" Value="1" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9005-01-8D0D_O-12_R-1" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9005-01-8D0D_O-13_R-2" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9005-01-8D0D_O-14_R-3" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9005-01-8D0D_O-15_R-4" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9005-01-8D0D_O-0_R-19" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-27" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-49" Address="8" Name="" ProductRefId="M-0001_H-hp.5F00002-2_P-5WG1.20287.2D2AB.5F.5F.20BA2" Hardware2ProgramRefId="M-0001_H-hp.5F00002-2_HP-9076-02-9E24" Comment="" Description="Raumbedienung" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2012-12-18T11:26:21Z" LastDownload="2012-12-18T11:26:21Z" Puid="157">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_UP-222_R-222" Value="195" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_UP-223_R-223" Value="195" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_UP-160_R-160" Value="195" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_P-114_R-114" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_P-292_R-292" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_UP-161_R-161" Value="195" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_UP-234_R-234" Value="195" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9076-02-9E24_UP-235_R-235" Value="195" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-7_R-202" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-13" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-6_R-211" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-13" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-0_R-215" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-14" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-1_R-216" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-15" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-2_R-218" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-16" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-3_R-220" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-17" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-5_R-222" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-19" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-4_R-226" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-18" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9076-02-9E24_O-11_R-237" DatapointType="DPST-1-11" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-20" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-50" Address="5" Name="" ProductRefId="M-0001_H-hp.5F00124-1_P-5WG1.20255.2D2AB.5F.5F" Hardware2ProgramRefId="M-0001_H-hp.5F00124-1_HP-211D-01-0A52-O0006" Comment="" Description="Melder Institutstür" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-04-21T09:38:50Z" LastDownload="2009-04-21T10:11:07Z" Puid="135">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_P-3_R-3" Value="8197" />
+                                    <ParameterInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_P-4_R-4" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_P-9_R-9" Value="3" />
+                                    <ParameterInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_P-10_R-10" Value="5" />
+                                    <ParameterInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_P-12_R-12" Value="0" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_O-0_R-0" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-10" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-211D-01-0A52-O0006_O-1_R-1" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-52" Address="13" Name="" ProductRefId="M-0001_H-hp.5F00166-1_P-5WG1.20567.2D1AB12" Hardware2ProgramRefId="M-0001_H-hp.5F00166-1_HP-9803-04-5747" Comment="" Description="Jalousieaktor" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2013-01-24T13:47:59Z" LastDownload="2013-01-24T13:47:59Z" Puid="261">
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-0_R-1" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-3_R-4" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-11_R-12" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-17" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-48" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-15_R-16" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-19" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-41" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-19_R-20" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-23_R-24" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-14" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-51" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-27_R-28" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-16" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-49" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-31_R-32" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-18" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-42" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9803-04-5747_O-7_R-43" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-15" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-50" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-53" Address="11" Name="" ProductRefId="M-0001_H-hp.5F00196-1-O00E8_P-5WG1.20258.2D2AB21" Hardware2ProgramRefId="M-0001_H-hp.5F00196-1-O00E8_HP-8042-12-94A8-O00E8" Comment="" Description="Präsenzmelder A-Lab" InstallationHints="" ApplicationProgramLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2013-01-16T12:03:55Z" LastDownload="2013-01-16T11:51:05Z" Puid="236">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_P-12_R-12" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_P-9_R-9" Value="30" />
+                                    <ParameterInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_P-36_R-409" Value="30" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_O-9_R-10" WriteFlag="Enabled" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-28" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-39" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_O-25_R-26" ReadFlag="Enabled" DatapointType="DPST-9-4" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-38" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_O-0_R-31" DatapointType="DPST-1-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-13" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-8042-12-94A8-O00E8_O-12_R-135" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-54" Address="12" Name="" ProductRefId="M-0001_H-hp.5F00184-1_P-5WG3.20140.2D2.5FB.5F1" Hardware2ProgramRefId="M-0001_H-hp.5F00184-1_HP-980B-02-5CB6" Comment="" Description="Fensterkontakte" InstallationHints="" ApplicationProgramLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2012-12-18T09:50:41Z" LastDownload="2012-12-18T09:49:21Z" Puid="246">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-980B-02-5CB6_P-205_R-205" Value="6" />
+                                    <ParameterInstanceRef RefId="M-0001_A-980B-02-5CB6_P-206_R-206" Value="11" />
+                                    <ParameterInstanceRef RefId="M-0001_A-980B-02-5CB6_P-207_R-207" Value="6" />
+                                    <ParameterInstanceRef RefId="M-0001_A-980B-02-5CB6_P-7_R-7" Value="11" />
+                                    <ParameterInstanceRef RefId="M-0001_A-980B-02-5CB6_P-203_R-203" Value="6" />
+                                    <ParameterInstanceRef RefId="M-0001_A-980B-02-5CB6_P-204_R-204" Value="11" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-10_R-1214" Text="Fensterkontakt rechts.Batteriestatus" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-1_R-1215" Text="Lokale Taste" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-60_R-7283" Text="Fensterkontakt links.Sensor Kanal" DatapointType="DPST-1-19" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-25" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-50_R-7332" Text="Fensterkontakt links.Batteriestatus" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-40_R-7345" Text="Fensterkontakt mitte.Sensor Kanal" DatapointType="DPST-1-19" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-24" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-30_R-7394" Text="Fensterkontakt mitte.Batteriestatus" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-980B-02-5CB6_O-20_R-7407" Text="Fensterkontakt rechts.Sensor Kanal" DatapointType="DPST-1-19" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-23" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                                <BinaryData>
+                                    <BinaryData Id="7436e24d-bf2b-4f1a-9723-bada550518fe" Name="MK" Puid="260" />
+                                </BinaryData>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-55" Address="10" Name="" ProductRefId="M-0050_H-FC.200001-1_P-49550" Hardware2ProgramRefId="M-0050_H-FC.200001-1_HP-0001-11-DC72" Comment="" Description="Steuerung Klimagerät Eurapo" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2013-01-22T09:34:44Z" LastDownload="2013-01-22T09:34:44Z" Puid="191">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-76_R-76" Value="3" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_UP-32_R-32" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_UP-3_R-3" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_UP-20_R-20" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-99_R-99" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-61_R-61" Value="2" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-68_R-68" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-60_R-60" Value="3126" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-109_R-109" Value="0" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-275_R-275" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-21_R-21" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0050_A-0001-11-DC72_P-85_R-85" Value="1" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-0_R-1" DatapointType="DPST-9-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-21" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-1_R-2" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-4_R-5" DatapointType="DPST-9-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-22" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-46" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-5_R-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-29" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-6_R-7" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-9_R-10" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-10_R-11" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-32" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-11_R-12" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-33" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-12_R-13" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-34" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-14_R-15" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-28" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-15_R-16" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-37" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-47" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-16_R-17" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-35" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-17_R-18" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-36" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-21_R-22" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-12" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-45" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-22_R-23" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-27" />
+                                            <Receive GroupAddressRefId="P-013F-0_GA-44" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-23_R-24" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-30" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-24_R-25" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-25_R-26" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-26_R-27" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-28_R-29" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-29_R-30" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-30_R-31" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-31_R-32" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-31" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-32_R-33" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-33_R-34" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-34_R-35" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-35_R-36" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-13_R-46" DatapointType="DPST-1-19" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-26" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-18_R-50" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-19_R-51" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-7_R-52" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0050_A-0001-11-DC72_O-8_R-53" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-56" Address="7" Name="" ProductRefId="M-0048_H-7319200-1_P-731.209.20200" Hardware2ProgramRefId="M-0048_H-7319200-1_HP-731A-10-B078" Comment="" Description="Heizung rechts" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-04-07T14:49:23Z" LastDownload="2009-04-07T14:51:07Z" Puid="150">
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-0_R-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-12" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-1_R-2" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-2_R-3" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-3_R-4" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-4_R-5" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-7_R-11" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-57" Address="6" Name="" ProductRefId="M-0048_H-7319200-1_P-731.209.20200" Hardware2ProgramRefId="M-0048_H-7319200-1_HP-731A-10-B078" Comment="" Description="Heizung links" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-04-07T14:49:23Z" LastDownload="2009-04-07T14:51:32Z" Puid="143">
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-0_R-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-12" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-1_R-2" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-2_R-3" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-3_R-4" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-4_R-5" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0048_A-731A-10-B078_O-7_R-11" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-58" Address="14" Name="" ProductRefId="M-0002_H-2.20.2F.2F.20GHQ.20631.200017.20R0111-1_P-GH.20Q631.200017.20R0111" Hardware2ProgramRefId="M-0002_H-2.20.2F.2F.20GHQ.20631.200017.20R0111-1_HP-6198-13-A260-O0007" Comment="" Description="Fensterstatus OR Verknüpfung aller Fenster" InstallationHints="" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2009-07-03T16:31:57Z" LastDownload="2009-07-03T16:33:48Z" Puid="271">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0002_A-6198-13-A260-O0007_P-2_R-2" Value="3" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-0_R-0" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-25" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-1_R-1" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-24" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-2_R-2" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-23" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-3_R-3" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-4_R-4" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-5_R-5" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-6_R-6" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-7_R-7" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0002_A-6198-13-A260-O0007_O-8_R-8" DatapointType="DPST-1-6" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-26" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-59" Address="0" Name="" ProductRefId="M-0001_H-hp.5F00156-1_P-5WG1.20146.2D1AB02" Hardware2ProgramRefId="M-0001_H-hp.5F00156-1_HP-0010-02-34B8" Comment="{\rtf1\ansi\ansicpg1252\uc1\htmautsp\deff2{\fonttbl{\f0\fcharset0 Times New Roman;}{\f2\fcharset0 Segoe UI;}}{\colortbl\red0\green0\blue0;\red255\green255\blue255;}\loch\hich\dbch\pard\plain\ltrpar\itap0{\lang1033\fs16\f2\cf0 \cf0\ql\sl15\slmult0{\f2 {\lang3079\ltrch sdf}\li0\ri0\sa0\sb0\fi0\ql\sl15\slmult0\par}&#xD;&#xA;}&#xD;&#xA;}" Description="Aufputzkasten A-Lab rechts" InstallationHints="{\rtf1\ansi\ansicpg1252\uc1\htmautsp\deff2{\fonttbl{\f0\fcharset0 Times New Roman;}{\f2\fcharset0 Segoe UI;}}{\colortbl\red0\green0\blue0;\red255\green255\blue255;}\loch\hich\dbch\pard\plain\ltrpar\itap0{\lang1033\fs16\f2\cf0 \cf0\ql\sl15\slmult0{\f2 {\lang3079\ltrch fsdf}\li0\ri0\sa0\sb0\fi0\ql\sl15\slmult0\par}&#xD;&#xA;}&#xD;&#xA;}" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2012-12-20T09:56:55Z" LastDownload="2012-12-20T09:56:55Z" Puid="6">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-2_R-2" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-3_R-3" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-42_R-42" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-44_R-44" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-17_R-17" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-25_R-25" Value="128" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-24_R-24" Value="130" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-23_R-23" Value="56" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-22_R-22" Value="140" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-29_R-29" Value="255" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-28_R-28" Value="255" />
+                                    <ParameterInstanceRef RefId="M-0001_A-0010-02-34B8_P-27_R-27" Value="255" />
+                                </ParameterInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-61" Address="16" Name="" ProductRefId="M-000C_H-MEG6005.2D0001-1-O0048_P-MEG6005.2D0001" Hardware2ProgramRefId="M-000C_H-MEG6005.2D0001-1-O0048_HP-FF21-11-C339-O0048" Comment="" Description="" SerialNumber="AEgEAS1K" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2016-02-10T15:50:13.1683556Z" LastDownload="2016-02-10T15:50:13.1643554Z" Puid="344">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_P-2237_R-2237" Value="1" />
+                                    <ParameterInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_P-2239_R-2239" Value="1" />
+                                    <ParameterInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_P-2241_R-2241" Value="1" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-0_R-1" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-52" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-1_R-2" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-53" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-2_R-3" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-54" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-3_R-50" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-5_R-55" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-7_R-60" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-9_R-68" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-11_R-71" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-13_R-75" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-15_R-80" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-17_R-85" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-23_R-91" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-19_R-101" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-21_R-102" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-000C_A-FF21-11-C339-O0048_O-25_R-105" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                            </DeviceInstance>
+                            <DeviceInstance Id="P-013F-0_DI-62" Address="17" Name="" ProductRefId="M-0001_H-hp.5F00261-1_P-5WG1.20562.2D1AB11" Hardware2ProgramRefId="M-0001_H-hp.5F00261-1_HP-9820-02-473E" Comment="" Description="" SerialNumber="AAEAQtD4" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsCommunicationObjectVisibilityCalculated="true" LastModified="2016-02-11T08:53:58.9951062Z" LastDownload="2016-02-11T08:53:58.9941061Z" Puid="356">
+                                <ParameterInstanceRefs>
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-0_R-0" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-25_R-25" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-31_R-31" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-33_R-33" Value="32" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-36_R-36" Value="32" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-41_R-41" Value="16" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-42_R-42" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-48_R-48" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-50_R-50" Value="32" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-53_R-53" Value="32" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-58_R-58" Value="16" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-2_R-2" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-12_R-12" Value="1" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-14_R-14" Value="32" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-17_R-17" Value="32" />
+                                    <ParameterInstanceRef RefId="M-0001_A-9820-02-473E_P-22_R-22" Value="16" />
+                                </ParameterInstanceRefs>
+                                <ComObjectInstanceRefs>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-1_R-0" Text="Status Direktbetrieb" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-3_R-2" Text="A-1, Schalten" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-55" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-13_R-12" Text="A-1, Status Schalten" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-56" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-15_R-14" Text="A-1, Schaltspielzahl" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-57" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-18_R-17" Text="A-1, Betriebsstunden" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-58" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-23_R-22" Text="A-1, Laststrom-Messwert" IsActive="true">
+                                        <Connectors>
+                                            <Send GroupAddressRefId="P-013F-0_GA-59" />
+                                        </Connectors>
+                                    </ComObjectInstanceRef>
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-26_R-25" Text="A-2, Schalten" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-32_R-31" Text="A-2, Status Schalten" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-34_R-33" Text="A-2, Schaltspielzahl" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-37_R-36" Text="A-2, Betriebsstunden" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-42_R-41" Text="A-2, Laststrom-Messwert" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-43_R-42" Text="A-3, Schalten" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-49_R-48" Text="A-3, Status Schalten" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-51_R-50" Text="A-3, Schaltspielzahl" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-54_R-53" Text="A-3, Betriebsstunden" IsActive="true" />
+                                    <ComObjectInstanceRef RefId="M-0001_A-9820-02-473E_O-59_R-58" Text="A-3, Laststrom-Messwert" IsActive="true" />
+                                </ComObjectInstanceRefs>
+                                <BinaryData>
+                                    <BinaryData Id="P-013F-0_DI-62_BLOB.5FSTRING" Name="BLOB_STRING" Puid="931" />
+                                </BinaryData>
+                            </DeviceInstance>
+                        </Line>
+                    </Area>
+                    <UnassignedDevices />
+                </Topology>
+                <Buildings>
+                    <BuildingPart Type="Building" Id="P-013F-0_BP-1" Name="Treitlstrasse" Number="" Comment="" Description="" Puid="291">
+                        <BuildingPart Type="BuildingPart" Id="P-013F-0_BP-2" Name="4.Stock" Number="" Comment="" Description="" Puid="292">
+                            <BuildingPart Type="Room" Id="P-013F-0_BP-3" Name="A-Lab" Number="" Comment="" Description="" Puid="293">
+                                <DeviceInstanceRef RefId="P-013F-0_DI-43" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-44" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-49" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-53" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-56" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-57" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-61" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-62" />
+                            </BuildingPart>
+                            <BuildingPart Type="Room" Id="P-013F-0_BP-4" Name="Gang" Number="" Comment="" Description="" Puid="294">
+                                <DeviceInstanceRef RefId="P-013F-0_DI-46" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-50" />
+                            </BuildingPart>
+                            <BuildingPart Type="DistributionBoard" Id="P-013F-0_BP-5" Name="Aufputzkasten A-Lab rechts" Number="" Comment="" Description="" Puid="295">
+                                <DeviceInstanceRef RefId="P-013F-0_DI-45" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-47" />
+                            </BuildingPart>
+                            <BuildingPart Type="DistributionBoard" Id="P-013F-0_BP-6" Name="Aufputzkasten A-Lab links" Number="" Comment="" Description="" Puid="296">
+                                <DeviceInstanceRef RefId="P-013F-0_DI-48" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-52" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-54" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-55" />
+                                <DeviceInstanceRef RefId="P-013F-0_DI-58" />
+                            </BuildingPart>
+                        </BuildingPart>
+                    </BuildingPart>
+                </Buildings>
+                <GroupAddresses>
+                    <GroupRanges>
+                        <GroupRange Id="P-013F-0_GR-7" RangeStart="10240" RangeEnd="12287" Name="E183-1" Description="" Puid="297">
+                            <GroupRange Id="P-013F-0_GR-8" RangeStart="10240" RangeEnd="10495" Name="Gang" Description="" Puid="298">
+                                <GroupAddress Id="P-013F-0_GA-9" Address="10242" Name="A-Lab Tür" Comment="" Description="" DatapointType="" Puid="300" />
+                                <GroupAddress Id="P-013F-0_GA-10" Address="10241" Name="Eingang Tür" Comment="" Description="" DatapointType="" Puid="299" />
+                            </GroupRange>
+                            <GroupRange Id="P-013F-0_GR-11" RangeStart="10496" RangeEnd="10751" Name="A-Lab" Description="" Puid="301">
+                                <GroupAddress Id="P-013F-0_GA-12" Address="10497" Name="HK Heizung Stellgröße" Comment="" Description="" DatapointType="" Puid="303" />
+                                <GroupAddress Id="P-013F-0_GA-13" Address="10500" Name="Licht" Comment="" Description="" DatapointType="" Puid="306" />
+                                <GroupAddress Id="P-013F-0_GA-14" Address="10501" Name="Jalousie links rauf" Comment="" Description="" DatapointType="" Puid="307" />
+                                <GroupAddress Id="P-013F-0_GA-15" Address="10502" Name="Jalousie links runter" Comment="" Description="" DatapointType="" Puid="308" />
+                                <GroupAddress Id="P-013F-0_GA-16" Address="10503" Name="Jalousie mitte rauf" Comment="" Description="" DatapointType="" Puid="309" />
+                                <GroupAddress Id="P-013F-0_GA-17" Address="10504" Name="Jalousie mitte runter" Comment="" Description="" DatapointType="" Puid="310" />
+                                <GroupAddress Id="P-013F-0_GA-18" Address="10505" Name="Jalousie rechts rauf" Comment="" Description="" DatapointType="" Puid="311" />
+                                <GroupAddress Id="P-013F-0_GA-19" Address="10506" Name="Jalousie rechts runter" Comment="" Description="" DatapointType="" Puid="312" />
+                                <GroupAddress Id="P-013F-0_GA-20" Address="10499" Name="Status Licht" Comment="" Description="" DatapointType="" Puid="305" />
+                                <GroupAddress Id="P-013F-0_GA-21" Address="10496" Name="HK Raumtemperatur Ist" Comment="" Description="" DatapointType="" Puid="302" />
+                                <GroupAddress Id="P-013F-0_GA-22" Address="10498" Name="HK Raumtemperatur Soll" Comment="" Description="" DatapointType="" Puid="304" />
+                                <GroupAddress Id="P-013F-0_GA-23" Address="10507" Name="Fensterkontakt rechts" Comment="" Description="" DatapointType="" Puid="313" />
+                                <GroupAddress Id="P-013F-0_GA-24" Address="10511" Name="Fensterkontakt mitte" Comment="" Description="" DatapointType="" Puid="314" />
+                                <GroupAddress Id="P-013F-0_GA-25" Address="10512" Name="Fensterkontakt links" Comment="" Description="" DatapointType="" Puid="315" />
+                                <GroupAddress Id="P-013F-0_GA-26" Address="10513" Name="Fensterstatus Alle" Comment="" Description="" DatapointType="" Puid="316" />
+                                <GroupAddress Id="P-013F-0_GA-27" Address="10514" Name="HK Kühlung Stellgröße" Comment="" Description="" DatapointType="" Puid="317" />
+                                <GroupAddress Id="P-013F-0_GA-28" Address="10515" Name="Präsenz" Comment="" Description="" DatapointType="" Puid="318" />
+                                <GroupAddress Id="P-013F-0_GA-29" Address="10516" Name="HK Sollwertverschiebung" Comment="" Description="" DatapointType="" Puid="319" />
+                                <GroupAddress Id="P-013F-0_GA-30" Address="10517" Name="HK Stellgröße Heiz-Kühlbetrieb" Comment="" Description="" DatapointType="" Puid="320" />
+                                <GroupAddress Id="P-013F-0_GA-31" Address="10518" Name="HK Status Komfortbetrieb" Comment="" Description="" DatapointType="" Puid="321" />
+                                <GroupAddress Id="P-013F-0_GA-32" Address="10519" Name="HK Standbybetrieb" Comment="" Description="" DatapointType="" Puid="322" />
+                                <GroupAddress Id="P-013F-0_GA-33" Address="10520" Name="HK Nachtbetrieb" Comment="" Description="" DatapointType="" Puid="323" />
+                                <GroupAddress Id="P-013F-0_GA-34" Address="10521" Name="HK Frost- Hitzeschutz" Comment="" Description="" DatapointType="" Puid="324" />
+                                <GroupAddress Id="P-013F-0_GA-35" Address="10522" Name="HK Ventilator Automatik" Comment="" Description="" DatapointType="" Puid="325" />
+                                <GroupAddress Id="P-013F-0_GA-36" Address="10523" Name="HK Ventilator Status" Comment="" Description="" DatapointType="" Puid="326" />
+                                <GroupAddress Id="P-013F-0_GA-37" Address="10524" Name="HK Ventilator Drehzahl" Comment="" Description="" DatapointType="" Puid="327" />
+                            </GroupRange>
+                            <GroupRange Id="P-013F-0_GR-12" RangeStart="10752" RangeEnd="11007" Name="IoTSensoren" Puid="328">
+                                <GroupAddress Id="P-013F-0_GA-38" Address="10752" Name="IndoorBrigthnessSensor" DatapointType="" Puid="329" />
+                                <GroupAddress Id="P-013F-0_GA-39" Address="10753" Name="PresenceDetector" DatapointType="" Puid="330" />
+                            </GroupRange>
+                            <GroupRange Id="P-013F-0_GR-13" RangeStart="11008" RangeEnd="11263" Name="IotActuator" Puid="331">
+                                <GroupAddress Id="P-013F-0_GA-41" Address="11008" Name="SunblindRechtsRunter" DatapointType="" Puid="332" />
+                                <GroupAddress Id="P-013F-0_GA-42" Address="11009" Name="SunblindRechtsRauf" DatapointType="" Puid="333" />
+                                <GroupAddress Id="P-013F-0_GA-43" Address="11010" Name="SwitchActuatorLicht" DatapointType="" Puid="334" />
+                                <GroupAddress Id="P-013F-0_GA-44" Address="11011" Name="HK_Kuehlen" DatapointType="" Puid="335" />
+                                <GroupAddress Id="P-013F-0_GA-45" Address="11012" Name="HK_Heizen" DatapointType="" Puid="336" />
+                                <GroupAddress Id="P-013F-0_GA-46" Address="11013" Name="HK_Sollwerttemp" DatapointType="" Puid="337" />
+                                <GroupAddress Id="P-013F-0_GA-47" Address="11014" Name="FanKlimageraet" DatapointType="" Puid="338" />
+                                <GroupAddress Id="P-013F-0_GA-48" Address="11015" Name="SunblindMitteRunter" DatapointType="" Puid="339" />
+                                <GroupAddress Id="P-013F-0_GA-49" Address="11016" Name="SunblindMitteRauf" DatapointType="" Puid="340" />
+                                <GroupAddress Id="P-013F-0_GA-50" Address="11017" Name="SunblindLinkRunter" DatapointType="" Puid="341" />
+                                <GroupAddress Id="P-013F-0_GA-51" Address="11018" Name="SunblindLinksRauf" DatapointType="" Puid="342" />
+                            </GroupRange>
+                            <GroupRange Id="P-013F-0_GR-14" RangeStart="11264" RangeEnd="11519" Name="SeWoA Geräte" Puid="346">
+                                <GroupAddress Id="P-013F-0_GA-52" Address="11264" Name="CO2" DatapointType="DPST-9-8" Puid="347" />
+                                <GroupAddress Id="P-013F-0_GA-53" Address="11265" Name="Rel.Feuchte" DatapointType="DPST-5-1" Puid="348" />
+                                <GroupAddress Id="P-013F-0_GA-54" Address="11266" Name="Temperatur" DatapointType="DPST-9-1" Puid="349" />
+                                <GroupAddress Id="P-013F-0_GA-55" Address="11267" Name="Schaltaktor N562 A1 Schalten" DatapointType="DPST-1-1" Puid="932" />
+                                <GroupAddress Id="P-013F-0_GA-56" Address="11268" Name="Schaltaktor N562 A1 Status" DatapointType="DPST-1-1" Puid="933" />
+                                <GroupAddress Id="P-013F-0_GA-57" Address="11269" Name="Schaltaktor N562 A1 Schaltspielzahl" DatapointType="DPST-12-1" Puid="934" />
+                                <GroupAddress Id="P-013F-0_GA-58" Address="11270" Name="Schaltaktor N562 A1 Betriebsstunden" DatapointType="DPST-12-1" Puid="935" />
+                                <GroupAddress Id="P-013F-0_GA-59" Address="11271" Name="Schaltaktor N562 A1 Laststrom" DatapointType="DPST-7-12" Puid="936" />
+                            </GroupRange>
+                        </GroupRange>
+                    </GroupRanges>
+                </GroupAddresses>
+            </Installation>
+        </Installations>
+    </Project>
+</KNX>

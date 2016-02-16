@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.0.1267.10507" xmlns="http://knx.org/xml/project/12">
+  <ManufacturerData>
+    <Manufacturer RefId="M-0002">
+      <ApplicationPrograms>
+        <ApplicationProgram Id="M-0002_A-6198-13-A260-O0007" Name="Logik 8E 1A Schalten/1" ApplicationNumber="24984" ApplicationVersion="19" ProgramType="ApplicationProgram" MaskVersion="MV-0011" VisibleDescription="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" LoadProcedureStyle="DefaultProcedure" PeiType="0" HelpFile="" DefaultLanguage="en-US" DynamicTableManagement="0" Linkable="1" OriginalManufacturer="M-0007" PreEts4Style="1" NonRegRelevantDataVersion="0" Hash="ovX3dJBQp4bghi3yXlNkYA==" ConvertedFromPreEts4Data="1" Broken="0" IPConfig="Tool" AdditionalAddressesCount="0" DownloadInfoIncomplete="0" CreatedFromLegacySchemaVersion="0">
+          <Static>
+            <Code>
+              <AbsoluteSegment Id="M-0002_A-6198-13-A260-O0007_AS-0100" Address="256" Size="256" UserMemory="0">
+                <Data>/7zoHAdhmBL9ABAAAP/gY68rPuJi4gERB////////////////////////wn+AP4B/gL+A/4E/gX+Bv4H/ggJztPTANTTANXTANbTANfTANjTANnTANrTANvTAAgAAAPdAgjGAQGgVZ2dzgFdv1bGAV63W8YBW7dXSioCIEm3V80MpSYEtlcg8E/OAVtaP1BI69M4UDxQWir2yAFctFAnAqYBAVYCqAG32wNWCMYBYbfdHt6BttsnBQFbCiADA1sFpgjNDbmBT65fzQ1xJhMP3gQf3iffpgjNDKUnBQVWAiCngYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFw==</Data>
+                <Mask>/wAAAP////////////////////////8AAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w==</Mask>
+              </AbsoluteSegment>
+            </Code>
+            <ParameterTypes>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount" Name="t_count" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-1" DisplayOrder="1" Text="Eingang 1" Value="1" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-2" DisplayOrder="2" Text="Eingang 1...2" Value="2" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-3" DisplayOrder="3" Text="Eingang 1...3" Value="3" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-4" DisplayOrder="4" Text="Eingang 1...4" Value="4" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-5" DisplayOrder="5" Text="Eingang 1...5" Value="5" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-6" DisplayOrder="6" Text="Eingang 1...6" Value="6" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-7" DisplayOrder="7" Text="Eingang 1...7" Value="7" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-8" DisplayOrder="8" Text="Eingang 1...8" Value="8" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fdelay" Name="t_delay" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="1">
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fdelay_EN-0" DisplayOrder="1" Text="nein" Value="0" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Fdelay_EN-1" DisplayOrder="2" Text="ja" Value="1" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus" Name="t_EinAus" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="1">
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus_EN-0" DisplayOrder="1" Text="nein" Value="0" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus_EN-1" DisplayOrder="2" Text="ja" Value="1" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Name="t_invert" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="1">
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert_EN-0" DisplayOrder="1" Text="nein" Value="0" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert_EN-1" DisplayOrder="2" Text="ja" Value="1" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite" Name="t_overwrite" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="1">
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite_EN-0" DisplayOrder="1" Text="Wert übernehmen" Value="0" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite_EN-1" DisplayOrder="2" Text="Wert nicht übernehmen,Verkn. senden" Value="1" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase" Name="t_timebase" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="4">
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-0" DisplayOrder="1" Text="130 ms" Value="0" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-1" DisplayOrder="2" Text="260 ms" Value="1" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-2" DisplayOrder="3" Text="520 ms" Value="2" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-3" DisplayOrder="4" Text="1,0 s" Value="3" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-4" DisplayOrder="5" Text="2,1 s" Value="4" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-5" DisplayOrder="6" Text="4,2 s" Value="5" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-6" DisplayOrder="7" Text="8,4 s" Value="6" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-7" DisplayOrder="8" Text="17 s" Value="7" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-8" DisplayOrder="9" Text="36 s" Value="8" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-9" DisplayOrder="10" Text="1,1 min" Value="9" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-10" DisplayOrder="11" Text="2,2 min" Value="10" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-11" DisplayOrder="12" Text="4,5 min" Value="11" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-12" DisplayOrder="13" Text="9,0 min" Value="12" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-13" DisplayOrder="14" Text="18 min" Value="13" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-14" DisplayOrder="15" Text="35 min" Value="14" />
+                  <Enumeration Id="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-15" DisplayOrder="16" Text="1,2 h" Value="15" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0002_A-6198-13-A260-O0007_PT-t.5FdelTime" Name="t_delTime" Plugin="">
+                <TypeNumber maxInclusive="127" minInclusive="2" SizeInBit="8" Type="unsignedInt" />
+              </ParameterType>
+            </ParameterTypes>
+            <Parameters>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-10" Name="InputInv.s_input7" Text="Eingang 7 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="1" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-11" Name="InputInv.s_input8" Text="Eingang 8 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="0" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-13" Name="Output.s_overwrite" Text="Reaktion bei Überschreiben des Objektwertes des Ausgangs" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="5" Offset="93" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-14" Name="Output.s_delay" Text="Verzögerung des Ausgangstelegramms" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Fdelay" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="6" Offset="93" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-15" Name="Output.s_OutInv" Text="Ausgang invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="7" Offset="93" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-16" Name="Filter.s_AusFlag" Text="AUS-Telegramm senden" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus" Access="ReadWrite" Value="1">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="6" Offset="94" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-17" Name="Filter.s_EinFlag" Text="EIN-Telegramm senden" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus" Access="ReadWrite" Value="1">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="7" Offset="94" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-18" Name="Delbasis.timer" Text="Zeitbasis für Sendeverzögerung" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase" Access="ReadWrite" Value="2">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="4" Offset="96" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-19" Name="Deltime" Text="Faktor für Sendeverzögerung (2...127)" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5FdelTime" Access="ReadWrite" Value="8">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="0" Offset="97" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-2" Name="Counter" Text="Benutzte Eingänge" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount" Access="ReadWrite" Value="8">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="0" Offset="91" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-4" Name="InputInv.s_input1" Text="Eingang 1 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="7" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-5" Name="InputInv.s_input2" Text="Eingang 2 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="6" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-6" Name="InputInv.s_input3" Text="Eingang 3 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="5" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-7" Name="InputInv.s_input4" Text="Eingang 4 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="4" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-8" Name="InputInv.s_input5" Text="Eingang 5 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="3" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-9" Name="InputInv.s_input6" Text="Eingang 6 invertieren" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="ReadWrite" Value="0">
+                <Memory CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" BitOffset="2" Offset="92" />
+              </Parameter>
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-1" Name="Eingänge" Text="Eingänge" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount" Access="Read" Value="1" />
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-3" Name="Eingänge" Text="Eingänge" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert" Access="Read" Value="0" />
+              <Parameter Id="M-0002_A-6198-13-A260-O0007_P-12" Name="Ausgang" Text="Ausgang" ParameterType="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite" Access="Read" Value="0" />
+            </Parameters>
+            <ParameterRefs>
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-1_R-1" DisplayOrder="100" RefId="M-0002_A-6198-13-A260-O0007_P-1" Tag="1" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-2_R-2" DisplayOrder="200" RefId="M-0002_A-6198-13-A260-O0007_P-2" Tag="2" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-3_R-3" DisplayOrder="300" RefId="M-0002_A-6198-13-A260-O0007_P-3" Tag="3" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-4_R-4" DisplayOrder="400" RefId="M-0002_A-6198-13-A260-O0007_P-4" Tag="4" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-5_R-5" DisplayOrder="500" RefId="M-0002_A-6198-13-A260-O0007_P-5" Tag="5" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-6_R-6" DisplayOrder="600" RefId="M-0002_A-6198-13-A260-O0007_P-6" Tag="6" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-7_R-7" DisplayOrder="700" RefId="M-0002_A-6198-13-A260-O0007_P-7" Tag="7" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-8_R-8" DisplayOrder="800" RefId="M-0002_A-6198-13-A260-O0007_P-8" Tag="8" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-9_R-9" DisplayOrder="900" RefId="M-0002_A-6198-13-A260-O0007_P-9" Tag="9" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-10_R-10" DisplayOrder="1000" RefId="M-0002_A-6198-13-A260-O0007_P-10" Tag="10" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-11_R-11" DisplayOrder="1100" RefId="M-0002_A-6198-13-A260-O0007_P-11" Tag="11" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-12_R-12" DisplayOrder="1200" RefId="M-0002_A-6198-13-A260-O0007_P-12" Tag="12" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-13_R-13" DisplayOrder="1300" RefId="M-0002_A-6198-13-A260-O0007_P-13" Tag="13" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-14_R-14" DisplayOrder="1400" RefId="M-0002_A-6198-13-A260-O0007_P-14" Tag="14" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-18_R-18" DisplayOrder="1420" RefId="M-0002_A-6198-13-A260-O0007_P-18" Tag="18" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-19_R-19" DisplayOrder="1440" RefId="M-0002_A-6198-13-A260-O0007_P-19" Tag="19" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-15_R-15" DisplayOrder="1500" RefId="M-0002_A-6198-13-A260-O0007_P-15" Tag="15" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-16_R-16" DisplayOrder="1600" RefId="M-0002_A-6198-13-A260-O0007_P-16" Tag="16" />
+              <ParameterRef Id="M-0002_A-6198-13-A260-O0007_P-17_R-17" DisplayOrder="1700" RefId="M-0002_A-6198-13-A260-O0007_P-17" Tag="17" />
+            </ParameterRefs>
+            <ComObjectTable CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" Offset="62">
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-0" FunctionText="Eingang 1" Name="Gatter" Number="0" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-1" FunctionText="Eingang 2" Name="Gatter" Number="1" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-2" FunctionText="Eingang 3" Name="Gatter" Number="2" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-3" FunctionText="Eingang 4" Name="Gatter" Number="3" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-4" FunctionText="Eingang 5" Name="Gatter" Number="4" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-5" FunctionText="Eingang 6" Name="Gatter" Number="5" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-6" FunctionText="Eingang 7" Name="Gatter" Number="6" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-7" FunctionText="Eingang 8" Name="Gatter" Number="7" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+              <ComObject Id="M-0002_A-6198-13-A260-O0007_O-8" FunctionText="Ausgang" Name="Gatter" Number="8" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Enabled" WriteFlag="Enabled" Text="Gatter" />
+            </ComObjectTable>
+            <ComObjectRefs>
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-0_R-0" RefId="M-0002_A-6198-13-A260-O0007_O-0" Tag="0" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-1_R-1" RefId="M-0002_A-6198-13-A260-O0007_O-1" Tag="1" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-2_R-2" RefId="M-0002_A-6198-13-A260-O0007_O-2" Tag="2" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-3_R-3" RefId="M-0002_A-6198-13-A260-O0007_O-3" Tag="3" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-4_R-4" RefId="M-0002_A-6198-13-A260-O0007_O-4" Tag="4" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-5_R-5" RefId="M-0002_A-6198-13-A260-O0007_O-5" Tag="5" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-6_R-6" RefId="M-0002_A-6198-13-A260-O0007_O-6" Tag="6" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-7_R-7" RefId="M-0002_A-6198-13-A260-O0007_O-7" Tag="7" />
+              <ComObjectRef Id="M-0002_A-6198-13-A260-O0007_O-8_R-8" RefId="M-0002_A-6198-13-A260-O0007_O-8" Tag="8" />
+            </ComObjectRefs>
+            <AddressTable CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" Offset="22" MaxEntries="9" />
+            <AssociationTable CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100" Offset="43" MaxEntries="9" />
+            <FixupList>
+              <Fixup FunctionRef="MV-0011_ME-U.5FGetTM" CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100">
+                <Offset>202</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0011_ME-U.5FtestObj" CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100">
+                <Offset>128</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0011_ME-U.5FtransRequest" CodeSegment="M-0002_A-6198-13-A260-O0007_AS-0100">
+                <Offset>195</Offset>
+              </Fixup>
+            </FixupList>
+            <Extension RequiresExternalSoftware="0" />
+            <Options PreferPartialDownloadIfApplicationLoaded="0" EasyCtrlModeModeStyleEmptyGroupComTables="0" SetObjectTableLengthAlwaysToOne="0" TextParameterEncoding="iso-8859-1" TextParameterZeroTerminate="0" ParameterByteOrder="BigEndian" LegacyNoPartialDownload="0" LegacyNoMemoryVerifyMode="0" LegacyNoOptimisticWrite="0" LegacyDoNotReportPropertyWriteErrors="0" LegacyNoBackgroundDownload="0" LegacyDoNotCheckManufacturerId="0" LegacyAlwaysReloadAppIfCoVisibilityChanged="0" LegacyNeverReloadAppIfCoVisibilityChanged="0" LegacyDoNotSupportUndoDelete="0" LegacyAllowPartialDownloadIfAp2Mismatch="0" LegacyKeepObjectTableGaps="0" PartialDownloadOnlyVisibleParameters="1" LegacyProxyCommunicationObjects="0" DeviceInfoIgnoreRunState="0" DeviceInfoIgnoreLoadedState="0" DeviceCompareAllowCompatibleManufacturerId="0" LineCoupler0912NewProgrammingStyle="0" DownloadInvisibleParameters="Background" />
+          </Static>
+          <Dynamic>
+            <Channel Name="Generic" Text="" Number="0" Id="M-0002_A-6198-13-A260-O0007_CH-0">
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-0_R-0" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-1_R-1" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-2_R-2" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-3_R-3" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-4_R-4" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-5_R-5" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-6_R-6" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-7_R-7" />
+              <ComObjectRefRef RefId="M-0002_A-6198-13-A260-O0007_O-8_R-8" />
+              <ParameterBlock Id="M-0002_A-6198-13-A260-O0007_PB-1" Name="Eingänge" Access="Read" ParamRefId="M-0002_A-6198-13-A260-O0007_P-1_R-1">
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-2_R-2" />
+              </ParameterBlock>
+              <ParameterBlock Id="M-0002_A-6198-13-A260-O0007_PB-3" Name="Eingänge" Access="Read" ParamRefId="M-0002_A-6198-13-A260-O0007_P-3_R-3">
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-4_R-4" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-5_R-5" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-6_R-6" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-7_R-7" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-8_R-8" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-9_R-9" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-10_R-10" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-11_R-11" />
+              </ParameterBlock>
+              <ParameterBlock Id="M-0002_A-6198-13-A260-O0007_PB-12" Name="Ausgang" Access="Read" ParamRefId="M-0002_A-6198-13-A260-O0007_P-12_R-12">
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-13_R-13" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-14_R-14" />
+                <choose ParamRefId="M-0002_A-6198-13-A260-O0007_P-14_R-14">
+                  <when test="1">
+                    <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-18_R-18" />
+                    <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-19_R-19" />
+                  </when>
+                </choose>
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-15_R-15" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-16_R-16" />
+                <ParameterRefRef RefId="M-0002_A-6198-13-A260-O0007_P-17_R-17" />
+              </ParameterBlock>
+            </Channel>
+          </Dynamic>
+        </ApplicationProgram>
+      </ApplicationPrograms>
+      <Languages>
+        <Language Identifier="de-DE">
+          <TranslationUnit RefId="M-0002_A-6198-13-A260-O0007">
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007">
+              <Translation AttributeName="Name" Text="Logik 8E 1A Schalten/1" />
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-0">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 1" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-1">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 2" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-2">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 3" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-3">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 4" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-4">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 5" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-5">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 6" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-6">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 7" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-7">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Eingang 8" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_O-8">
+              <Translation AttributeName="Text" Text="Gatter" />
+              <Translation AttributeName="FunctionText" Text="Ausgang" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-1">
+              <Translation AttributeName="Text" Text="Eingänge" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-3">
+              <Translation AttributeName="Text" Text="Eingänge" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-10">
+              <Translation AttributeName="Text" Text="Eingang 7 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-11">
+              <Translation AttributeName="Text" Text="Eingang 8 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-12">
+              <Translation AttributeName="Text" Text="Ausgang" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-2">
+              <Translation AttributeName="Text" Text="Benutzte Eingänge" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-13">
+              <Translation AttributeName="Text" Text="Reaktion bei Überschreiben des Objektwertes des Ausgangs" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-14">
+              <Translation AttributeName="Text" Text="Verzögerung des Ausgangstelegramms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-4">
+              <Translation AttributeName="Text" Text="Eingang 1 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-5">
+              <Translation AttributeName="Text" Text="Eingang 2 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-6">
+              <Translation AttributeName="Text" Text="Eingang 3 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-7">
+              <Translation AttributeName="Text" Text="Eingang 4 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-8">
+              <Translation AttributeName="Text" Text="Eingang 5 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-9">
+              <Translation AttributeName="Text" Text="Eingang 6 invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-15">
+              <Translation AttributeName="Text" Text="Ausgang invertieren" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-16">
+              <Translation AttributeName="Text" Text="AUS-Telegramm senden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-17">
+              <Translation AttributeName="Text" Text="EIN-Telegramm senden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-18">
+              <Translation AttributeName="Text" Text="Zeitbasis für Sendeverzögerung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_P-19">
+              <Translation AttributeName="Text" Text="Faktor für Sendeverzögerung (2...127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-1">
+              <Translation AttributeName="Text" Text="Eingang 1" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-2">
+              <Translation AttributeName="Text" Text="Eingang 1...2" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-3">
+              <Translation AttributeName="Text" Text="Eingang 1...3" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-4">
+              <Translation AttributeName="Text" Text="Eingang 1...4" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-5">
+              <Translation AttributeName="Text" Text="Eingang 1...5" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-6">
+              <Translation AttributeName="Text" Text="Eingang 1...6" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-7">
+              <Translation AttributeName="Text" Text="Eingang 1...7" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fcount_EN-8">
+              <Translation AttributeName="Text" Text="Eingang 1...8" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fdelay_EN-0">
+              <Translation AttributeName="Text" Text="nein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Fdelay_EN-1">
+              <Translation AttributeName="Text" Text="ja" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus_EN-0">
+              <Translation AttributeName="Text" Text="nein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5FEinAus_EN-1">
+              <Translation AttributeName="Text" Text="ja" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert_EN-0">
+              <Translation AttributeName="Text" Text="nein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Finvert_EN-1">
+              <Translation AttributeName="Text" Text="ja" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite_EN-0">
+              <Translation AttributeName="Text" Text="Wert übernehmen" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Foverwrite_EN-1">
+              <Translation AttributeName="Text" Text="Wert nicht übernehmen,Verkn. senden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-0">
+              <Translation AttributeName="Text" Text="130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-1">
+              <Translation AttributeName="Text" Text="260 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-2">
+              <Translation AttributeName="Text" Text="520 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-3">
+              <Translation AttributeName="Text" Text="1,0 s" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-4">
+              <Translation AttributeName="Text" Text="2,1 s" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-5">
+              <Translation AttributeName="Text" Text="4,2 s" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-6">
+              <Translation AttributeName="Text" Text="8,4 s" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-7">
+              <Translation AttributeName="Text" Text="17 s" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-8">
+              <Translation AttributeName="Text" Text="36 s" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-9">
+              <Translation AttributeName="Text" Text="1,1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-10">
+              <Translation AttributeName="Text" Text="2,2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-11">
+              <Translation AttributeName="Text" Text="4,5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-12">
+              <Translation AttributeName="Text" Text="9,0 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-13">
+              <Translation AttributeName="Text" Text="18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-14">
+              <Translation AttributeName="Text" Text="35 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007_PT-t.5Ftimebase_EN-15">
+              <Translation AttributeName="Text" Text="1,2 h" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="en-GB">
+          <TranslationUnit RefId="M-0002_A-6198-13-A260-O0007">
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007">
+              <Translation AttributeName="VisibleDescription" Text="ETS 1.x name: 9850 8IN/1OUT&#xD;&#xA;&#xD;&#xA;The application enables the logical &#xD;&#xA;connection of up to eight input values to &#xD;&#xA;one output value. The inputs and outputs can &#xD;&#xA;be inverted individually, and the logic functions &#xD;&#xA;of AND, NOT AND, OR and&#xD;&#xA;NOT OR are thus available. In addition, it is also possible &#xD;&#xA;to filter for the output, which &#xD;&#xA;telegrams (ON or OFF) should be &#xD;&#xA;sent.&#xD;&#xA;Group addresses: 9      Associations: 9" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="en-US">
+          <TranslationUnit RefId="M-0002_A-6198-13-A260-O0007">
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="it-IT">
+          <TranslationUnit RefId="M-0002_A-6198-13-A260-O0007">
+            <TranslationElement RefId="M-0002_A-6198-13-A260-O0007">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+      </Languages>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>
