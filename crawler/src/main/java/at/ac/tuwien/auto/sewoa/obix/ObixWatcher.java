@@ -2,20 +2,14 @@ package at.ac.tuwien.auto.sewoa.obix;
 
 import at.ac.tuwien.auto.sewoa.http.HttpRetriever;
 import at.ac.tuwien.auto.sewoa.http.HttpRetrieverImpl;
-import at.ac.tuwien.auto.sewoa.jena.SewoaModelHandler;
-import at.ac.tuwien.auto.sewoa.obix.data.ObixOperation;
+import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatch;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOut;
-import at.ac.tuwien.auto.sewoa.xml.XMLParser;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.logging.XMLFormatter;
 
 /**
  * Created by karinigor on 06.12.2015.
@@ -38,9 +32,9 @@ public class ObixWatcher {
     private ObixWatchParser parser;
     private ObixWatch obixWatch;
     private List<String> instances;
-    private SewoaModelHandler handler;
+    private ObixSewoaModelHandler handler;
 
-    public ObixWatcher(String url, SewoaModelHandler handler){
+    public ObixWatcher(String url, ObixSewoaModelHandler handler){
         this.baseURL = url;
         instances = new ArrayList<String>();
         this.httpRetriever = new HttpRetrieverImpl();

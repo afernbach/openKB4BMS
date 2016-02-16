@@ -60,14 +60,21 @@ public class ObixWatchParser {
         NodeList nodeList = document.getElementsByTagName("*");
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
-             if (node.getNodeType() == Node.ELEMENT_NODE && node.getNodeName().equals("bool")) {
+             if (node.getNodeType() == Node.ELEMENT_NODE && (node.getNodeName().equals("bool") || node.getNodeName().equals("real"))) {
                 // do something with the current element
                  ObixWatchOutListItem item = new ObixWatchOutListItem();
-                 item.setType("bool");
+                 item.setType(node.getNodeName());
                  item.setDisplayName(node.getAttributes().getNamedItem("displayName").getNodeValue());
                  item.setHref(node.getAttributes().getNamedItem("href").getNodeValue());
                  item.setVal(node.getAttributes().getNamedItem("val").getNodeValue());
-                 item.setWritable(Boolean.valueOf(node.getAttributes().getNamedItem("writable").getNodeValue()));
+                 Node writable = node.getAttributes().getNamedItem("writable");
+                 if (writable != null) {
+                     item.setWritable(Boolean.valueOf(writable.getNodeValue()));
+                 }
+                 Node unitNode = node.getAttributes().getNamedItem("unit");
+                 if (unitNode != null){
+                     item.setUnit(unitNode.getNodeValue());
+                 }
                  result.addItem(item);
             }
         }

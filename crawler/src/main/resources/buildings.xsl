@@ -41,7 +41,7 @@
                         <xsl:value-of select="concat($prefix, $value)"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="concat($prefix, substring($value, 1, string-length($value) - 2))"/>
+                        <xsl:value-of select="concat($prefix, substring($value, 2, string-length($value) - 3))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>

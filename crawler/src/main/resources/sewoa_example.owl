@@ -17542,6 +17542,47 @@
         <rdf:type rdf:resource="&EnergyResourceOntology;WirelessBuildingAutomationNetwork"/>
     </owl:NamedIndividual>
 
+    <owl:ObjectProperty rdf:about="&EnergyResourceOntology;functionOf">
+    			<rdfs:label rdf:datatype="&xsd;string">functionOf</rdfs:label>
+    			<rdfs:comment xml:lang="en">Indicates which different functions are provided by a device.</rdfs:comment>
+    			<rdfs:domain rdf:resource="&EnergyResourceOntology;BuildingAutomationSystemResource"/>
+    			<rdfs:range rdf:resource="&EnergyResourceOntology;Controllable"/>
+    		</owl:ObjectProperty>
+
+    		<owl:ObjectProperty rdf:about="&EnergyResourceOntology;providesFunction">
+    			<owl:inverseOf rdf:resource="&EnergyResourceOntology;functionOf"/>
+    		</owl:ObjectProperty>
+
+    		<owl:Class rdf:about="&EnergyResourceOntology;TemperatureRegulationFunctionality">
+                    <owl:equivalentClass>
+            			<owl:Class rdf:about="&EnergyResourceOntology;ThermostatControlFunctionality"/>
+                    </owl:equivalentClass>
+            </owl:Class>
+
+            	 <owl:Class rdf:about="&EnergyResourceOntology;TemperatureController">
+                    <rdfs:label rdf:datatype="&xsd;string">TemperatureController</rdfs:label>
+                    <rdfs:subClassOf rdf:resource="&EnergyResourceOntology;BuildingAutomationSystemResource"/>
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="&EnergyResourceOntology;hasState"/>
+                            <owl:someValuesFrom rdf:resource="&EnergyResourceOntology;TemperatureState"/>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="&EnergyResourceOntology;hasFieldOfApplication"/>
+                            <owl:someValuesFrom rdf:resource="&EnergyResourceOntology;TemperatureFieldOfApplication"/>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="&EnergyResourceOntology;hasFunctionality"/>
+                            <owl:someValuesFrom rdf:resource="&EnergyResourceOntology;TemperatureRegulationFunctionality"/>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+                    <rdfs:comment xml:lang="en">A mechanism that allows automatic opening and closing of a window</rdfs:comment>
+                </owl:Class>
+
     <owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080/building/parts/treitlstrasse">
     <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treitlstrasse</rdfs:label>
     <rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#Building"/>
@@ -17638,6 +17679,7 @@
 <hasCurrentStateValue rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff"/>
 <actuallyProducesEnergy rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOff"/>
 <maxProducesEnergy rdf:resource="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#supplyOff"/>
+<functionOf rdf:resource="http://localhost:8080//networks/e183_1/entities/fan_coil_49550"/>
 </owl:NamedIndividual>
 <owl:NamedIndividual xmlns:owl="http://www.w3.org/2002/07/owl#" rdf:about="http://localhost:8080//networks/e183_1/entities/load_switch_n_510_03_n_510_04">
 <rdf:type rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffLightSwitch"/>

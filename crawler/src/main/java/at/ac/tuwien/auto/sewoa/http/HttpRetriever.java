@@ -10,4 +10,7 @@ public interface HttpRetriever {
     byte [] retrieveData(String url);
 
     byte [] postData(String url, String data);
+
+    byte [] putData(String url, String data);
+
 }

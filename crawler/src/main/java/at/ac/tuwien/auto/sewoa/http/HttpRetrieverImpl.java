@@ -5,6 +5,7 @@ import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
+import org.apache.commons.httpclient.methods.PutMethod;
 import org.apache.commons.httpclient.methods.StringRequestEntity;
 import org.apache.commons.httpclient.params.HttpConnectionManagerParams;
 import org.slf4j.Logger;
@@ -60,6 +61,26 @@ public class HttpRetrieverImpl implements HttpRetriever {
 
         try {
             result = send(httpClient, postMethod);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public byte[] putData(String url, String data) {
+        byte[] result = new byte[]{};
+        HttpClient httpClient = httpClientFactory.createClient();
+        PutMethod putmethod = new PutMethod(url);
+        putmethod.setRequestEntity(new StringRequestEntity(data));
+
+        HttpConnectionManagerParams params = httpClient.getHttpConnectionManager().getParams();
+        params.setConnectionTimeout((int) TimeUnit.SECONDS.toMillis(CONNECTION_TO));
+        params.setSoTimeout((int) TimeUnit.SECONDS.toMillis(SOCKET_TO));
+        putmethod.addRequestHeader("Content-Type", "application/xml");
+        putmethod.addRequestHeader("Accept", "application/xml");
+
+        try {
+            result = send(httpClient, putmethod);
         } catch (Exception e) {
             e.printStackTrace();
         }

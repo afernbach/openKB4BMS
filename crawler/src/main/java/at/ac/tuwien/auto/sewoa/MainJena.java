@@ -1,31 +1,35 @@
 package at.ac.tuwien.auto.sewoa;
 
-import at.ac.tuwien.auto.sewoa.jena.SewoaModelHandler;
-import at.ac.tuwien.auto.sewoa.jena.SewoaModelListener;
+import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
+import at.ac.tuwien.auto.sewoa.obix.ObixUnitParser;
+import at.ac.tuwien.auto.sewoa.obix.jena.ObixIndividual;
+import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler;
+import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelListener;
 import at.ac.tuwien.auto.sewoa.obix.ObixModelConverter;
-import at.ac.tuwien.auto.sewoa.obix.ObixWatcher;
-import com.hp.hpl.jena.ontology.Individual;
+import at.ac.tuwien.auto.sewoa.obix.jena.device.*;
+import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.ontology.OntDocumentManager;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.QuerySolution;
-import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.reasoner.Reasoner;
-import com.hp.hpl.jena.reasoner.ReasonerRegistry;
+import com.hp.hpl.jena.sparql.core.TriplePath;
+import com.hp.hpl.jena.sparql.syntax.ElementPathBlock;
+import com.hp.hpl.jena.sparql.syntax.ElementVisitorBase;
+import com.hp.hpl.jena.sparql.syntax.ElementWalker;
+import com.hp.hpl.jena.update.UpdateAction;
+import com.hp.hpl.jena.update.UpdateFactory;
+import com.hp.hpl.jena.update.UpdateRequest;
 import com.hp.hpl.jena.util.FileManager;
-import com.hp.hpl.jena.util.iterator.ExtendedIterator;
-import com.hp.hpl.jena.vocabulary.ReasonerVocabulary;
-import org.mindswap.pellet.jena.PelletReasoner;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 /**
  * User: pelesic
@@ -35,6 +39,7 @@ import java.io.InputStream;
 public class MainJena {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MainJena.class);
+    private static final String PREFIX = "http://localhost:8080";
 
     public static void main( String[] args )
     {
@@ -44,7 +49,6 @@ public class MainJena {
         s.setDocumentManager( mgr );
         OntModel ontologyModel = ModelFactory.createOntologyModel( s, null );
         ontologyModel.setStrictMode(false);
-        ontologyModel.register(new SewoaModelListener());
 
 
         // use the FileManager to open the ontology from the filesystem
@@ -64,22 +68,43 @@ public class MainJena {
         System.out.println(groupOnt);
         ontologyModel.read(new ByteArrayInputStream(groupOnt.getBytes()), "");
 
-        SewoaModelHandler handler = new SewoaModelHandler("http://localhost:8080", ontologyModel);
+        HashMap<String, ObixIndividual> individuals = new HashMap<String, ObixIndividual>();
 
-        sparqlQuery(ontologyModel);
+        ObixUnitFactory obixUnitFactory = new ObixUnitFactory(PREFIX, new ObixUnitParser());
+
+        ObixSewoaModelHandler handler = new ObixSewoaModelHandler(PREFIX, individuals, ontologyModel, obixUnitFactory);
+        handler.registerHandler(new OnOffSwitchDeviceHandlerImpl());
+        handler.registerHandler(new TempSensorDeviceHandlerImpl());
+        handler.registerHandler(new TempControllerDeviceHandlerImpl());
+        handler.registerHandler(new LightSensorDeviceHandlerImpl());
+        handler.registerHandler(new PresenceSensorDeviceHandlerImpl());
+        handler.init();
+
+        ontologyModel.register(new ObixSewoaModelListener(PREFIX, individuals, handler));
+
+        sparqlQuery("11", ontologyModel);
         while(true){
             try {
-                System.in.read();
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                String input = br.readLine();
+                if (input.contains("1")){
+                    sparqlQuery(input, ontologyModel);
+                } else if (input.contains("2")){
+                    sparqlUpdate(2, ontologyModel);
+                } else if (input.contains("3")){
+                    sparqlUpdate(3, ontologyModel);
+                } else if (input.contains("4")){
+                    sparqlUpdate(4, ontologyModel);
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            sparqlQuery(ontologyModel);
         }
 
 
     }
 
-    private static void sparqlQuery(OntModel model){
+    private static void sparqlQuery(String input, OntModel model){
         String queryStr1 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#>\n" +
                 "SELECT ?location " +
@@ -102,7 +127,20 @@ public class MainJena {
                 "WHERE { "
 //                  +  "?location rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#DistributionBoard> .\n "
                 + "?switch EnergyResourceOntology:hasCurrentStateValue ?type . \n "
-                + "?type rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OffStateValue> . \n "
+                + "?type rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#$state$> . \n "
+                +"}";
+
+        String queryStr1c = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#>\n" +
+                "SELECT ?switch ?value ?unit " +
+                "WHERE { "
+//                  +  "?location rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#DistributionBoard> .\n "
+                + "?switch rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#$sensor$> . \n "
+                + "?switch EnergyResourceOntology:hasCurrentStateValue ?current . \n "
+                + "?current EnergyResourceOntology:realStateValue ?value . \n "
+                + "?current EnergyResourceOntology:hasNativeUnit ?unit . \n "
+                + "?switch EnergyResourceOntology:functionOf ?device . \n "
+                + "?device EnergyResourceOntology:isIn <$location$> . \n "
                 +"}";
 
         String queryStr2 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
@@ -132,17 +170,40 @@ public class MainJena {
                 "  ?entity rdf:type ?type .\n" +
                 "  ?type rdfs:subClassOf <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#OnOffLightSwitch> . \n" +
                 "}";
-        System.out.println(queryStr1b);
+
+        String query = queryStr1b.replace("$state$", "OffStateValue");
+        if (input != null && input.contains("12")){
+            query = queryStr1c.replace("$sensor$", "TemperatureSensor").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links");;
+        } else if (input != null && input.contains("13")){
+            query = queryStr1c.replace("$sensor$", "LightSensor").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/a_lab");
+        } else if (input != null && input.contains("14")){
+            query = queryStr1c.replace("$sensor$", "TemperatureController").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links");
+        } else if (input != null && input.contains("15")){
+            query = queryStr1b.replace("$state$", "NotPresentState");
+        }
+        System.out.println(query);
+
+
         try {
             QueryExecution qe = QueryExecutionFactory.create(
-                    queryStr1b,
+                    query,
                     model);
 //            qe.setTimeout(10000);
 
+//            Set<Node> subjects = getSubjects(qe.getQuery());
 
             for (ResultSet rs = qe.execSelect() ; rs.hasNext() ; ) {
                 QuerySolution binding = rs.nextSolution();
                 System.out.println("switch: " + binding.get("switch"));
+                RDFNode value = binding.get("value");
+                if (value != null && value.isLiteral()){
+                    System.out.println("value: " +value.toString());
+                }
+
+                RDFNode unit = binding.get("unit");
+                if (unit != null && unit.isLiteral()){
+                    System.out.println("unit: " +unit.toString());
+                }
             }
             System.out.println("Query finished!");
         } catch (Exception e) {
@@ -150,5 +211,77 @@ public class MainJena {
             return;
         }
 
+    }
+
+    private static void sparqlUpdate(int onOff, OntModel model){
+        String update1 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#> \n" +
+                "DELETE\n" +
+                " { <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#lamp> EnergyResourceOntology:hasCurrentStateValue <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn> }\n"+
+                "INSERT \n" +
+                " { <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#lamp> EnergyResourceOntology:hasCurrentStateValue <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff> }\n"+
+                " WHERE {}";
+
+        String update2 = "";
+        if (onOff == 2) {
+            update2 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                    "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#> \n" +
+                    "DELETE\n" +
+                    " { <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c/value> EnergyResourceOntology:hasCurrentStateValue <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn> }\n" +
+                    "INSERT \n" +
+                    " { <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c/value> EnergyResourceOntology:hasCurrentStateValue <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff> }\n" +
+                    " WHERE {}";
+        } else if (onOff == 3) {
+            update2 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                    "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#> \n" +
+                    "DELETE\n" +
+                    " { <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c/value> EnergyResourceOntology:hasCurrentStateValue <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOff> }\n" +
+                    "INSERT \n" +
+                    " { <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c/value> EnergyResourceOntology:hasCurrentStateValue <http://localhost:8080/networks/e183_1/entities/load_switch_n_510_03_n_510_04/1/datapoints/switch_channel_c#stateOn> }\n" +
+                    " WHERE {}";
+        } else if (onOff == 4){
+            update2 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                    "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#> \n" +
+                    "DELETE\n" +
+                    " { <http://localhost:8080/networks/e183_1/entities/fan_coil_49550/1/datapoints/base_setpoint_temperature#tempStateValue> EnergyResourceOntology:realStateValue ?v }\n" +
+                    "INSERT \n" +
+                    " { <http://localhost:8080/networks/e183_1/entities/fan_coil_49550/1/datapoints/base_setpoint_temperature#tempStateValue> EnergyResourceOntology:realStateValue \"21.0\" }\n" +
+                    " WHERE { <http://localhost:8080/networks/e183_1/entities/fan_coil_49550/1/datapoints/base_setpoint_temperature#tempStateValue> EnergyResourceOntology:realStateValue ?v  }";
+        }
+
+
+                System.out.println(update2);
+
+
+        try {
+            UpdateRequest updateRequest = UpdateFactory.create(update2);
+            UpdateAction.execute(updateRequest, model);
+            System.out.println("Update finished!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static Set<Node> getSubjects(Query query){
+        // Remember distinct subjects in this
+        final Set<Node> subjects = new HashSet<Node>();
+
+        // This will walk through all parts of the query
+        ElementWalker.walk(query.getQueryPattern(),
+                // For each element...
+                new ElementVisitorBase() {
+                    // ...when it's a block of triples...
+                    public void visit(ElementPathBlock el) {
+                        // ...go through all the triples...
+                        Iterator<TriplePath> triples = el.patternElts();
+                        while (triples.hasNext()) {
+                            // ...and grab the subject
+                            subjects.add(triples.next().getSubject());
+                        }
+                    }
+                }
+        );
+        return subjects;
     }
 }

@@ -14113,23 +14113,60 @@
         <rdf:type rdf:resource="&EnergyResourceOntology;WirelessBuildingAutomationNetwork"/>
     </owl:NamedIndividual>
 
-    <owl:DatatypeProperty rdf:about="&EnergyResourceOntology;webserviceRelativeUrl">
-            <rdfs:label rdf:datatype="&xsd;string">webserviceRelativeUrl</rdfs:label>
-            <rdfs:comment xml:lang="en">The relative url of a web service</rdfs:comment>
-            <rdfs:domain rdf:resource="&EnergyResourceOntology;StateValue"/>
-        </owl:DatatypeProperty>
-
-    	<owl:DatatypeProperty rdf:about="&EnergyResourceOntology;webServicePayload">
-            <rdfs:label rdf:datatype="&xsd;string">webServicePayload</rdfs:label>
-            <rdfs:comment xml:lang="en">The payload of a web service call.</rdfs:comment>
-            <rdfs:domain rdf:resource="&EnergyResourceOntology;StateValue"/>
-        </owl:DatatypeProperty>
-
     	<owl:DatatypeProperty rdf:about="&EnergyResourceOntology;webserviceMethod">
             <rdfs:label rdf:datatype="&xsd;string">webserviceMethod</rdfs:label>
             <rdfs:comment xml:lang="en">The payload of a web service call.</rdfs:comment>
             <rdfs:domain rdf:resource="&EnergyResourceOntology;StateValue"/>
         </owl:DatatypeProperty>
+
+        <owl:ObjectProperty rdf:about="&EnergyResourceOntology;isValueOf">
+            <rdfs:label rdf:datatype="&xsd;string">isValueOf</rdfs:label>
+            <rdfs:comment xml:lang="en">Indicates to which Controllable an instance belongs.</rdfs:comment>
+            <rdfs:domain rdf:resource="&EnergyResourceOntology;StateValue"/>
+            <rdfs:range rdf:resource="&EnergyResourceOntology;Controllable"/>
+        </owl:ObjectProperty>
+
+
+        <owl:ObjectProperty rdf:about="&EnergyResourceOntology;functionOf">
+            <rdfs:label rdf:datatype="&xsd;string">functionOf</rdfs:label>
+            <rdfs:comment xml:lang="en">Indicates different functions provided by a controlled device.</rdfs:comment>
+            <rdfs:domain rdf:resource="&EnergyResourceOntology;BuildingAutomationSystemResource"/>
+            <rdfs:range rdf:resource="&EnergyResourceOntology;Controllable"/>
+        </owl:ObjectProperty>
+
+        <owl:ObjectProperty rdf:about="&EnergyResourceOntology;providesFunction">
+        	<owl:inverseOf rdf:resource="&EnergyResourceOntology;functionOf"/>
+        </owl:ObjectProperty>
+
+        <owl:Class rdf:about="&EnergyResourceOntology;TemperatureRegulationFunctionality">
+            <owl:equivalentClass>
+        		<owl:Class rdf:about="&EnergyResourceOntology;ThermostatControlFunctionality"/>
+            </owl:equivalentClass>
+       	</owl:Class>
+
+         <owl:Class rdf:about="&EnergyResourceOntology;TemperatureController">
+            <rdfs:label rdf:datatype="&xsd;string">TemperatureController</rdfs:label>
+            <rdfs:subClassOf rdf:resource="&EnergyResourceOntology;BuildingAutomationSystemResource"/>
+            <rdfs:subClassOf>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="&EnergyResourceOntology;hasState"/>
+                    <owl:someValuesFrom rdf:resource="&EnergyResourceOntology;TemperatureState"/>
+                </owl:Restriction>
+            </rdfs:subClassOf>
+            <rdfs:subClassOf>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="&EnergyResourceOntology;hasFieldOfApplication"/>
+                    <owl:someValuesFrom rdf:resource="&EnergyResourceOntology;TemperatureFieldOfApplication"/>
+                </owl:Restriction>
+            </rdfs:subClassOf>
+            <rdfs:subClassOf>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="&EnergyResourceOntology;hasFunctionality"/>
+                    <owl:someValuesFrom rdf:resource="&EnergyResourceOntology;TemperatureRegulationFunctionality"/>
+                </owl:Restriction>
+            </rdfs:subClassOf>
+            <rdfs:comment xml:lang="en">A mechanism that allows controlling a temperature.</rdfs:comment>
+        </owl:Class>
 
 
     <!-- 

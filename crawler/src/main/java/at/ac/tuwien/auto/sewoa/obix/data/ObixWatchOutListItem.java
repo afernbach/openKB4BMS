@@ -9,6 +9,7 @@ public class ObixWatchOutListItem {
     private String href;
     private String val;
     private String displayName;
+    private String unit;
     private boolean writable;
 
     public String getType() {
@@ -41,6 +42,14 @@ public class ObixWatchOutListItem {
 
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public boolean isWritable() {
