@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.0.1267.10507" xmlns="http://knx.org/xml/project/12">
+  <ManufacturerData>
+    <Manufacturer RefId="M-0050">
+      <Hardware>
+        <Hardware Id="M-0050_H-FC.200001-1" Name="FAN COIL 49550" SerialNumber="FC 0001" VersionNumber="1" BusCurrent="5.0000000e+000" IsAccessory="0" HasIndividualAddress="1" HasApplicationProgram="1" HasApplicationProgram2="0" IsPowerSupply="0" IsChoke="0" IsCoupler="0" IsPowerLineRepeater="0" IsPowerLineSignalFilter="0" IsCable="0" NonRegRelevantDataVersion="0" IsIPEnabled="0">
+          <Products>
+            <Product Id="M-0050_H-FC.200001-1_P-49550" Text="FAN COIL 49550" OrderNumber="49550" IsRailMounted="1" WidthInMillimeter="1.0500000e+002" DefaultLanguage="de-DE" Hash="MMEGBShLxLsR9vjpTs+LDiGTmJI=" NonRegRelevantDataVersion="0">
+              <RegistrationInfo RegistrationStatus="Registered" RegistrationSignature="k3EMs5ufSpApBHXB17y35XiVsEmcHWJrF4sGCodkaoaiRc3d7wyckTzcjVBC/qaphuvWFyaFS6QHWXYwawK388nGMFI7SZq0F89aRFfs7A4z5oq8mYJbaPNpoGyPZpmC3UkYcqxaEG8Bz+8lxD63/dKEhwS8jQAgi5q9Fp+RFTI=" />
+            </Product>
+          </Products>
+          <Hardware2Programs>
+            <Hardware2Program Id="M-0050_H-FC.200001-1_HP-0001-11-DC72" MediumTypes="MT-0" Hash="gZ611Oo97JBQgBetyOL/DqYDe88=">
+              <ApplicationProgramRef RefId="M-0050_A-0001-11-DC72" />
+              <RegistrationInfo RegistrationSignature="lF4qvnZByJwAA1/R7qtp71XTQYX+6yjCbUP9DklC3eUFNKil78fGcr0tSup220FlieokjTyH68irGvVH4dG2HPEBdWpLo1FDAjrYY+rxvK2UwXTx/XeWWsRAS95GFMAObk5FBf/K4mlsEOnLVNRS+WIhgAUvHykkrVi5EY/kROY=" OriginalRegistrationNumber="1900/0" RegistrationNumber="2004/6466" RegistrationStatus="Registered" />
+            </Hardware2Program>
+          </Hardware2Programs>
+        </Hardware>
+      </Hardware>
+      <Languages>
+        <Language Identifier="de-DE">
+          <TranslationUnit RefId="M-0050_H-FC.200001-1_P-49550">
+            <TranslationElement RefId="M-0050_H-FC.200001-1_P-49550">
+              <Translation AttributeName="Text" Text="FAN COIL 49550" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="en-US">
+          <TranslationUnit RefId="M-0050_H-FC.200001-1_P-49550">
+            <TranslationElement RefId="M-0050_H-FC.200001-1_P-49550">
+              <Translation AttributeName="Text" Text="FAN COIL 49550" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="it-IT">
+          <TranslationUnit RefId="M-0050_H-FC.200001-1_P-49550">
+            <TranslationElement RefId="M-0050_H-FC.200001-1_P-49550">
+              <Translation AttributeName="Text" Text="FAN COIL 49550" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+      </Languages>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>

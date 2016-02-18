@@ -1,25 +1,37 @@
+/*
+ *     openKB4BMS is an open source knowledge base (KB) acting as a
+ *     building management application.
+ *
+ *     Copyright (C) 2016
+ *     Institute of Computer Aided Automation, Automation Systems Group, TU Wien.
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
 package at.ac.tuwien.auto.sewoa.obix;
 
 import at.ac.tuwien.auto.sewoa.http.HttpRetriever;
 import at.ac.tuwien.auto.sewoa.http.HttpRetrieverImpl;
-import at.ac.tuwien.auto.sewoa.jena.SewoaModelHandler;
-import at.ac.tuwien.auto.sewoa.obix.data.ObixOperation;
+import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatch;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOut;
-import at.ac.tuwien.auto.sewoa.xml.XMLParser;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.logging.XMLFormatter;
 
-/**
- * Created by karinigor on 06.12.2015.
- */
 public class ObixWatcher {
 
     public static final String ADD_TEMPLATE =
@@ -38,9 +50,9 @@ public class ObixWatcher {
     private ObixWatchParser parser;
     private ObixWatch obixWatch;
     private List<String> instances;
-    private SewoaModelHandler handler;
+    private ObixSewoaModelHandler handler;
 
-    public ObixWatcher(String url, SewoaModelHandler handler){
+    public ObixWatcher(String url, ObixSewoaModelHandler handler){
         this.baseURL = url;
         instances = new ArrayList<String>();
         this.httpRetriever = new HttpRetrieverImpl();

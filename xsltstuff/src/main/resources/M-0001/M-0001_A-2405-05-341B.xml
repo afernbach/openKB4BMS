@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.0.1267.10507" xmlns="http://knx.org/xml/project/12">
+  <ManufacturerData>
+    <Manufacturer RefId="M-0001">
+      <ApplicationPrograms>
+        <ApplicationProgram Id="M-0001_A-2405-05-341B" Name="12 S4 BinCycl   240505" ApplicationNumber="9221" ApplicationVersion="5" ProgramType="ApplicationProgram" MaskVersion="MV-0012" VisibleDescription="Description - see file:   240505_apb_e.pdf" LoadProcedureStyle="DefaultProcedure" PeiType="2" HelpFile="" DefaultLanguage="en-US" DynamicTableManagement="1" Linkable="1" PreEts4Style="1" NonRegRelevantDataVersion="0" Hash="NKZugZf2wNKKMERPaDuLGw==" ConvertedFromPreEts4Data="1" Broken="0" IPConfig="Tool" AdditionalAddressesCount="0" DownloadInfoIncomplete="0" CreatedFromLegacySchemaVersion="0">
+          <Static>
+            <Code>
+              <AbsoluteSegment Id="M-0001_A-2405-05-341B_AS-0100" Address="256" Size="256" UserMemory="0">
+                <Data>/wAAAAEkBQX/AgAAAADgY2g1VnGAfgH//xAA//////////////////////////////////8EAQABAQECAQMFAAYABwAIAAkACgALAAwADQAOAA8AEAAE0NLXANPXANTXANXXAD09PT3bZmYAJSUlJX+m4LcLxgEYqkG337fagWhPzQ3PtlCuFM0MdbdUpgTNDWwm6rZbzQydAlBWvlsB2gm2VAzaAUNEadbWAWS3WebWAFQGJig0WSACJyKoAefW2AFkpQInBObSqAEFWQSkAefSCVkd1gFs59ufzQ25tlvNDWwmDb5b5tJE1gFkJAFIK+M0VDxbEAwFW5k/2oGDAA==</Data>
+                <Mask>/wAAAP////////////////////////8AAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w==</Mask>
+              </AbsoluteSegment>
+            </Code>
+            <ParameterTypes>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244" Name="t_configDes$4" Plugin="" InternalDescription="Telegrammratenbegrenzung">
+                <TypeRestriction Base="Value" SizeInBit="1">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244_EN-0" DisplayOrder="1" Text="enabled" Value="0" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244_EN-1" DisplayOrder="2" Text="disabled" Value="1" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FdebTime" Name="t_debTime" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-20" DisplayOrder="1" Text="10  milliseconds" Value="20" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-60" DisplayOrder="2" Text="30 milliseconds" Value="60" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-100" DisplayOrder="3" Text="50 milliseconds" Value="100" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-200" DisplayOrder="4" Text="100 milliseconds" Value="200" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FFlanke" Name="t_Flanke" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="4">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-13" DisplayOrder="1" Text="rising On, falling Off" Value="13" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-12" DisplayOrder="2" Text="rising Off, falling On" Value="12" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-5" DisplayOrder="3" Text="rising On" Value="5" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-8" DisplayOrder="4" Text="falling On" Value="8" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-4" DisplayOrder="5" Text="rising Off" Value="4" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-9" DisplayOrder="6" Text="falling Off" Value="9" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-6" DisplayOrder="7" Text="rising Toggle" Value="6" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-10" DisplayOrder="8" Text="falling Toggle" Value="10" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-14" DisplayOrder="9" Text="rising Toggle, falling Toggle" Value="14" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-0" DisplayOrder="10" Text="no evaluation" Value="0" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FSend" Name="t_Send" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="2">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FSend_EN-1" DisplayOrder="1" Text="rising edge" Value="1" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FSend_EN-2" DisplayOrder="2" Text="falling edge" Value="2" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FSend_EN-3" DisplayOrder="3" Text="rising and falling edge" Value="3" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FSend_EN-0" DisplayOrder="4" Text="no sending" Value="0" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FStart" Name="t_Start" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="16">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FStart_EN-43585" DisplayOrder="1" Text="Yes" Value="43585" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FStart_EN-42501" DisplayOrder="2" Text="No" Value="42501" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FtelRate" Name="t_telRate" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-30" DisplayOrder="1" Text="30 telegrams per 17 sec" Value="30" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-60" DisplayOrder="2" Text="60 telegrams per 17 sec" Value="60" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-100" DisplayOrder="3" Text="100 telegrams per 17 sec" Value="100" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-127" DisplayOrder="4" Text="127 telegrams per 17 sec" Value="127" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis" Name="t_userTimerBasis" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="4">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-0" DisplayOrder="1" Text="Time base 130 ms" Value="0" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-1" DisplayOrder="2" Text="Time base 260 ms" Value="1" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-2" DisplayOrder="3" Text="Time base 520 ms" Value="2" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-3" DisplayOrder="4" Text="Time base 1.0 sec" Value="3" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-4" DisplayOrder="5" Text="Time base 2.1 sec" Value="4" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-5" DisplayOrder="6" Text="Time base 4.2 sec" Value="5" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-6" DisplayOrder="7" Text="Time base 8.4 sec" Value="6" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-7" DisplayOrder="8" Text="Time base 17 sec" Value="7" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-8" DisplayOrder="9" Text="Time base 34 sec" Value="8" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-9" DisplayOrder="10" Text="Time base 1.1 min" Value="9" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-10" DisplayOrder="11" Text="Time base 2.2 min" Value="10" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-11" DisplayOrder="12" Text="Time base 4.5 min" Value="11" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-12" DisplayOrder="13" Text="Time base 9.0 min" Value="12" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-13" DisplayOrder="14" Text="Time base 18 min" Value="13" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-14" DisplayOrder="15" Text="Time base 35 min" Value="14" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-15" DisplayOrder="16" Text="Time base 1.2 hr" Value="15" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd" Name="t_Zy_Snd" Plugin="">
+                <TypeRestriction Base="Value" SizeInBit="2">
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-0" DisplayOrder="1" Text="no cyclical sending" Value="0" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-1" DisplayOrder="2" Text="On" Value="1" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-2" DisplayOrder="3" Text="Off" Value="2" />
+                  <Enumeration Id="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-3" DisplayOrder="4" Text="On and Off" Value="3" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="M-0001_A-2405-05-341B_PT-t.5FTM.5Ffaktor" Name="t_TM_faktor" Plugin="">
+                <TypeNumber maxInclusive="127" minInclusive="5" SizeInBit="8" Type="unsignedInt" />
+              </ParameterType>
+            </ParameterTypes>
+            <Parameters>
+              <Parameter Id="M-0001_A-2405-05-341B_P-10" Name="TM_Bs_AB.BasisL" Text="Base for cyclical sending" ParameterType="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis" Access="ReadWrite" Value="6" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="105" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-11" Name="TM_Val_A" Text="Factor for cyclical sending (5-127)" ParameterType="M-0001_A-2405-05-341B_PT-t.5FTM.5Ffaktor" Access="ReadWrite" Value="37" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="108" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-13" Name="keyMode_B.Flanke" Text="Edge evaluation" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="ReadWrite" Value="13" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="101" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-14" Name="keyMode_B.Send" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" ParameterType="M-0001_A-2405-05-341B_PT-t.5FSend" Access="ReadWrite" Value="3" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="2" Offset="101" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-15" Name="keyMode_B.Zy_Snd" Text="Behaviour on sending: cyclical sending on" ParameterType="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd" Access="ReadWrite" Value="0" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="101" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-16" Name="TM_Bs_AB.BasisH" Text="Base for cyclical sending" ParameterType="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis" Access="ReadWrite" Value="6" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="105" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-17" Name="TM_Val_B" Text="Factor for cyclical sending (5-127)" ParameterType="M-0001_A-2405-05-341B_PT-t.5FTM.5Ffaktor" Access="ReadWrite" Value="37" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="109" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-19" Name="keyMode_C.Flanke" Text="Edge evaluation" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="ReadWrite" Value="13" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="102" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-2" Name="debTime" Text="Debounce time" ParameterType="M-0001_A-2405-05-341B_PT-t.5FdebTime" Access="ReadWrite" Value="20" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="135" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-20" Name="keyMode_C.Send" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" ParameterType="M-0001_A-2405-05-341B_PT-t.5FSend" Access="ReadWrite" Value="3" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="2" Offset="102" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-21" Name="keyMode_C.Zy_Snd" Text="Behaviour on sending: cyclical sending on" ParameterType="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd" Access="ReadWrite" Value="0" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="102" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-22" Name="TM_Bs_CD.BasisL" Text="Base for cyclical sending" ParameterType="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis" Access="ReadWrite" Value="6" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="106" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-23" Name="TM_Val_C" Text="Factor for cyclical sending (5-127)" ParameterType="M-0001_A-2405-05-341B_PT-t.5FTM.5Ffaktor" Access="ReadWrite" Value="37" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="110" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-25" Name="keyMode_D.Flanke" Text="Edge evaluation" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="ReadWrite" Value="13" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="103" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-26" Name="keyMode_D.Send" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" ParameterType="M-0001_A-2405-05-341B_PT-t.5FSend" Access="ReadWrite" Value="3" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="2" Offset="103" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-27" Name="keyMode_D.Zy_Snd" Text="Behaviour on sending: cyclical sending on" ParameterType="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd" Access="ReadWrite" Value="0" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="103" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-28" Name="TM_Bs_CD.BasisH" Text="Base for cyclical sending" ParameterType="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis" Access="ReadWrite" Value="6" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="106" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-29" Name="TM_Val_D" Text="Factor for cyclical sending (5-127)" ParameterType="M-0001_A-2405-05-341B_PT-t.5FTM.5Ffaktor" Access="ReadWrite" Value="37" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="111" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-3" Name="Start" Text="Send starting value on bus voltage &#xD;&#xA;recovery (dep. on edge evaluation)" ParameterType="M-0001_A-2405-05-341B_PT-t.5FStart" Access="ReadWrite" Value="43585" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="120" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-4" Name="configDes.telLim" Text="Limit number of telegrams" ParameterType="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244" Access="ReadWrite" Value="1" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="16" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-5" Name="telRate" Text="Limit number of telegrams" ParameterType="M-0001_A-2405-05-341B_PT-t.5FtelRate" Access="ReadWrite" Value="127" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="112" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-7" Name="keyMode_A.Flanke" Text="Edge evaluation" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="ReadWrite" Value="13" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="4" Offset="100" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-8" Name="keyMode_A.Send" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" ParameterType="M-0001_A-2405-05-341B_PT-t.5FSend" Access="ReadWrite" Value="3" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="2" Offset="100" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-9" Name="keyMode_A.Zy_Snd" Text="Behaviour on sending: cyclical sending on" ParameterType="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd" Access="ReadWrite" Value="0" LegacyPatchAlways="0">
+                <Memory CodeSegment="M-0001_A-2405-05-341B_AS-0100" BitOffset="0" Offset="100" />
+              </Parameter>
+              <Parameter Id="M-0001_A-2405-05-341B_P-1" Name="Allgemein" Text="General" ParameterType="M-0001_A-2405-05-341B_PT-t.5FdebTime" Access="Read" Value="20" LegacyPatchAlways="0" />
+              <Parameter Id="M-0001_A-2405-05-341B_P-6" Name="Eingang A" Text="Input A" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="Read" Value="13" LegacyPatchAlways="0" />
+              <Parameter Id="M-0001_A-2405-05-341B_P-12" Name="Eingang B" Text="Input B" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="Read" Value="13" LegacyPatchAlways="0" />
+              <Parameter Id="M-0001_A-2405-05-341B_P-18" Name="Eingang C" Text="Input C" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="Read" Value="13" LegacyPatchAlways="0" />
+              <Parameter Id="M-0001_A-2405-05-341B_P-24" Name="Eingang D" Text="Input D" ParameterType="M-0001_A-2405-05-341B_PT-t.5FFlanke" Access="Read" Value="13" LegacyPatchAlways="0" />
+            </Parameters>
+            <ParameterRefs>
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-1_R-1" DisplayOrder="100" RefId="M-0001_A-2405-05-341B_P-1" Tag="1" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-2_R-2" DisplayOrder="200" RefId="M-0001_A-2405-05-341B_P-2" Tag="2" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-3_R-3" DisplayOrder="300" RefId="M-0001_A-2405-05-341B_P-3" Tag="3" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-4_R-4" DisplayOrder="400" RefId="M-0001_A-2405-05-341B_P-4" Tag="4" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-5_R-5" DisplayOrder="500" RefId="M-0001_A-2405-05-341B_P-5" Tag="5" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-6_R-6" DisplayOrder="600" RefId="M-0001_A-2405-05-341B_P-6" Tag="6" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-7_R-7" DisplayOrder="700" RefId="M-0001_A-2405-05-341B_P-7" Tag="7" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-8_R-8" DisplayOrder="800" RefId="M-0001_A-2405-05-341B_P-8" Tag="8" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-9_R-9" DisplayOrder="900" RefId="M-0001_A-2405-05-341B_P-9" Tag="9" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-10_R-10" DisplayOrder="1000" RefId="M-0001_A-2405-05-341B_P-10" Tag="10" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-11_R-11" DisplayOrder="1100" RefId="M-0001_A-2405-05-341B_P-11" Tag="11" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-12_R-12" DisplayOrder="1200" RefId="M-0001_A-2405-05-341B_P-12" Tag="12" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-13_R-13" DisplayOrder="1300" RefId="M-0001_A-2405-05-341B_P-13" Tag="13" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-14_R-14" DisplayOrder="1400" RefId="M-0001_A-2405-05-341B_P-14" Tag="14" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-15_R-15" DisplayOrder="1500" RefId="M-0001_A-2405-05-341B_P-15" Tag="15" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-16_R-16" DisplayOrder="1600" RefId="M-0001_A-2405-05-341B_P-16" Tag="16" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-17_R-17" DisplayOrder="1700" RefId="M-0001_A-2405-05-341B_P-17" Tag="17" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-18_R-18" DisplayOrder="1800" RefId="M-0001_A-2405-05-341B_P-18" Tag="18" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-19_R-19" DisplayOrder="1900" RefId="M-0001_A-2405-05-341B_P-19" Tag="19" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-20_R-20" DisplayOrder="2000" RefId="M-0001_A-2405-05-341B_P-20" Tag="20" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-21_R-21" DisplayOrder="2100" RefId="M-0001_A-2405-05-341B_P-21" Tag="21" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-22_R-22" DisplayOrder="2200" RefId="M-0001_A-2405-05-341B_P-22" Tag="22" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-23_R-23" DisplayOrder="2300" RefId="M-0001_A-2405-05-341B_P-23" Tag="23" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-24_R-24" DisplayOrder="2400" RefId="M-0001_A-2405-05-341B_P-24" Tag="24" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-25_R-25" DisplayOrder="2500" RefId="M-0001_A-2405-05-341B_P-25" Tag="25" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-26_R-26" DisplayOrder="2600" RefId="M-0001_A-2405-05-341B_P-26" Tag="26" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-27_R-27" DisplayOrder="2700" RefId="M-0001_A-2405-05-341B_P-27" Tag="27" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-28_R-28" DisplayOrder="2800" RefId="M-0001_A-2405-05-341B_P-28" Tag="28" />
+              <ParameterRef Id="M-0001_A-2405-05-341B_P-29_R-29" DisplayOrder="2900" RefId="M-0001_A-2405-05-341B_P-29" Tag="29" />
+            </ParameterRefs>
+            <ComObjectTable CodeSegment="M-0001_A-2405-05-341B_AS-0100" Offset="86">
+              <ComObject Id="M-0001_A-2405-05-341B_O-0" FunctionText="On / Off / Toggle" Name="Eingang A" Number="0" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Disabled" WriteFlag="Enabled" Text="Input A" />
+              <ComObject Id="M-0001_A-2405-05-341B_O-1" FunctionText="On / Off / Toggle" Name="Eingang B" Number="1" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Disabled" WriteFlag="Enabled" Text="Input B" />
+              <ComObject Id="M-0001_A-2405-05-341B_O-2" FunctionText="On / Off / Toggle" Name="Eingang C" Number="2" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Disabled" WriteFlag="Enabled" Text="Input C" />
+              <ComObject Id="M-0001_A-2405-05-341B_O-3" FunctionText="On / Off / Toggle" Name="Eingang D" Number="3" ObjectSize="1 Bit" Priority="Low" CommunicationFlag="Enabled" ReadFlag="Disabled" ReadOnInitFlag="Disabled" TransmitFlag="Enabled" UpdateFlag="Disabled" WriteFlag="Enabled" Text="Input D" />
+            </ComObjectTable>
+            <ComObjectRefs>
+              <ComObjectRef Id="M-0001_A-2405-05-341B_O-0_R-0" RefId="M-0001_A-2405-05-341B_O-0" Tag="0" />
+              <ComObjectRef Id="M-0001_A-2405-05-341B_O-1_R-1" RefId="M-0001_A-2405-05-341B_O-1" Tag="1" />
+              <ComObjectRef Id="M-0001_A-2405-05-341B_O-2_R-2" RefId="M-0001_A-2405-05-341B_O-2" Tag="2" />
+              <ComObjectRef Id="M-0001_A-2405-05-341B_O-3_R-3" RefId="M-0001_A-2405-05-341B_O-3" Tag="3" />
+            </ComObjectRefs>
+            <AddressTable CodeSegment="M-0001_A-2405-05-341B_AS-0100" Offset="22" MaxEntries="14" />
+            <AssociationTable CodeSegment="M-0001_A-2405-05-341B_AS-0100" Offset="53" MaxEntries="16" />
+            <FixupList>
+              <Fixup FunctionRef="MV-0012_ME-U.5Fdebounce" CodeSegment="M-0001_A-2405-05-341B_AS-0100">
+                <Offset>137</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0012_ME-U.5FflagsGet" CodeSegment="M-0001_A-2405-05-341B_AS-0100">
+                <Offset>151</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0012_ME-U.5FGetTMx" CodeSegment="M-0001_A-2405-05-341B_AS-0100">
+                <Offset>144</Offset>
+                <Offset>225</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0012_ME-U.5FioAST" CodeSegment="M-0001_A-2405-05-341B_AS-0100">
+                <Offset>130</Offset>
+              </Fixup>
+              <Fixup FunctionRef="MV-0012_ME-U.5FtransRequest" CodeSegment="M-0001_A-2405-05-341B_AS-0100">
+                <Offset>220</Offset>
+              </Fixup>
+            </FixupList>
+            <Extension RequiresExternalSoftware="0" />
+            <Options PreferPartialDownloadIfApplicationLoaded="0" EasyCtrlModeModeStyleEmptyGroupComTables="0" SetObjectTableLengthAlwaysToOne="0" TextParameterEncoding="iso-8859-1" TextParameterZeroTerminate="0" ParameterByteOrder="BigEndian" LegacyNoPartialDownload="1" LegacyNoMemoryVerifyMode="0" LegacyNoOptimisticWrite="0" LegacyDoNotReportPropertyWriteErrors="0" LegacyNoBackgroundDownload="0" LegacyDoNotCheckManufacturerId="0" LegacyAlwaysReloadAppIfCoVisibilityChanged="0" LegacyNeverReloadAppIfCoVisibilityChanged="0" LegacyDoNotSupportUndoDelete="0" LegacyAllowPartialDownloadIfAp2Mismatch="0" LegacyKeepObjectTableGaps="0" PartialDownloadOnlyVisibleParameters="0" LegacyProxyCommunicationObjects="0" DeviceInfoIgnoreRunState="0" DeviceInfoIgnoreLoadedState="0" DeviceCompareAllowCompatibleManufacturerId="0" LineCoupler0912NewProgrammingStyle="0" Comparable="0" Reconstructable="0" DownloadInvisibleParameters="Background" />
+          </Static>
+          <Dynamic>
+            <Channel Name="Generic" Text="" Number="0" Id="M-0001_A-2405-05-341B_CH-0">
+              <ComObjectRefRef RefId="M-0001_A-2405-05-341B_O-0_R-0" />
+              <ComObjectRefRef RefId="M-0001_A-2405-05-341B_O-1_R-1" />
+              <ComObjectRefRef RefId="M-0001_A-2405-05-341B_O-2_R-2" />
+              <ComObjectRefRef RefId="M-0001_A-2405-05-341B_O-3_R-3" />
+              <ParameterBlock Id="M-0001_A-2405-05-341B_PB-1" Name="Allgemein" Access="Read" ParamRefId="M-0001_A-2405-05-341B_P-1_R-1">
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-2_R-2" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-3_R-3" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-4_R-4" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-5_R-5" />
+              </ParameterBlock>
+              <ParameterBlock Id="M-0001_A-2405-05-341B_PB-6" Name="Eingang A" Access="Read" ParamRefId="M-0001_A-2405-05-341B_P-6_R-6">
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-7_R-7" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-8_R-8" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-9_R-9" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-10_R-10" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-11_R-11" />
+              </ParameterBlock>
+              <ParameterBlock Id="M-0001_A-2405-05-341B_PB-12" Name="Eingang B" Access="Read" ParamRefId="M-0001_A-2405-05-341B_P-12_R-12">
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-13_R-13" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-14_R-14" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-15_R-15" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-16_R-16" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-17_R-17" />
+              </ParameterBlock>
+              <ParameterBlock Id="M-0001_A-2405-05-341B_PB-18" Name="Eingang C" Access="Read" ParamRefId="M-0001_A-2405-05-341B_P-18_R-18">
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-19_R-19" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-20_R-20" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-21_R-21" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-22_R-22" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-23_R-23" />
+              </ParameterBlock>
+              <ParameterBlock Id="M-0001_A-2405-05-341B_PB-24" Name="Eingang D" Access="Read" ParamRefId="M-0001_A-2405-05-341B_P-24_R-24">
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-25_R-25" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-26_R-26" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-27_R-27" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-28_R-28" />
+                <ParameterRefRef RefId="M-0001_A-2405-05-341B_P-29_R-29" />
+              </ParameterBlock>
+            </Channel>
+          </Dynamic>
+        </ApplicationProgram>
+      </ApplicationPrograms>
+      <Languages>
+        <Language Identifier="de-DE">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="Name" Text="12 S4 BinärZy   240505" />
+              <Translation AttributeName="VisibleDescription" Text="Beschreibung  - siehe Datei:  240505_apb.pdf" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-0">
+              <Translation AttributeName="Text" Text="Eingang A" />
+              <Translation AttributeName="FunctionText" Text="Ein / Aus / Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-1">
+              <Translation AttributeName="Text" Text="Eingang B" />
+              <Translation AttributeName="FunctionText" Text="Ein / Aus / Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-2">
+              <Translation AttributeName="Text" Text="Eingang C" />
+              <Translation AttributeName="FunctionText" Text="Ein / Aus / Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-3">
+              <Translation AttributeName="Text" Text="Eingang D" />
+              <Translation AttributeName="FunctionText" Text="Ein / Aus / Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-1">
+              <Translation AttributeName="Text" Text="Allgemein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-6">
+              <Translation AttributeName="Text" Text="Eingang A" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-12">
+              <Translation AttributeName="Text" Text="Eingang B" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-18">
+              <Translation AttributeName="Text" Text="Eingang C" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-24">
+              <Translation AttributeName="Text" Text="Eingang D" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-4">
+              <Translation AttributeName="Text" Text="Telegrammratenbegrenzung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-13">
+              <Translation AttributeName="Text" Text="Flankenauswertung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-14">
+              <Translation AttributeName="Text" Text="Sendebedingung: bei Änderung am Eingang&#xD;&#xA;oder Busspannungswiederkehr senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-15">
+              <Translation AttributeName="Text" Text="Sendeverhalten: zyklisches Senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-20">
+              <Translation AttributeName="Text" Text="Sendebedingung: bei Änderung am Eingang&#xD;&#xA;oder Busspannungswiederkehr senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-21">
+              <Translation AttributeName="Text" Text="Sendeverhalten: zyklisches Senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-7">
+              <Translation AttributeName="Text" Text="Flankenauswertung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-8">
+              <Translation AttributeName="Text" Text="Sendebedingung: bei Änderung am Eingang&#xD;&#xA;oder Busspannungswiederkehr senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-9">
+              <Translation AttributeName="Text" Text="Sendeverhalten: zyklisches Senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-10">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-11">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Faktor (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-16">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-17">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Faktor (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-19">
+              <Translation AttributeName="Text" Text="Flankenauswertung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-2">
+              <Translation AttributeName="Text" Text="Entprellzeit" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-22">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-23">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Faktor (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-25">
+              <Translation AttributeName="Text" Text="Flankenauswertung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-26">
+              <Translation AttributeName="Text" Text="Sendebedingung: bei Änderung am Eingang&#xD;&#xA;oder Busspannungswiederkehr senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-6">
+              <Translation AttributeName="Text" Text="Zeitbasis 8,4 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-7">
+              <Translation AttributeName="Text" Text="Zeitbasis 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-8">
+              <Translation AttributeName="Text" Text="Zeitbasis 34 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-9">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-10">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-11">
+              <Translation AttributeName="Text" Text="Zeitbasis 4,5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-12">
+              <Translation AttributeName="Text" Text="Zeitbasis 9,0 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-13">
+              <Translation AttributeName="Text" Text="Zeitbasis 18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-14">
+              <Translation AttributeName="Text" Text="Zeitbasis 35 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-15">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,2 std" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-0">
+              <Translation AttributeName="Text" Text="kein zyklisches Senden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-1">
+              <Translation AttributeName="Text" Text="Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-2">
+              <Translation AttributeName="Text" Text="Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-3">
+              <Translation AttributeName="Text" Text="Ein und Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-27">
+              <Translation AttributeName="Text" Text="Sendeverhalten: zyklisches Senden bei" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-28">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Basis" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-29">
+              <Translation AttributeName="Text" Text="Zyklisches Senden Faktor (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-3">
+              <Translation AttributeName="Text" Text="Startwert senden bei Busspannungswieder-&#xD;&#xA;kehr (abh. von Flankenauswertung)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-5">
+              <Translation AttributeName="Text" Text="Telegrammratenbegrenzung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244_EN-0">
+              <Translation AttributeName="Text" Text="freigegeben" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244_EN-1">
+              <Translation AttributeName="Text" Text="gesperrt" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-20">
+              <Translation AttributeName="Text" Text="10  Millisekunden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-60">
+              <Translation AttributeName="Text" Text="30 Millisekunden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-100">
+              <Translation AttributeName="Text" Text="50 Millisekunden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-200">
+              <Translation AttributeName="Text" Text="100 Millisekunden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-13">
+              <Translation AttributeName="Text" Text="steigend Ein, fallend Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-12">
+              <Translation AttributeName="Text" Text="steigend Aus, fallend Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-5">
+              <Translation AttributeName="Text" Text="steigend Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-8">
+              <Translation AttributeName="Text" Text="fallend Ein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-4">
+              <Translation AttributeName="Text" Text="steigend Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-9">
+              <Translation AttributeName="Text" Text="fallend Aus" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-6">
+              <Translation AttributeName="Text" Text="steigend Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-10">
+              <Translation AttributeName="Text" Text="fallend Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-14">
+              <Translation AttributeName="Text" Text="steigend Um, fallend Um" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-0">
+              <Translation AttributeName="Text" Text="keine Auswertung" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-1">
+              <Translation AttributeName="Text" Text="steigender Flanke" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-2">
+              <Translation AttributeName="Text" Text="fallender Flanke" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-3">
+              <Translation AttributeName="Text" Text="steigender &amp; fallender Flanke" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-0">
+              <Translation AttributeName="Text" Text="kein Senden" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FStart_EN-43585">
+              <Translation AttributeName="Text" Text="Ja" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FStart_EN-42501">
+              <Translation AttributeName="Text" Text="Nein" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-30">
+              <Translation AttributeName="Text" Text="30 Telegramme pro 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-60">
+              <Translation AttributeName="Text" Text="60 Telegramme pro 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-100">
+              <Translation AttributeName="Text" Text="100 Telegramme pro 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-127">
+              <Translation AttributeName="Text" Text="127 Telegramme pro 17 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-0">
+              <Translation AttributeName="Text" Text="Zeitbasis 130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-1">
+              <Translation AttributeName="Text" Text="Zeitbasis 260 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-2">
+              <Translation AttributeName="Text" Text="Zeitbasis 520 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-3">
+              <Translation AttributeName="Text" Text="Zeitbasis 1,0 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-4">
+              <Translation AttributeName="Text" Text="Zeitbasis 2,1 sek" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-5">
+              <Translation AttributeName="Text" Text="Zeitbasis 4,2 sek" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="en-US">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="Name" Text="12 S4 BinCycl   240505" />
+              <Translation AttributeName="VisibleDescription" Text="Description - see file:   240505_apb_e.pdf" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-0">
+              <Translation AttributeName="Text" Text="Input A" />
+              <Translation AttributeName="FunctionText" Text="On / Off / Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-1">
+              <Translation AttributeName="Text" Text="Input B" />
+              <Translation AttributeName="FunctionText" Text="On / Off / Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-2">
+              <Translation AttributeName="Text" Text="Input C" />
+              <Translation AttributeName="FunctionText" Text="On / Off / Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_O-3">
+              <Translation AttributeName="Text" Text="Input D" />
+              <Translation AttributeName="FunctionText" Text="On / Off / Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-1">
+              <Translation AttributeName="Text" Text="General" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-6">
+              <Translation AttributeName="Text" Text="Input A" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-12">
+              <Translation AttributeName="Text" Text="Input B" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-18">
+              <Translation AttributeName="Text" Text="Input C" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-24">
+              <Translation AttributeName="Text" Text="Input D" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-4">
+              <Translation AttributeName="Text" Text="Limit number of telegrams" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-13">
+              <Translation AttributeName="Text" Text="Edge evaluation" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-14">
+              <Translation AttributeName="Text" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-15">
+              <Translation AttributeName="Text" Text="Behaviour on sending: cyclical sending on" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-20">
+              <Translation AttributeName="Text" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-21">
+              <Translation AttributeName="Text" Text="Behaviour on sending: cyclical sending on" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-7">
+              <Translation AttributeName="Text" Text="Edge evaluation" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-8">
+              <Translation AttributeName="Text" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-9">
+              <Translation AttributeName="Text" Text="Behaviour on sending: cyclical sending on" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-10">
+              <Translation AttributeName="Text" Text="Base for cyclical sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-11">
+              <Translation AttributeName="Text" Text="Factor for cyclical sending (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-16">
+              <Translation AttributeName="Text" Text="Base for cyclical sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-17">
+              <Translation AttributeName="Text" Text="Factor for cyclical sending (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-19">
+              <Translation AttributeName="Text" Text="Edge evaluation" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-2">
+              <Translation AttributeName="Text" Text="Debounce time" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-22">
+              <Translation AttributeName="Text" Text="Base for cyclical sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-23">
+              <Translation AttributeName="Text" Text="Factor for cyclical sending (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-25">
+              <Translation AttributeName="Text" Text="Edge evaluation" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-26">
+              <Translation AttributeName="Text" Text="Send condition: send on change at input&#xD;&#xA;or on bus voltage recovery" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-5">
+              <Translation AttributeName="Text" Text="Time base 4.2 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-6">
+              <Translation AttributeName="Text" Text="Time base 8.4 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-7">
+              <Translation AttributeName="Text" Text="Time base 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-8">
+              <Translation AttributeName="Text" Text="Time base 34 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-9">
+              <Translation AttributeName="Text" Text="Time base 1.1 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-10">
+              <Translation AttributeName="Text" Text="Time base 2.2 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-11">
+              <Translation AttributeName="Text" Text="Time base 4.5 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-12">
+              <Translation AttributeName="Text" Text="Time base 9.0 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-13">
+              <Translation AttributeName="Text" Text="Time base 18 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-14">
+              <Translation AttributeName="Text" Text="Time base 35 min" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-15">
+              <Translation AttributeName="Text" Text="Time base 1.2 hr" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-0">
+              <Translation AttributeName="Text" Text="no cyclical sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-1">
+              <Translation AttributeName="Text" Text="On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-2">
+              <Translation AttributeName="Text" Text="Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FZy.5FSnd_EN-3">
+              <Translation AttributeName="Text" Text="On and Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-27">
+              <Translation AttributeName="Text" Text="Behaviour on sending: cyclical sending on" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-28">
+              <Translation AttributeName="Text" Text="Base for cyclical sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-29">
+              <Translation AttributeName="Text" Text="Factor for cyclical sending (5-127)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-3">
+              <Translation AttributeName="Text" Text="Send starting value on bus voltage &#xD;&#xA;recovery (dep. on edge evaluation)" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_P-5">
+              <Translation AttributeName="Text" Text="Limit number of telegrams" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244_EN-0">
+              <Translation AttributeName="Text" Text="enabled" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FconfigDes.244_EN-1">
+              <Translation AttributeName="Text" Text="disabled" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-20">
+              <Translation AttributeName="Text" Text="10  milliseconds" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-60">
+              <Translation AttributeName="Text" Text="30 milliseconds" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-100">
+              <Translation AttributeName="Text" Text="50 milliseconds" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FdebTime_EN-200">
+              <Translation AttributeName="Text" Text="100 milliseconds" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-13">
+              <Translation AttributeName="Text" Text="rising On, falling Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-12">
+              <Translation AttributeName="Text" Text="rising Off, falling On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-5">
+              <Translation AttributeName="Text" Text="rising On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-8">
+              <Translation AttributeName="Text" Text="falling On" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-4">
+              <Translation AttributeName="Text" Text="rising Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-9">
+              <Translation AttributeName="Text" Text="falling Off" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-6">
+              <Translation AttributeName="Text" Text="rising Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-10">
+              <Translation AttributeName="Text" Text="falling Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-14">
+              <Translation AttributeName="Text" Text="rising Toggle, falling Toggle" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FFlanke_EN-0">
+              <Translation AttributeName="Text" Text="no evaluation" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-1">
+              <Translation AttributeName="Text" Text="rising edge" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-2">
+              <Translation AttributeName="Text" Text="falling edge" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-3">
+              <Translation AttributeName="Text" Text="rising and falling edge" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FSend_EN-0">
+              <Translation AttributeName="Text" Text="no sending" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FStart_EN-43585">
+              <Translation AttributeName="Text" Text="Yes" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FStart_EN-42501">
+              <Translation AttributeName="Text" Text="No" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-30">
+              <Translation AttributeName="Text" Text="30 telegrams per 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-60">
+              <Translation AttributeName="Text" Text="60 telegrams per 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-100">
+              <Translation AttributeName="Text" Text="100 telegrams per 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FtelRate_EN-127">
+              <Translation AttributeName="Text" Text="127 telegrams per 17 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-0">
+              <Translation AttributeName="Text" Text="Time base 130 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-1">
+              <Translation AttributeName="Text" Text="Time base 260 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-2">
+              <Translation AttributeName="Text" Text="Time base 520 ms" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-3">
+              <Translation AttributeName="Text" Text="Time base 1.0 sec" />
+            </TranslationElement>
+            <TranslationElement RefId="M-0001_A-2405-05-341B_PT-t.5FuserTimerBasis_EN-4">
+              <Translation AttributeName="Text" Text="Time base 2.1 sec" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="es-ES">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="VisibleDescription" Text="Descripción - ver fichero:   240505_apb_es.pdf" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="fr-FR">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="id-ID">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="it-IT">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="nb-NO">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+        <Language Identifier="sv-SE">
+          <TranslationUnit RefId="M-0001_A-2405-05-341B">
+            <TranslationElement RefId="M-0001_A-2405-05-341B">
+              <Translation AttributeName="VisibleDescription" Text="&#xD;&#xA;" />
+            </TranslationElement>
+          </TranslationUnit>
+        </Language>
+      </Languages>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>
