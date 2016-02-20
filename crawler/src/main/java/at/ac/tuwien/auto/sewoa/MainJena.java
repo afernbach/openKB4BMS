@@ -99,6 +99,7 @@ public class MainJena {
         handler.registerHandler(new TempControllerDeviceHandlerImpl());
         handler.registerHandler(new LightSensorDeviceHandlerImpl());
         handler.registerHandler(new PresenceSensorDeviceHandlerImpl());
+        handler.registerHandler(new Co2SensorDeviceHandler());
         handler.init();
 
         ontologyModel.register(new ObixSewoaModelListener(PREFIX, individuals, handler));

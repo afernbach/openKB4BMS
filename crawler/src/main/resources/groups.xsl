@@ -1013,7 +1013,132 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- co2 -->
+    <xsl:template match="obj[contains(@href,'/sewoa_geraete/groups/co2') and@is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'co2')">
+                <xsl:call-template name="co2StateValue">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="co2State">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="co2Sensor">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
 
+
+    <!--  <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1CO2Sensor1StateValue">
+        <rdf:type rdf:resource="&EnergyResourceOntology;CO2StateValue"/>
+        <realStateValue rdf:datatype="&xsd;double">1253.4</realStateValue>
+        <hasNativeUnit rdf:datatype="&xsd;string">PPM</hasNativeUnit>
+    </owl:NamedIndividual> -->
+
+    <xsl:template name="co2StateValue">
+        <xsl:param name="value"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '#co2StateValue')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;CO2StateValue</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:realStateValue">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;double</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">0.0</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasNativeUnit">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">PPM</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:isValueOf">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '/value')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:webservicePayload">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">&lt;![CDATA[ </xsl:text>
+                <xsl:text disable-output-escaping="yes">&lt;real name="value" href="value/" val="$value" unit="/units/ppm"/&gt; </xsl:text>
+                <xsl:text disable-output-escaping="yes">]]&gt; </xsl:text>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
+    <!--  <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1CO2Sensor1State">
+        <rdf:type rdf:resource="&EnergyResourceOntology;CO2State"/>
+        <hasStateValue rdf:resource="&EnergyResourceOntology;LivingRoom1CO2Sensor1StateValue"/>
+    </owl:NamedIndividual> -->
+
+    <xsl:template name="co2State">
+        <xsl:param name="value"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '#co2State')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;CO2State</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasStateValue">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '#co2StateValue')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
+    <!--
+         <owl:NamedIndividual rdf:about="&EnergyResourceOntology;LivingRoom1CO2Sensor1">
+        <rdf:type rdf:resource="&EnergyResourceOntology;CO2Sensor"/>
+        <isIn rdf:resource="&EnergyResourceOntology;LivingRoom1"/>
+        <isSensorOf rdf:resource="&EnergyResourceOntology;LivingRoom1"/>
+        <hasState rdf:resource="&EnergyResourceOntology;LivingRoom1CO2Sensor1State"/>
+        <hasCurrentStateValue rdf:resource="&EnergyResourceOntology;LivingRoom1CO2Sensor1StateValue"/>
+    </owl:NamedIndividual>
+
+        -->
+
+    <xsl:template name="co2Sensor">
+        <xsl:param name="value"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '/value')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;CO2Sensor</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasState">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '#co2State')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasCurrentStateValue">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '#co2StateValue')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:functionOf">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="substring-before($value, '/1/datapoints')"/>
+                </xsl:attribute>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
 
 
 
