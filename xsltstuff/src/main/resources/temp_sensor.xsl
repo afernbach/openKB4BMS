@@ -1163,6 +1163,138 @@
         </xsl:for-each>
     </xsl:template>
 
+    <!-- humidity -->
+    <xsl:template match="obj[contains(@href,'/sewoa_geraete/groups/relfeuchte') and @is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'rel_feuchte')">
+                <xsl:call-template name="humidityStateValue">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="humidityState">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="humiditySensor">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+
+
+    <!-- <owl:NamedIndividual rdf:about="&EnergyResourceOntology;OutdoorHumiditySensor1StateValue">
+        <rdf:type rdf:resource="&EnergyResourceOntology;HumidityStateValue"/>
+        <realStateValue rdf:datatype="&xsd;float">82.2</realStateValue>
+        <hasNativeUnit rdf:datatype="&xsd;string">percent</hasNativeUnit>
+    </owl:NamedIndividual>
+
+    -->
+
+    <xsl:template name="humidityStateValue">
+        <xsl:param name="value"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '#humidityStateValue')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;HumidityStateValue</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:realStateValue">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;double</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">0.0</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasNativeUnit">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">percent</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:isValueOf">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '/value')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:webservicePayload">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">&lt;![CDATA[ </xsl:text>
+                <xsl:text disable-output-escaping="yes">&lt;real name="value" href="value/" val="$value" unit="/units/percent"/&gt; </xsl:text>
+                <xsl:text disable-output-escaping="yes">]]&gt; </xsl:text>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- <owl:NamedIndividual rdf:about="&EnergyResourceOntology;OutdoorHumiditySensor1State">
+        <rdf:type rdf:resource="&EnergyResourceOntology;HumidityState"/>
+        <hasStateValue rdf:resource="&EnergyResourceOntology;OutdoorHumiditySensor1StateValue"/>
+    </owl:NamedIndividual> -->
+
+    <xsl:template name="humidityState">
+        <xsl:param name="value"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '#humidityState')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;HumidityState</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasStateValue">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '#humidityStateValue')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
+    <!--
+        <owl:NamedIndividual rdf:about="&EnergyResourceOntology;OutdoorHumiditySensor1">
+        <rdf:type rdf:resource="&EnergyResourceOntology;HumiditySensor"/>
+        <isSensorOf rdf:resource="&EnergyResourceOntology;Exterior"/>
+        <isIn rdf:resource="&EnergyResourceOntology;Exterior"/>
+        <hasFieldOfApplication rdf:resource="&EnergyResourceOntology;HumiditySensorElectricalFOA"/>
+        <hasFieldOfApplication rdf:resource="&EnergyResourceOntology;HumiditySensorHumidityFOA"/>
+        <hasState rdf:resource="&EnergyResourceOntology;OutdoorHumiditySensor1State"/>
+        <hasCurrentStateValue rdf:resource="&EnergyResourceOntology;OutdoorHumiditySensor1StateValue"/>
+    </owl:NamedIndividual>
+    -->
+    <xsl:template name="humiditySensor">
+        <xsl:param name="value"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '/value')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;HumiditySensor</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasState">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '#humidityState')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasCurrentStateValue">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($value, '#humidityStateValue')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:functionOf">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="substring-before($value, '/1/datapoints')"/>
+                </xsl:attribute>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
+
+
 
 
 </xsl:stylesheet>

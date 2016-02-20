@@ -27,7 +27,8 @@ public enum DeviceType {
     TEMP_CONTROL("TemperatureController"),
     LIGHT_SENSOR("LightSensor"),
     PRESENCE_SENSOR("PresenceSensor"),
-    CO2_SENSOR("CO2Sensor");
+    CO2_SENSOR("CO2Sensor"),
+    HUMIDITY_SENSOR("HumiditySensor");
 
     private String type;
 
