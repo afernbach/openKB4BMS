@@ -1140,6 +1140,29 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- temperature from co2 -->
+    <xsl:template match="obj[contains(@href,'/sewoa_geraete/groups/temperatur') and@is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'temperatur')">
+                <xsl:call-template name="tempStateValue">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="tempState">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="tempSensor">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
 
 
 </xsl:stylesheet>

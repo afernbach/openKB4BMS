@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~     openKB4BMS is an open source knowledge base (KB) acting as a
+  ~     building management application.
+  ~
+  ~     Copyright (C) 2016
+  ~     Institute of Computer Aided Automation, Automation Systems Group, TU Wien.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>
+  -->
+
 <!DOCTYPE rdf:RDF [
         <!ENTITY EnergyResourceOntology "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#" >
         <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -1117,6 +1138,29 @@
                 </xsl:attribute>
             </xsl:element>
         </xsl:element>
+    </xsl:template>
+
+    <!-- temperature from co2 -->
+    <xsl:template match="obj[contains(@href,'/sewoa_geraete/groups/temperatur') and@is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'temperatur')">
+                <xsl:call-template name="tempStateValue">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="tempState">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="tempSensor">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 
 
