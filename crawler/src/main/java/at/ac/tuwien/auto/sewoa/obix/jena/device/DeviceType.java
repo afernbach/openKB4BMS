@@ -30,6 +30,7 @@ public enum DeviceType {
     CO2_SENSOR("CO2Sensor"),
     HUMIDITY_SENSOR("HumiditySensor"),
     LOAD_CURRENT_STATE("LoadCurrentStateValue"),
+    SWITCHING_CYCLES_STATE("SwitchingCyclesStateValue"),
     OPERATING_HOURS_STATE("OperatingHoursStateValue");
 
     private String type;

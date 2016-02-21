@@ -3,10 +3,10 @@ package at.ac.tuwien.auto.sewoa.obix.jena.device;
 /**
  * Created by igorpelesic on 21.02.2016.
  */
-public class OperatingHoursStateDeviceHandlerImpl extends LoadCurrentStateDeviceHandlerImpl {
+public class SwitchingCyclesStateDeviceHandlerImpl extends LoadCurrentStateDeviceHandlerImpl {
 
     @Override
     public DeviceType getDeviceType() {
-        return DeviceType.SWITCHING_CYCLES_STATE;
+        return DeviceType.OPERATING_HOURS_STATE;
     }
 }
