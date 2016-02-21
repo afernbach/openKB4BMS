@@ -28,7 +28,8 @@ public enum DeviceType {
     LIGHT_SENSOR("LightSensor"),
     PRESENCE_SENSOR("PresenceSensor"),
     CO2_SENSOR("CO2Sensor"),
-    HUMIDITY_SENSOR("HumiditySensor");
+    HUMIDITY_SENSOR("HumiditySensor"),
+    LOAD_CURRENT_STATE("LoadCurrentStateValue");
 
     private String type;
 

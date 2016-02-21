@@ -14169,6 +14169,57 @@
         </owl:Class>
 
 
+        	<owl:Class rdf:about="&EnergyResourceOntology;LoadCurrentStateValue">
+                <rdfs:subClassOf rdf:resource="&EnergyResourceOntology;ContinuousValue"/>
+            </owl:Class>
+
+        	<owl:ObjectProperty rdf:about="&EnergyResourceOntology;hasLoadCurrentStateValue">
+                    <rdfs:label rdf:datatype="&xsd;string">hasLoadCurrentStateValue</rdfs:label>
+                    <rdfs:comment xml:lang="en">Indicates the actual load current.</rdfs:comment>
+                    <rdfs:range rdf:resource="&EnergyResourceOntology;LoadCurrentStateValue"/>
+                    <rdfs:domain rdf:resource="&EnergyResourceOntology;Switch"/>
+            </owl:ObjectProperty>
+
+        	<owl:ObjectProperty rdf:about="&EnergyResourceOntology;isLoadCurrentStateValueOf">
+                	<owl:inverseOf rdf:resource="&EnergyResourceOntology;hasLoadCurrentStateValue"/>
+            </owl:ObjectProperty>
+
+
+
+        	<owl:Class rdf:about="&EnergyResourceOntology;OperatingHoursStateValue">
+                <rdfs:subClassOf rdf:resource="&EnergyResourceOntology;ContinuousValue"/>
+            </owl:Class>
+
+        	<owl:ObjectProperty rdf:about="&EnergyResourceOntology;hasOperatingHoursStateValue">
+                    <rdfs:label rdf:datatype="&xsd;string">hasOperatingHoursStateValue</rdfs:label>
+                    <rdfs:comment xml:lang="en">Indicates for how long the switch has been running.</rdfs:comment>
+                    <rdfs:range rdf:resource="&EnergyResourceOntology;OperatingHoursStateValue"/>
+                    <rdfs:domain rdf:resource="&EnergyResourceOntology;Switch"/>
+            </owl:ObjectProperty>
+
+        	<owl:ObjectProperty rdf:about="&EnergyResourceOntology;isOperationgHoursStateValueOf">
+                	<owl:inverseOf rdf:resource="&EnergyResourceOntology;hasOperatingHoursStateValue"/>
+            </owl:ObjectProperty>
+
+
+
+        	<owl:Class rdf:about="&EnergyResourceOntology;SwitchingCyclesStateValue">
+                <rdfs:subClassOf rdf:resource="&EnergyResourceOntology;ContinuousValue"/>
+            </owl:Class>
+
+        	<owl:ObjectProperty rdf:about="&EnergyResourceOntology;hasSwitchingCyclesStateValue">
+                    <rdfs:label rdf:datatype="&xsd;string">hasSwitchingCyclesStateValue</rdfs:label>
+                    <rdfs:comment xml:lang="en">Indicates how many switching cycles have been performed.</rdfs:comment>
+                    <rdfs:range rdf:resource="&EnergyResourceOntology;SwitchingCyclesStateValue"/>
+                    <rdfs:domain rdf:resource="&EnergyResourceOntology;Switch"/>
+            </owl:ObjectProperty>
+
+        	<owl:ObjectProperty rdf:about="&EnergyResourceOntology;isSwitchingCyclesStateValueOf">
+                	<owl:inverseOf rdf:resource="&EnergyResourceOntology;hasSwitchingCyclesStateValue"/>
+            </owl:ObjectProperty>
+
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

@@ -1293,6 +1293,144 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- advanced switch -->
+    <xsl:template match="obj[contains(@href,'/schaltaktor_n562_a1_schalten') and@is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'a_1_schalten')">
+                <xsl:call-template name="demand">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="off">
+                        <xsl:text>On</xsl:text>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="demand">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="off">
+                        <xsl:text>Off</xsl:text>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="command">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="off">
+                        <xsl:text>Off</xsl:text>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="command">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="off">
+                        <xsl:text>On</xsl:text>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="supply">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="state">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="off">
+                        <xsl:text>Off</xsl:text>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="state">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="off">
+                        <xsl:text>On</xsl:text>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="stateOnOff">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="funcOnOff">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="lamp">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="switch">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+
+    <!-- load current -->
+    <xsl:template match="obj[contains(@href,'/sewoa_geraete/groups/schaltaktor_n562_a1_laststrom') and @is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'a_1_laststrom_messwert')">
+                <xsl:call-template name="loadCurrentStateValue">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="switch">
+                        <xsl:value-of select="substring-before(concat($prefix, ref/@href), '/1/datapoints')"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+
+
+    <xsl:template name="loadCurrentStateValue">
+        <xsl:param name="value"/>
+        <xsl:param name="switch"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '/value')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;LoadCurrentStateValue</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:realStateValue">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;double</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">0.0</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasNativeUnit">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">mA</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:isLoadCurrentStateValueOf">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($switch, '#lightswitch')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:webservicePayload">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">&lt;![CDATA[ </xsl:text>
+                <xsl:text disable-output-escaping="yes">&lt;int name="value" href="value/" val="$value" /&gt; </xsl:text>
+                <xsl:text disable-output-escaping="yes">]]&gt; </xsl:text>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
 
 
 
