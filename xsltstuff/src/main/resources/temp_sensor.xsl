@@ -1431,6 +1431,62 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- operating hours -->
+    <xsl:template match="obj[contains(@href,'/sewoa_geraete/groups/schaltaktor_n562_a1_betriebsstunden') and @is='knx:Group']">
+        <xsl:for-each select="list/obj[@is='knx:InstanceGroup']">
+            <xsl:if test="contains(ref/@href, 'a_1_betriebsstunden')">
+                <xsl:call-template name="operatingHoursStateValue">
+                    <xsl:with-param name="value">
+                        <xsl:value-of select="concat($prefix, ref/@href)"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="switch">
+                        <xsl:value-of select="substring-before(concat($prefix, ref/@href), '/1/datapoints')"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+
+
+    <xsl:template name="operatingHoursStateValue">
+        <xsl:param name="value"/>
+        <xsl:param name="switch"/>
+        <xsl:element name="owl:NamedIndividual">
+            <xsl:attribute name="rdf:about">
+                <xsl:value-of select="concat($value, '/value')"/>
+            </xsl:attribute>
+            <xsl:element name="rdf:type">
+                <xsl:attribute name="rdf:resource">&EnergyResourceOntology;OperatingHoursStateValue</xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:realStateValue">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;double</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">0.0</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:hasNativeUnit">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">hours</xsl:text>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:isOperationgHoursStateValueOf">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="concat($switch, '#lightswitch')"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="EnergyResourceOntology:webservicePayload">
+                <xsl:attribute name="rdf:datatype"><xsl:text
+                        disable-output-escaping="yes">&xsd;string</xsl:text>
+                </xsl:attribute>
+                <xsl:text disable-output-escaping="yes">&lt;![CDATA[ </xsl:text>
+                <xsl:text disable-output-escaping="yes">&lt;int name="value" href="value/" val="$value" /&gt; </xsl:text>
+                <xsl:text disable-output-escaping="yes">]]&gt; </xsl:text>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
 
 
 
