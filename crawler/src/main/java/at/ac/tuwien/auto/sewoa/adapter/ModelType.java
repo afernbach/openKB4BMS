@@ -19,21 +19,27 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena.device;
+package at.ac.tuwien.auto.sewoa.adapter;
 
-import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
-import at.ac.tuwien.auto.sewoa.obix.ObixWatcher;
-import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOutListItem;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixIndividual;
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.rdf.model.Statement;
+public enum ModelType {
+    ON_OFF_SWITCH("OnOffLightSwitch"),
+    TEMP_SENSOR("TemperatureSensor"),
+    TEMP_CONTROL("TemperatureController"),
+    LIGHT_SENSOR("LightSensor"),
+    PRESENCE_SENSOR("PresenceSensor"),
+    CO2_SENSOR("CO2Sensor"),
+    HUMIDITY_SENSOR("HumiditySensor"),
+    LOAD_CURRENT_STATE("LoadCurrentStateValue"),
+    SWITCHING_CYCLES_STATE("SwitchingCyclesStateValue"),
+    OPERATING_HOURS_STATE("OperatingHoursStateValue");
 
-import java.util.HashMap;
+    private String type;
 
-public interface ObixDeviceHandler {
+    ModelType(String type) {
+        this.type = type;
+    }
 
-    DeviceType getDeviceType();
-    void init(String prefix, HashMap<String, ObixIndividual> individuals, OntModel model, ObixWatcher watcher, ObixUnitFactory obixUnitFactory);
-    void updateModel(ObixWatchOutListItem item, ObixIndividual individual);
-    void updateObix(Statement statement);
+    public String getType() {
+        return type;
+    }
 }

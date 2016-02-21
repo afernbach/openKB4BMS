@@ -19,15 +19,12 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena.device;
+package at.ac.tuwien.auto.sewoa.adapter;
 
-import at.ac.tuwien.auto.sewoa.http.HttpRetrieverImpl;
 import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
 import at.ac.tuwien.auto.sewoa.obix.ObixWatcher;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOutListItem;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixIndividual;
-import static at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler.BASE_ONTOLOGY_URL;
-
+import at.ac.tuwien.auto.sewoa.obix.model.ObixIndividual;
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.*;
@@ -35,47 +32,43 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 import java.util.HashMap;
 
-public class OnOffSwitchDeviceHandlerImpl implements ObixDeviceHandler {
+import static at.ac.tuwien.auto.sewoa.obix.model.ObixOwlModelHandler.BASE_ONTOLOGY_URL;
 
+public class PresenceSensorModelAdapterImpl implements ObixModelAdapter {
+    private String prefix;
     private HashMap<String, ObixIndividual> individuals;
     private OntModel model;
-    private String prefix;
-    private Property hasControlProperty;
     private Property hasStateProperty;
     private Property hasStateValueProperty;
     private Property webservicePayloadProperty;
     private Property currentStateValueProperty;
 
-    public DeviceType getDeviceType() {
-        return DeviceType.ON_OFF_SWITCH;
+
+    public ModelType getModelType() {
+        return ModelType.PRESENCE_SENSOR;
     }
 
-    public void init(String prefix, HashMap<String, ObixIndividual> individuals, OntModel model, ObixWatcher obixWatcher, ObixUnitFactory obixUnitFactory) {
+    public void init(String prefix, HashMap<String, ObixIndividual> individuals, OntModel model, ObixWatcher watcher, ObixUnitFactory obixUnitFactory) {
+
         this.prefix = prefix;
         this.individuals = individuals;
         this.model = model;
 
-        Resource switchClass = ResourceFactory.createResource(BASE_ONTOLOGY_URL + getDeviceType().getType());
-        Property controlledObjectProperty = model.getProperty(BASE_ONTOLOGY_URL + "controlledObject");
+        Resource sensorClass = ResourceFactory.createResource(BASE_ONTOLOGY_URL + getModelType().getType());
 
-        this.hasControlProperty = model.getProperty(BASE_ONTOLOGY_URL + "hasControl");
         this.hasStateProperty = model.getProperty(BASE_ONTOLOGY_URL + "hasState");
         this.hasStateValueProperty = model.getProperty(BASE_ONTOLOGY_URL + "hasStateValue");
         this.webservicePayloadProperty = model.getProperty(BASE_ONTOLOGY_URL + "webservicePayload");
         this.currentStateValueProperty = model.getProperty(BASE_ONTOLOGY_URL + "hasCurrentStateValue");
 
 
-        ExtendedIterator<Individual> individualExtendedIterator = model.listIndividuals(switchClass);
+        ExtendedIterator<Individual> individualExtendedIterator = model.listIndividuals(sensorClass);
         while(individualExtendedIterator.hasNext()){
             Individual next = individualExtendedIterator.next();
-            Statement property = next.getProperty(controlledObjectProperty);
-            RDFNode object = property.getObject();
-            Individual individual = model.getIndividual(object.toString());
-            individuals.put(object.toString().replace(prefix, ""), new ObixIndividual(individual, getDeviceType()));
-            obixWatcher.addInstance(object.toString());
-            System.out.println("added individual: " + individual);
+            individuals.put(next.toString().replace(prefix, ""), new ObixIndividual(next, getModelType()));
+            watcher.addInstance(next.toString());
+            System.out.println("added individual: " + next);
         }
-
     }
 
     public void updateModel(ObixWatchOutListItem item, ObixIndividual obixIndividual) {
@@ -96,31 +89,11 @@ public class OnOffSwitchDeviceHandlerImpl implements ObixDeviceHandler {
 //                    System.out.println("removed1: " +  currentStateControlled.getObject().toString());
                 individual.addProperty(currentStateValueProperty, stateValueInd);
 //                    System.out.println("added1: " + stateValueInd.toString());
-
-                if (individual.hasProperty(hasControlProperty)) {
-                    Statement hasControl = individual.getProperty(hasControlProperty);
-                    RDFNode object1 = hasControl.getObject();
-                    Individual controllingInd = model.getIndividual(object1.toString());
-
-                    Statement currentState = controllingInd.getProperty(currentStateValueProperty);
-                    controllingInd.removeProperty(currentStateValueProperty, currentState.getObject());
-//                        System.out.println("removed2: " +  currentState.getObject().toString());
-                    controllingInd.addProperty(currentStateValueProperty, stateValueInd);
-//                        System.out.println("added2: " + stateValueInd.toString());
-                }
             }
         }
     }
 
     public void updateObix(Statement statement) {
-        Individual stateInd = model.getIndividual(statement.getObject().toString());
-        Statement webService = stateInd.getProperty(this.webservicePayloadProperty);
-        if (webService != null){
-            RDFNode webServiceValue = webService.getObject();
-            System.out.println("url:" + statement.getSubject().toString() + " payload: " + webServiceValue.asLiteral().getString());
-            new HttpRetrieverImpl().putData(statement.getSubject().toString(), webServiceValue.asLiteral().getString());
-        } else {
-            System.out.println("Change not relevant for Obix!");
-        }
+
     }
 }

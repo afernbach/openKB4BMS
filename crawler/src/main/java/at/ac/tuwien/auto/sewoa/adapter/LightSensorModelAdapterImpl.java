@@ -19,12 +19,12 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena.device;
+package at.ac.tuwien.auto.sewoa.adapter;
 
-public class LightSensorDeviceHandlerImpl extends TempSensorDeviceHandlerImpl {
+public class LightSensorModelAdapterImpl extends TempSensorModelAdapterImpl {
 
 
-    public DeviceType getDeviceType() {
-        return DeviceType.LIGHT_SENSOR;
+    public ModelType getModelType() {
+        return ModelType.LIGHT_SENSOR;
     }
 }

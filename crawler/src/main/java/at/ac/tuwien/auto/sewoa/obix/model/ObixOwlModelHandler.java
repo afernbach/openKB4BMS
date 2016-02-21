@@ -19,20 +19,20 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena;
+package at.ac.tuwien.auto.sewoa.obix.model;
 
 import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
 import at.ac.tuwien.auto.sewoa.obix.ObixWatcher;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOut;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOutListItem;
-import at.ac.tuwien.auto.sewoa.obix.jena.device.DeviceType;
-import at.ac.tuwien.auto.sewoa.obix.jena.device.ObixDeviceHandler;
+import at.ac.tuwien.auto.sewoa.adapter.ModelType;
+import at.ac.tuwien.auto.sewoa.adapter.ObixModelAdapter;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.*;
 
 import java.util.HashMap;
 
-public class ObixSewoaModelHandler {
+public class ObixOwlModelHandler {
 
     public static final String BASE_ONTOLOGY_URL = "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#";
     private final String prefix;
@@ -41,23 +41,23 @@ public class ObixSewoaModelHandler {
     private HashMap<String, ObixIndividual> individuals;
     private ObixWatcher obixWatcher;
     private ObixUnitFactory obixUnitFactory;
-    private HashMap<DeviceType, ObixDeviceHandler> deviceHandlerMap = new HashMap<DeviceType, ObixDeviceHandler>();
+    private HashMap<ModelType, ObixModelAdapter> adapterMap = new HashMap<ModelType, ObixModelAdapter>();
 
-    public ObixSewoaModelHandler(String prefix, HashMap<String, ObixIndividual> individuals, OntModel model, ObixUnitFactory obixUnitFactory) {
+    public ObixOwlModelHandler(String prefix, HashMap<String, ObixIndividual> individuals, OntModel model, ObixUnitFactory obixUnitFactory) {
         this.prefix = prefix;
         this.individuals = individuals;
         this.model = model;
         this.obixUnitFactory = obixUnitFactory;
     }
 
-    public void registerHandler(ObixDeviceHandler deviceHandler){
-        this.deviceHandlerMap.put(deviceHandler.getDeviceType(), deviceHandler);
+    public void registerAdapter(ObixModelAdapter modelAdapter){
+        this.adapterMap.put(modelAdapter.getModelType(), modelAdapter);
     }
 
     public void init(){
         this.obixWatcher = new ObixWatcher(this.prefix, this);
-        for (ObixDeviceHandler handler : deviceHandlerMap.values()){
-            handler.init(prefix,individuals, model, obixWatcher, obixUnitFactory);
+        for (ObixModelAdapter adapter : adapterMap.values()){
+            adapter.init(prefix,individuals, model, obixWatcher, obixUnitFactory);
         }
     }
 
@@ -67,7 +67,7 @@ public class ObixSewoaModelHandler {
             try {
                 obixIndividual.getSemaphore().acquire();
                 obixIndividual.setObixUpdateRequired(false);
-                deviceHandlerMap.get(obixIndividual.getDeviceType()).updateModel(item, obixIndividual);
+                adapterMap.get(obixIndividual.getModelType()).updateModel(item, obixIndividual);
                 obixIndividual.setObixUpdateRequired(true);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -78,6 +78,6 @@ public class ObixSewoaModelHandler {
     }
 
     public void updateObix(Statement statement, ObixIndividual individual) {
-        deviceHandlerMap.get(individual.getDeviceType()).updateObix(statement);
+        adapterMap.get(individual.getModelType()).updateObix(statement);
     }
 }

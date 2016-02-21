@@ -21,13 +21,14 @@
 
 package at.ac.tuwien.auto.sewoa;
 
+import at.ac.tuwien.auto.sewoa.filter.SewoaObixUpdateFilterImpl;
 import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
 import at.ac.tuwien.auto.sewoa.obix.ObixUnitParser;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixIndividual;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelListener;
+import at.ac.tuwien.auto.sewoa.obix.model.ObixIndividual;
+import at.ac.tuwien.auto.sewoa.obix.model.ObixOwlModelHandler;
+import at.ac.tuwien.auto.sewoa.obix.model.ObixOwlModelListener;
 import at.ac.tuwien.auto.sewoa.obix.ObixModelConverter;
-import at.ac.tuwien.auto.sewoa.obix.jena.device.*;
+import at.ac.tuwien.auto.sewoa.adapter.*;
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.ontology.OntDocumentManager;
 import com.hp.hpl.jena.ontology.OntModel;
@@ -93,20 +94,21 @@ public class MainJena {
 
         ObixUnitFactory obixUnitFactory = new ObixUnitFactory(PREFIX, new ObixUnitParser());
 
-        ObixSewoaModelHandler handler = new ObixSewoaModelHandler(PREFIX, individuals, ontologyModel, obixUnitFactory);
-        handler.registerHandler(new OnOffSwitchDeviceHandlerImpl());
-        handler.registerHandler(new TempSensorDeviceHandlerImpl());
-        handler.registerHandler(new TempControllerDeviceHandlerImpl());
-        handler.registerHandler(new LightSensorDeviceHandlerImpl());
-        handler.registerHandler(new PresenceSensorDeviceHandlerImpl());
-        handler.registerHandler(new Co2SensorDeviceHandlerImpl());
-        handler.registerHandler(new HumiditySensorDeviceHandlerImpl());
-        handler.registerHandler(new LoadCurrentStateDeviceHandlerImpl());
-        handler.registerHandler(new OperatingHoursStateDeviceHandlerImpl());
-        handler.registerHandler(new SwitchingCyclesStateDeviceHandlerImpl());
+        ObixOwlModelHandler handler = new ObixOwlModelHandler(PREFIX, individuals, ontologyModel, obixUnitFactory);
+        handler.registerAdapter(new OnOffSwitchModelAdapterImpl());
+        handler.registerAdapter(new TempSensorModelAdapterImpl());
+        handler.registerAdapter(new TempControllerModelAdapterImpl());
+        handler.registerAdapter(new LightSensorModelAdapterImpl());
+        handler.registerAdapter(new PresenceSensorModelAdapterImpl());
+        handler.registerAdapter(new Co2SensorModelAdapterImpl());
+        handler.registerAdapter(new HumiditySensorModelAdapterImpl());
+        handler.registerAdapter(new LoadCurrentStateModelAdapterImpl());
+        handler.registerAdapter(new OperatingHoursStateModelAdapterImpl());
+        handler.registerAdapter(new SwitchingCyclesStateModelAdapterImpl());
         handler.init();
 
-        ontologyModel.register(new ObixSewoaModelListener(PREFIX, individuals, handler));
+        SewoaObixUpdateFilterImpl sewoaObixUpdateFilter = new SewoaObixUpdateFilterImpl(PREFIX);
+        ontologyModel.register(new ObixOwlModelListener(sewoaObixUpdateFilter, individuals, handler));
 
         sparqlQuery("11", ontologyModel);
         while(true){

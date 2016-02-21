@@ -19,24 +19,24 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena;
+package at.ac.tuwien.auto.sewoa.obix.model;
 
-import at.ac.tuwien.auto.sewoa.obix.jena.device.DeviceType;
+import at.ac.tuwien.auto.sewoa.adapter.ModelType;
 import com.hp.hpl.jena.ontology.Individual;
 
 import java.util.concurrent.Semaphore;
 
 public class ObixIndividual {
 
-    private DeviceType deviceType;
+    private ModelType modelType;
     private boolean obixUpdateRequired;
     private Individual individual;
 
     private Semaphore semaphore;
 
-    public ObixIndividual(Individual individual, DeviceType deviceType) {
+    public ObixIndividual(Individual individual, ModelType modelType) {
         this.individual = individual;
-        this.deviceType = deviceType;
+        this.modelType = modelType;
         this.obixUpdateRequired = true;
         this.semaphore = new Semaphore(1);
     }
@@ -57,12 +57,12 @@ public class ObixIndividual {
         this.individual = individual;
     }
 
-    public DeviceType getDeviceType() {
-        return deviceType;
+    public ModelType getModelType() {
+        return modelType;
     }
 
-    public void setDeviceType(DeviceType deviceType) {
-        this.deviceType = deviceType;
+    public void setModelType(ModelType modelType) {
+        this.modelType = modelType;
     }
 
     public synchronized Semaphore getSemaphore() {

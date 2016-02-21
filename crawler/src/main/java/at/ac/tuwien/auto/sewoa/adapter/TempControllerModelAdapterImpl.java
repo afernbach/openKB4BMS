@@ -19,28 +19,20 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena.device;
+package at.ac.tuwien.auto.sewoa.adapter;
 
 import at.ac.tuwien.auto.sewoa.http.HttpRetrieverImpl;
-import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
-import at.ac.tuwien.auto.sewoa.obix.ObixWatcher;
-import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOutListItem;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixIndividual;
 import com.hp.hpl.jena.ontology.Individual;
-import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
-import java.util.HashMap;
+import static at.ac.tuwien.auto.sewoa.obix.model.ObixOwlModelHandler.BASE_ONTOLOGY_URL;
 
-import static at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler.BASE_ONTOLOGY_URL;
-
-public class TempControllerDeviceHandlerImpl extends TempSensorDeviceHandlerImpl {
+public class TempControllerModelAdapterImpl extends TempSensorModelAdapterImpl {
 
     public static final String PLACEHOLDER = "$value";
 
-    public DeviceType getDeviceType() {
-        return DeviceType.TEMP_CONTROL;
+    public ModelType getModelType() {
+        return ModelType.TEMP_CONTROL;
     }
 
     public void updateObix(Statement statement) {

@@ -19,12 +19,12 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package at.ac.tuwien.auto.sewoa.obix.jena.device;
+package at.ac.tuwien.auto.sewoa.adapter;
 
 import at.ac.tuwien.auto.sewoa.obix.ObixUnitFactory;
 import at.ac.tuwien.auto.sewoa.obix.ObixWatcher;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOutListItem;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixIndividual;
+import at.ac.tuwien.auto.sewoa.obix.model.ObixIndividual;
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.*;
@@ -32,9 +32,9 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 import java.util.HashMap;
 
-import static at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler.BASE_ONTOLOGY_URL;
+import static at.ac.tuwien.auto.sewoa.obix.model.ObixOwlModelHandler.BASE_ONTOLOGY_URL;
 
-public class TempSensorDeviceHandlerImpl implements ObixDeviceHandler {
+public class TempSensorModelAdapterImpl implements ObixModelAdapter {
 
     protected HashMap<String, ObixIndividual> individuals;
     protected OntModel model;
@@ -43,8 +43,8 @@ public class TempSensorDeviceHandlerImpl implements ObixDeviceHandler {
     protected Property currentStateValueProperty;
     protected Property hasNativeUnitProperty;
 
-    public DeviceType getDeviceType() {
-        return DeviceType.TEMP_SENSOR;
+    public ModelType getModelType() {
+        return ModelType.TEMP_SENSOR;
     }
 
     public void init(String prefix, HashMap<String, ObixIndividual> individuals, OntModel model, ObixWatcher obixWatcher, ObixUnitFactory obixUnitFactory) {
@@ -52,7 +52,7 @@ public class TempSensorDeviceHandlerImpl implements ObixDeviceHandler {
         this.model = model;
         this.obixUnitFactory = obixUnitFactory;
 
-        Resource tempSensorClass = ResourceFactory.createResource(BASE_ONTOLOGY_URL + getDeviceType().getType());
+        Resource tempSensorClass = ResourceFactory.createResource(BASE_ONTOLOGY_URL + getModelType().getType());
 
         this.realStateValue = model.getProperty(BASE_ONTOLOGY_URL + "realStateValue");
         this.hasNativeUnitProperty = model.getProperty(BASE_ONTOLOGY_URL + "hasNativeUnit");
@@ -62,7 +62,7 @@ public class TempSensorDeviceHandlerImpl implements ObixDeviceHandler {
         ExtendedIterator<Individual> individualExtendedIterator = model.listIndividuals(tempSensorClass);
         while(individualExtendedIterator.hasNext()){
             Individual next = individualExtendedIterator.next();
-            individuals.put(next.toString().replace(prefix, ""), new ObixIndividual(next, getDeviceType()));
+            individuals.put(next.toString().replace(prefix, ""), new ObixIndividual(next, getModelType()));
             obixWatcher.addInstance(next.toString());
 
             System.out.println("added individual: " + next);

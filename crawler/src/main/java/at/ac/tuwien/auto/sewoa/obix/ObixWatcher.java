@@ -23,7 +23,7 @@ package at.ac.tuwien.auto.sewoa.obix;
 
 import at.ac.tuwien.auto.sewoa.http.HttpRetriever;
 import at.ac.tuwien.auto.sewoa.http.HttpRetrieverImpl;
-import at.ac.tuwien.auto.sewoa.obix.jena.ObixSewoaModelHandler;
+import at.ac.tuwien.auto.sewoa.obix.model.ObixOwlModelHandler;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatch;
 import at.ac.tuwien.auto.sewoa.obix.data.ObixWatchOut;
 
@@ -50,9 +50,9 @@ public class ObixWatcher {
     private ObixWatchParser parser;
     private ObixWatch obixWatch;
     private List<String> instances;
-    private ObixSewoaModelHandler handler;
+    private ObixOwlModelHandler handler;
 
-    public ObixWatcher(String url, ObixSewoaModelHandler handler){
+    public ObixWatcher(String url, ObixOwlModelHandler handler){
         this.baseURL = url;
         instances = new ArrayList<String>();
         this.httpRetriever = new HttpRetrieverImpl();
