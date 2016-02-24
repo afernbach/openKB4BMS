@@ -171,6 +171,29 @@ public class MainJena {
                 + "?device EnergyResourceOntology:isIn <$location$> . \n "
                 +"}";
 
+        String queryStr1d = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#>\n" +
+                "SELECT ?switch ?value " +
+                "WHERE { "
+//                  +  "?location rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#DistributionBoard> .\n "
+                + "?switch EnergyResourceOntology:$property$ ?type . \n "
+                + "?type rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#$state$> . \n "
+                + "?type EnergyResourceOntology:realStateValue ?value . \n "
+//                + "?type EnergyResourceOntology:hasNativeUnit ?unit . \n "
+                +"}";
+
+        String queryStr1e = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX EnergyResourceOntology: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#>\n" +
+                "SELECT ?switch ?value ?unit " +
+                "WHERE { "
+//                  +  "?location rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#DistributionBoard> .\n "
+                + "?switch EnergyResourceOntology:$property$ ?type . \n "
+                + "?type rdf:type <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#$state$> . \n "
+                + "?type EnergyResourceOntology:realStateValue ?value . \n "
+                + "?type EnergyResourceOntology:hasNativeUnit ?unit . \n "
+                +"}";
+
+
         String queryStr2 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
@@ -208,6 +231,18 @@ public class MainJena {
             query = queryStr1c.replace("$sensor$", "TemperatureController").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/aufputzkasten_a_lab_links");
         } else if (input != null && input.contains("15")){
             query = queryStr1b.replace("$state$", "NotPresentState");
+        } else if (input != null && input.contains("16")){
+            query = queryStr1d.replace("$state$", "SwitchingCyclesStateValue").replace("$property$", "hasSwitchingCyclesStateValue");
+        } else if (input != null && input.contains("17")){
+            query = queryStr1e.replace("$state$", "OperatingHoursStateValue").replace("$property$", "hasOperatingHoursStateValue");
+        } else if (input != null && input.contains("18")){
+            query = queryStr1e.replace("$state$", "LoadCurrentStateValue").replace("$property$", "hasLoadCurrentStateValue");
+        } else if (input != null && input.contains("191")){
+            query = queryStr1c.replace("$sensor$", "CO2Sensor").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/a_lab");
+        } else if (input != null && input.contains("192")){
+            query = queryStr1c.replace("$sensor$", "HumiditySensor").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/a_lab");
+        } else if (input != null && input.contains("193")){
+            query = queryStr1c.replace("$sensor$", "TemperatureSensor").replace("$location$","http://localhost:8080/building/parts/treitlstrasse/parts/4stock/parts/a_lab");
         }
         System.out.println(query);
 
